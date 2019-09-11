@@ -9,7 +9,7 @@ GIT=/usr/bin/git
 GREP=/usr/bin/grep
 HOSTNAME=/bin/hostname
 MKDIR=/bin/mkdir
-MKTEMP=/usr/bin/mktemp
+MKTEMP=/bin/mktemp
 RM=/bin/rm
 SUDO=/usr/bin/sudo
 
