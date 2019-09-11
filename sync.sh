@@ -65,7 +65,7 @@ $CP -f $GIT_DIR/perltidy/perltidyrc $HOME
 
 # SSH config
 
-$SSH_CONFIG=$GIT_DIR/ssh/config/$HOST
+SSH_CONFIG="${GIT_DIR}/ssh/config/${HOST}"
 
 if [ -f $SSH_CONFIG ]; then
     SSH_DIR=$HOME/.ssh
