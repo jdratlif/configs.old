@@ -19,7 +19,7 @@ alias rpm5="rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
 alias rpm7="rpm --define='_gpg_name globalnoc@iu.edu'"
 
-HOSTNAME=$(/usr/bin/hostname -s)
+HOSTNAME=$(/bin/hostname -s)
 
 # host specific aliases
 if [ $HOSTNAME == "jdratlif-dev7" ]; then
