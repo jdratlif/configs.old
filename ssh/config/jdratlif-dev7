@@ -1,0 +1,20 @@
+Host laptop
+    HostName            129.79.9.125
+    User                vnctunnel
+    RemoteForward       5901 localhost:5901
+
+Host skip
+    HostName            skip.grnoc.iu.edu
+    ForwardAgent        yes
+
+Host xaiver
+    HostName            xaiver.technoplaza.net
+    Port                1022
+    RemoteForward       192.168.1.2:5910 localhost:5901
+    RemoteForward       192.168.1.2:2222 localhost:22
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host vmx
+    HostName            140.182.45.188
+    User                root

@@ -1,2 +1,3 @@
-# configs
-My linux configuration files
+# jdratlif Linux Configs
+
+My Linux configuration files.

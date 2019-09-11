@@ -1,0 +1,85 @@
+ForwardAgent yes
+
+Host burp
+    HostName backup.grnoc.iu.edu
+
+Host burp-i2
+    HostName backup.ctc.net.internet2.edu
+
+Host comp
+    HostName simp-comp.bldc.grnoc.iu.edu
+
+Host data
+    HostName simp-data2.bldc.grnoc.iu.edu
+
+Host dev
+    HostName jdratlif-dev7.grnoc.iu.edu
+
+Host dns
+    HostName db2.grnoc.iu.edu
+
+Host flow-proc                                                                                                                                                                                
+    HostName flow-proc.bldc.grnoc.iu.edu
+
+Host kvm
+    HostName np-dev3.grnoc.iu.edu
+
+Host kvm2
+    HostName netsage-archive.grnoc.iu.edu
+
+Host netsage-dev
+    HostName netsage-pipeline-dev2.bldc.grnoc.iu.edu
+
+Host netsage-probe
+    HostName netsage-probe1.grnoc.iu.edu
+
+Host io3
+    HostName io3.bldc.grnoc.iu.edu
+
+Host rabbitmq-i2-bldc
+    HostName rabbitmq.tsds.bldc.net.internet2.edu
+
+Host rabbitmq-i2-wash2
+    HostName rabbitmq.tsds.wash2.net.internet2.edu
+
+Host poller
+    HostName simp-poller.bldc.grnoc.iu.edu
+
+Host puppet
+    HostName build.grnoc.iu.edu
+
+Host simp-i2
+    HostName snapp-collector.bldc.net.internet2.edu
+
+Host snapp
+    HostName snapp.bldc.grnoc.iu.edu
+
+Host snapp-cen
+    HostName snapp.net.cen.ct.gov
+
+Host snapp-i2-bldc
+    HostName snapp-collector.bldc.net.internet2.edu
+
+Host snapp-i2-wash
+    HostName snapp-collector.wash2.net.internet2.edu
+
+Host snapp-mcnc-1
+    HostName snapp-collector-01.globalnoc.mcnc.org
+
+Host snapp-mcnc-2
+    HostName snapp.ncren.net
+
+Host tsds
+    HostName simp-comp.bldc.grnoc.iu.edu
+
+Host tsds-i2-bldc
+    HostName services.tsds.bldc.net.internet2.edu
+
+Host tsds-i2-wash2
+    HostName services.tsds.wash2.net.internet2.edu
+
+Host vn-bldc
+    HostName vn.bldc.net.internet2.edu
+
+Host vn-wash
+    HostName vn.wash2.net.internet2.edu
