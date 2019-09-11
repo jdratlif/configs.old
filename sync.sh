@@ -61,7 +61,7 @@ fi
 
 # perltidy
 
-$CP -f $GIT_DIR/perltidy/perltidyrc $HOME
+$CP -f $GIT_DIR/perltidy/perltidyrc $HOME/.perltidyrc
 
 # SSH config
 
