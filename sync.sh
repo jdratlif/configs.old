@@ -24,13 +24,20 @@ GIT_DIR="${TEMP_DIR}/configs"
 ################################################################################
 # start of script
 
+if [ ! -x $GIT ]; then
+    # we don't have git, bailout!
+    exit 1
+fi
+
 # clone this repo so we can get files
-$GIT clone https://github.com/jdratlif/configs.git $GIT_DIR
+$GIT clone https://github.com/jdratlif/configs.git $GIT_DIR 2> /dev/null
 
 # bash
 
-# test for RedHat/CentOS
-if [ -f /etc/redhat-release ]; then
+# test for RedHat/CentOS > 5
+$GREP 'release [678]' /etc/redhat-release > /dev/null
+
+if [ $? -eq 0 ]; then
     $CP -f $GIT_DIR/bash/rhel/bash.bashrc ~/.bashrc
     $CP -f $GIT_DIR/bash/rhel/bash.profile ~/.bash_profile
 fi
