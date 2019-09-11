@@ -29,12 +29,10 @@ $GIT clone https://github.com/jdratlif/configs.git $GIT_DIR
 
 # bash
 
-# test for RedHat/CentOS 7
-$GREP 'release 7' /etc/redhat-release > /dev/null 2>&1
-
-if [ $? -eq 0 ]; then
-    $CP -f $GIT_DIR/bash/rhel7/bash.bashrc ~/.bashrc
-    $CP -f $GIT_DIR/bash/rhel7/bash.profile ~/.bash_profile
+# test for RedHat/CentOS
+if [ -f /etc/redhat-release ]; then
+    $CP -f $GIT_DIR/bash/rhel/bash.bashrc ~/.bashrc
+    $CP -f $GIT_DIR/bash/rhel/bash.profile ~/.bash_profile
 fi
 
 # git
