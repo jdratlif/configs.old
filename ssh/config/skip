@@ -18,7 +18,7 @@ Host dev
 Host dns
     HostName db2.grnoc.iu.edu
 
-Host flow-proc                                                                                                                                                                                
+Host flow-proc
     HostName flow-proc.bldc.grnoc.iu.edu
 
 Host kvm
@@ -60,7 +60,7 @@ Host snapp-cen
 Host snapp-i2-bldc
     HostName snapp-collector.bldc.net.internet2.edu
 
-Host snapp-i2-wash
+Host snapp-i2-wash2
     HostName snapp-collector.wash2.net.internet2.edu
 
 Host snapp-mcnc-1
@@ -81,5 +81,5 @@ Host tsds-i2-wash2
 Host vn-bldc
     HostName vn.bldc.net.internet2.edu
 
-Host vn-wash
+Host vn-wash2
     HostName vn.wash2.net.internet2.edu
