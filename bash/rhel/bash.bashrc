@@ -24,7 +24,6 @@ HOSTNAME=$(/bin/hostname -s)
 # host specific aliases
 if [ $HOSTNAME == "jdratlif-dev7" ]; then
     alias logstash='sudo /usr/share/logstash/bin/logstash'
-    alias puppet='sudo puppet agent --test --environment jdratlif'
     alias pyenv='source ~/venv/bin/activate'
     alias vnctunnel='ssh -f -N laptop'
     alias vncxaiver='autossh -M 20000 -f -N xaiver'
