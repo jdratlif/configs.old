@@ -13,7 +13,7 @@ export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # global aliases
 alias ipt="sudo iptables --line-numbers -n -v -L"
-alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
+alias gcs='curl --header "Authorization: token 1460072683938cb2dd68dd748fe3b82a50028a66" --header "Accept: application/vnd.github.v3.raw" https://api.github.com/repos/jdratlif/configs/contents/sync.sh | sh'
 alias puppet="sudo puppet agent --test"
 alias rpm5="rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
