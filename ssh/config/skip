@@ -67,6 +67,9 @@ Host snapp-mcnc-1
     HostName snapp-collector-01.globalnoc.mcnc.org
 
 Host snapp-mcnc-2
+    HostName snapp-collector-01.globalnoc.mcnc.org
+
+Host snapp-ncren
     HostName snapp.ncren.net
 
 Host tsds
