@@ -6,7 +6,7 @@
 CHMOD=/bin/chmod
 CP=/bin/cp
 GIT=/usr/bin/git
-GREP=/usr/bin/grep
+GREP=/bin/grep
 HOSTNAME=/bin/hostname
 MKDIR=/bin/mkdir
 MKTEMP=/bin/mktemp
