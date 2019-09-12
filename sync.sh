@@ -12,6 +12,7 @@ MKDIR=/bin/mkdir
 MKTEMP=/bin/mktemp
 RM=/bin/rm
 SUDO=/usr/bin/sudo
+TOUCH=/bin/touch
 
 ################################################################################
 # global variables
@@ -159,6 +160,8 @@ XR_FILE="${GIT_DIR}/Xresources/${HOST}"
 if [ -d $XR_FILE ]; then
     $CP -f $XR_FILE $HOME/.Xresources
 fi
+
+$TOUCH $HOME/.last-sync
 
 ################################################################################
 # cleanup the temp files
