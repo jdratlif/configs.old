@@ -62,7 +62,7 @@ if [ -d $BASE ]; then
 
     $MKDIR $I3BASE 2> /dev/null
     $CP -f $BASE/i3.conf $I3BASE
-    $CP -f $BASE/i3status.conf $HOME
+    $CP -f $BASE/i3status.conf $HOME/.i3status.conf
 fi
 
 # perltidy
