@@ -7,6 +7,14 @@ Host skip
     HostName            skip.grnoc.iu.edu
     ForwardAgent        yes
 
+Host leap
+    HostName            leap.grnoc.iu.edu
+    ForwardAgent        yes
+
+Host jump
+    HostName            jump.grnoc.iu.edu
+    ForwardAgent        yes
+
 Host xaiver
     HostName            xaiver.technoplaza.net
     Port                1022
