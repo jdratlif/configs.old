@@ -21,6 +21,9 @@ Host dns
 Host flow-proc
     HostName flow-proc.bldc.grnoc.iu.edu
 
+Host frontend-i2-wash2
+    HostName frontend.tsds.wash2.net.internet2.edu
+
 Host kvm
     HostName np-dev3.grnoc.iu.edu
 
