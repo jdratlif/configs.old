@@ -72,6 +72,9 @@ Host snapp-mcnc-2
 Host snapp-ncren
     HostName snapp.ncren.net
 
+Host snapp-oshean
+    HostName snapp.oshean.org
+
 Host tsds
     HostName simp-comp.bldc.grnoc.iu.edu
 
