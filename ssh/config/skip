@@ -21,6 +21,9 @@ Host dns
 Host flow-proc
     HostName flow-proc.bldc.grnoc.iu.edu
 
+Host frontend-i2-bldc
+    HostName frontend.tsds.bldc.net.internet2.edu
+
 Host frontend-i2-wash2
     HostName frontend.tsds.wash2.net.internet2.edu
 
@@ -29,6 +32,24 @@ Host kvm
 
 Host kvm2
     HostName netsage-archive.grnoc.iu.edu
+
+Host mongo-i2-bldc-1
+    HostName mongo1.tsds.bldc.net.internet2.edu
+
+Host mongo-i2-bldc-2
+    HostName mongo2.tsds.bldc.net.internet2.edu
+
+Host mongo-i2-bldc-3
+    HostName mongo3.tsds.bldc.net.internet2.edu
+
+Host mongo-i2-wash2-1
+    HostName mongo1.tsds.wash2.net.internet2.edu
+
+Host mongo-i2-wash2-2
+    HostName mongo2.tsds.wash2.net.internet2.edu
+
+Host mongo-i2-wash2-3
+    HostName mongo3.tsds.wash2.net.internet2.edu
 
 Host netsage-dev
     HostName netsage-pipeline-dev2.bldc.grnoc.iu.edu
