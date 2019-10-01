@@ -3,6 +3,9 @@ ForwardAgent yes
 Host burp
     HostName backup.grnoc.iu.edu
 
+Host burp2
+    HostName backup.ictc.ilight.net
+
 Host burp-i2
     HostName backup.ctc.net.internet2.edu
 
