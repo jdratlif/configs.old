@@ -1,7 +1,8 @@
 Host laptop
-    HostName            129.79.9.125
-    User                vnctunnel
-    RemoteForward       5901 localhost:5901
+    HostName            129.79.9.97
+    User                john@technoplaza.net
+    Port                9722
+    RemoteForward       5907 localhost:5901
 
 Host skip
     HostName            skip.grnoc.iu.edu
