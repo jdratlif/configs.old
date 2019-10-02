@@ -18,9 +18,9 @@ Host jump
 
 Host xaiver
     HostName            xaiver.technoplaza.net
-    Port                1022
-    RemoteForward       192.168.1.2:5910 localhost:5901
-    RemoteForward       192.168.1.2:2222 localhost:22
+    Port                2202
+    RemoteForward       192.168.1.2:5907 localhost:5901
+    RemoteForward       192.168.1.2:9722 localhost:22
     ServerAliveInterval 30
     ServerAliveCountMax 3
 
