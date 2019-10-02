@@ -111,3 +111,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export LIBVIRT_DEFAULT_URI="qemu:///system"
+
+set -o vi
+bind -m vi-insert "\C-l":clear-screen
