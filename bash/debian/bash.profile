@@ -26,3 +26,6 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -x "/usr/bin/keychain" ]; then
+    eval `/usr/bin/keychain --eval --agents ssh id_rsa`
+fi
