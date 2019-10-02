@@ -163,7 +163,7 @@ fi
 
 XR_FILE="${GIT_DIR}/Xresources/${HOST}"
 
-if [ -d $XR_FILE ]; then
+if [ -f $XR_FILE ]; then
     $CP -f $XR_FILE $HOME/.Xresources
 fi
 
