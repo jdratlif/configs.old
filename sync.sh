@@ -46,6 +46,7 @@ if [ -f /etc/redhat-release ]; then
 elif [ -f /etc/debian_version ]; then
     $CP -f $GIT_DIR/bash/debian/bash.bashrc ~/.bashrc
     $CP -f $GIT_DIR/bash/debian/bash.profile ~/.profile
+    $CP -f $GIT_DIR/bash/debian/bash_aliases.sh ~/.bash_aliases
 fi
 
 # git
