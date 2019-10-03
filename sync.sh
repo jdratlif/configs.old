@@ -138,7 +138,13 @@ fi
 
 VIM_DIR="${GIT_DIR}/vim"
 
-$CP -f $VIM_DIR/vimrc.vim $HOME/.vimrc
+VIMRC=$VIM_DIR/common.vim
+
+if [ -f "${VIM_DIR}/${HOST}.vim" ]; then
+    VIMRC="${VIM_DIR}/${HOST}.vim"
+fi
+
+$CP -f $VIMRC $HOME/.vimrc
 
 $RM -rf $HOME/.vim && $MKDIR $HOME/.vim
 $CP $VIM_DIR/plugins/* $HOME/.vim/
