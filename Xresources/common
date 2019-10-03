@@ -1,4 +1,4 @@
-# https://github.com/majutsushi/urxvt-font-size
+! https://github.com/majutsushi/urxvt-font-size
 URxvt.perl-ext-common:	font-size
 URxvt.keysym.C-equal:	font-size:increase
 
@@ -6,7 +6,7 @@ URxvt*font:		xft:Inconsolata:size=12
 URxvt*scrollBar:	false
 URxvt*termName:		rxvt-256color
 
-# https://draculatheme.com
+! https://draculatheme.com
 ! Dracula Xresources palette
 URxvt*foreground:	#F8F8F2
 URxvt*background: 	#282A36
