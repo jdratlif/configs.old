@@ -116,3 +116,7 @@ Host vn-bldc
 
 Host vn-wash2
     HostName vn.wash2.net.internet2.edu
+
+Host vmx
+    HostName 140.182.45.188
+    User root
