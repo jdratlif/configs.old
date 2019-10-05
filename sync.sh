@@ -75,21 +75,33 @@ fi
 
 $CP -f $GIT_DIR/perltidy/perltidyrc $HOME/.perltidyrc
 
+# SSH
+
+SSH_DIR=$HOME/.ssh
+
+if [ ! -d $SSH_DIR ]; then
+    $MKDIR $SSH_DIR
+    $CHMOD 700 $SSH_DIR
+fi
+
 # SSH config
 
 SSH_CONFIG="${GIT_DIR}/ssh/config/${HOST}"
 
 if [ -f $SSH_CONFIG ]; then
-    SSH_DIR=$HOME/.ssh
-
-    if [ ! -d $SSH_DIR ]; then
-        $MKDIR $SSH_DIR
-        $CHMOD 700 $SSH_DIR
-    fi
-
     SSH_CONFIG_FILE="${SSH_DIR}/config"
     $CP -f $SSH_CONFIG $SSH_CONFIG_FILE
-    $CHMOD 600 $SSH_CONFIG_FILE
+    $CHMOD 0600 $SSH_CONFIG_FILE
+fi
+
+# SSH authorized keys
+
+SSH_AUTH_KEYS="${GIT_DIR}/ssh/authorized_keys/${HOST}"
+
+if [ -f $SSH_AUTH_KEYS ]; then
+    $SSH_AUTH_KEYS_FILE="${SSH_DIR}/authorized_keys"
+    $CP -f $SSH_AUTH_KEYS $SSH_AUTH_KEYS_FILE
+    $CHMOD 0600 $SSH_AUTH_KEYS_FILE
 fi
 
 ################################################################################
