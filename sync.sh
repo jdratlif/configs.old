@@ -104,32 +104,12 @@ if [ -f $SSH_AUTH_KEYS ]; then
     $CHMOD 0600 $SSH_AUTH_KEYS_FILE
 fi
 
-################################################################################
-# sudoers
-
-# THESE 2 won't work unattended, so I'm leaving it out for now
-
-# SUDOERS_DIR="${GIT_DIR}/sudoers.d/${HOST}"
-
-# if [ -d $SUDOERS_DIR ]; then
-#     $SUDO $CP -f $SUDOERS_DIR/* /etc/sudoers.d
-# fi
-
-# # sysctl
-
-# SYSCTL_DIR="${GIT_DIR}/sysctl/${HOST}"
-
-# if [ -d $SYSCTL_DIR ]; then
-#     $SUDO $CP -f $SYSCTL_DIR/sysctl.conf /etc
-# fi
-################################################################################
-
 # tmux
 
-TMUX_DIR="${GIT_DIR}/tmux/${HOST}"
+TMUX_CONF="${GIT_DIR}/tmux/${HOST}"
 
-if [ -d $TMUX_DIR ]; then
-    $CP -f $TMUX_DIR/tmux.conf $HOME/.tmux.conf
+if [ -f $TMUX_CONF ]; then
+    $CP -f $TMUX_CONF $HOME/.tmux.conf
 fi
 
 # urxvt extensions
@@ -186,6 +166,26 @@ if [ -f $XR_FILE ]; then
 fi
 
 $TOUCH $HOME/.last-sync
+
+################################################################################
+# sudoers
+
+# these won't work unattended, so we'll leave it out for now
+
+# SUDOERS_DIR="${GIT_DIR}/sudoers.d/${HOST}"
+
+# if [ -d $SUDOERS_DIR ]; then
+#     $SUDO $CP -f $SUDOERS_DIR/* /etc/sudoers.d
+# fi
+
+# # sysctl
+
+# SYSCTL_DIR="${GIT_DIR}/sysctl/${HOST}"
+
+# if [ -d $SYSCTL_DIR ]; then
+#     $SUDO $CP -f $SYSCTL_DIR/sysctl.conf /etc
+# fi
+################################################################################
 
 ################################################################################
 # cleanup the temp files
