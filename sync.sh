@@ -99,7 +99,7 @@ fi
 SSH_AUTH_KEYS="${GIT_DIR}/ssh/authorized_keys/${HOST}"
 
 if [ -f $SSH_AUTH_KEYS ]; then
-    $SSH_AUTH_KEYS_FILE="${SSH_DIR}/authorized_keys"
+    SSH_AUTH_KEYS_FILE="${SSH_DIR}/authorized_keys"
     $CP -f $SSH_AUTH_KEYS $SSH_AUTH_KEYS_FILE
     $CHMOD 0600 $SSH_AUTH_KEYS_FILE
 fi
