@@ -27,5 +27,9 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 if [ -x "/usr/bin/keychain" ]; then
+    if [ -x "/usr/bin/ssh-askpass" ]; then
+        export SSH_ASKPASS="/usr/bin/ssh-askpass"
+    fi
+
     eval `/usr/bin/keychain --eval --agents ssh id_rsa`
 fi
