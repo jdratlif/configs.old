@@ -4,3 +4,6 @@ Host dev
 
 Host qtbox
     User        qtbox
+
+Host xenial
+    ForwardX11  yes

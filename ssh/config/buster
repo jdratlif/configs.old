@@ -1,2 +1,9 @@
+Host dev
+    HostName    htpc
+    Port        9722
+
 Host qtbox
     User        qtbox
+
+Host xenial
+    ForwardX11  yes
