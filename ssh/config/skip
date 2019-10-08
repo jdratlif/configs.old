@@ -108,6 +108,9 @@ Host snapp-ncren
 Host snapp-oshean
     HostName snapp.oshean.org
 
+Host syslog
+    HostName syslog.grnoc.iu.edu
+
 Host tsds
     HostName simp-comp.bldc.grnoc.iu.edu
 
