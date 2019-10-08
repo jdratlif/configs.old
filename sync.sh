@@ -71,6 +71,14 @@ if [ -d $BASE ]; then
     $CP -f $BASE/i3status.conf $HOME/.i3status.conf
 fi
 
+# qterminal
+
+QTERMINAL="${GIT_DIR}/qterminal/${HOST}.ini"
+
+if [ -f $QTERMINAL ]; then
+    $CP -f $QTERMINAL $HOME/.config/qterminal.org/qterminal.ini
+fi
+
 # perltidy
 
 $CP -f $GIT_DIR/perltidy/perltidyrc $HOME/.perltidyrc
