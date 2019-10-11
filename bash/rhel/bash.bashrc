@@ -30,5 +30,17 @@ if [ $HOSTNAME == "jdratlif-dev7" ]; then
     alias xrdb='xrdb -cpp /usr/bin/cpp'
 fi
 
+# use vi line editing mode
 set -o vi
 bind -m vi-insert "\C-l":clear-screen
+
+# history options
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL="ignorespace:erasedups"
+
+export PROMPT_COMMAND='$PROMPT_COMMAND; history -a'
+
+shopt -s histappend
+shopt -s cmdhist
