@@ -40,7 +40,11 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL="ignorespace:erasedups"
 
-export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+if [ -z $PROMPT_COMMAND ]; then
+    export PROMPT_COMMAND="history -a"
+else
+    export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+fi
 
 shopt -s histappend
 shopt -s cmdhist
