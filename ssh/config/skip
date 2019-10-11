@@ -88,7 +88,7 @@ Host snapp-cen
     HostName snapp.net.cen.ct.gov
 
 Host snapp-cen-test
-    HostName snapp-cen-test.grnoc.iu.edu
+    HostName snapp-el7-test.net.cen.ct.gov
 
 Host snapp-i2-bldc
     HostName snapp-collector.bldc.net.internet2.edu
