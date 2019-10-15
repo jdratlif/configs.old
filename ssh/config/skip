@@ -96,7 +96,7 @@ Host snapp
 Host snapp-cen
     HostName snapp.net.cen.ct.gov
 
-Host snapp-cen-test
+Host snapp-el7-test
     HostName snapp-el7-test.net.cen.ct.gov
 
 Host snapp-i2-bldc
