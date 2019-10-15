@@ -114,6 +114,9 @@ Host snapp-mcnc-2
 Host snapp-ncren
     HostName snapp.ncren.net
 
+Host snapp-onenet
+    HostName snapp.noc.onenet.net
+
 Host snapp-oshean
     HostName snapp.oshean.org
 
