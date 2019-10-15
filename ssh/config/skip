@@ -13,7 +13,10 @@ Host comp
     HostName simp-comp.bldc.grnoc.iu.edu
 
 Host cosign-cen
-    HostName login.bldc.net.cen.ct.gov
+    HostName cosign.bldc.net.cen.ct.gov
+
+Host cosign-cen2
+    HostName cosign.ehct.net.cen.ct.gov.
 
 Host data
     HostName simp-data2.bldc.grnoc.iu.edu
