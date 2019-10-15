@@ -12,6 +12,9 @@ Host burp-i2
 Host comp
     HostName simp-comp.bldc.grnoc.iu.edu
 
+Host cosign
+    HostName cosign.grnoc.iu.edu
+
 Host cosign-cen
     HostName cosign.bldc.net.cen.ct.gov
 
