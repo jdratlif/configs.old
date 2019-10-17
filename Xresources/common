@@ -5,6 +5,7 @@ URxvt.keysym.C-equal:	font-size:increase
 URxvt*font:		xft:Inconsolata:size=12
 URxvt*scrollBar:	false
 URxvt*termName:		rxvt-256color
+URxvt*visualBell:	true
 
 ! https://draculatheme.com
 ! Dracula Xresources palette
