@@ -49,6 +49,12 @@ elif [ -f /etc/debian_version ]; then
     $CP -f $GIT_DIR/bash/debian/bash_aliases.sh ~/.bash_aliases
 fi
 
+# dircolors
+
+if [ -f /etc/redhat-release ]; then
+    $CP -f $GIT_DIR/dircolors/rhel/dircolors ~/.dircolors
+fi
+
 # git
 
 GITCONFIG_DIR="${GIT_DIR}/git/${HOST}"
