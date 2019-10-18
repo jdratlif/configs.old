@@ -7,23 +7,30 @@ URxvt*scrollBar:	false
 URxvt*termName:		rxvt-256color
 URxvt*visualBell:	true
 
-! https://draculatheme.com
-! Dracula Xresources palette
-URxvt*foreground:	#F8F8F2
-URxvt*background: 	#282A36
-URxvt*color0:		#000000
-URxvt*color8:		#4D4D4D
-URxvt*color1:		#FF5555
-URxvt*color9:		#FF6E67
-URxvt*color2:		#50FA7B
-URxvt*color10:		#5AF78E
-URxvt*color3:		#F1FA8C
-URxvt*color11:		#F4F99D
-URxvt*color4:		#BD93F9
-URxvt*color12:		#CAA9FA
-URxvt*color5:		#FF79C6
-URxvt*color13:		#FF92D0
-URxvt*color6:		#8BE9FD
-URxvt*color14:		#9AEDFE
-URxvt*color7:		#BFBFBF
-URxvt*color15:		#E6E6E6
+! https://github.com/kittykatattack/vim/blob/master/colors/mirodark.vim
+*background:		#121212
+*foreground:		#999999
+! black dark/light
+*color0:		#3d3d3d
+*color8:		#5e5e5e
+! red dark/light
+*color1:		#8a2f58
+*color9:		#cf4f88
+! green dark/light
+*color2:		#287373
+*color10:		#53a6a6
+! yellow dark/light
+*color3:		#914e89
+*color11:		#bf85cc
+! blue dark/light
+*color4:		#395573
+*color12:		#4779b3
+! magenta dark/light
+*color5:		#5e468c
+*color13:		#7f62b3
+! cyan dark/light
+*color6:		#2b7694
+*color14:		#47959e
+! white dark/light
+*color7:		#899ca1
+*color15:		#c0c0c0
