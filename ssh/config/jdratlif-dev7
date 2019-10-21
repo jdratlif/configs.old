@@ -1,5 +1,5 @@
 Host laptop
-    HostName            129.79.9.97
+    HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
     Port                9722
     RemoteForward       5907 localhost:5901
