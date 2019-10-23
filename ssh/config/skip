@@ -9,6 +9,36 @@ Host burp2
 Host burp-i2
     HostName backup.ctc.net.internet2.edu
 
+Host cloud-bldc-1
+    HostName compute.cloud.bldc.grnoc.iu.edu
+
+Host cloud-bldc-2
+    HostName compute2.cloud.bldc.grnoc.iu.edu
+
+Host cloud-bldc-3
+    HostName compute3.cloud.bldc.grnoc.iu.edu
+
+Host cloud-bldc-4
+    HostName compute4.cloud.bldc.grnoc.iu.edu
+
+Host cloud-bldc-5
+    HostName compute5.cloud.bldc.grnoc.iu.edu
+
+Host cloud-ctc-1
+    HostName compute.cloud.ctc.grnoc.iu.edu
+
+Host cloud-ctc-2
+    HostName compute2.cloud.ctc.grnoc.iu.edu
+
+Host cloud-ctc-3
+    HostName compute3.cloud.ctc.grnoc.iu.edu
+
+Host cloud-ctc-4
+    HostName compute4.cloud.ctc.grnoc.iu.edu
+
+Host cloud-ctc-5
+    HostName compute5.cloud.ctc.grnoc.iu.edu
+
 Host comp
     HostName simp-comp.bldc.grnoc.iu.edu
 
