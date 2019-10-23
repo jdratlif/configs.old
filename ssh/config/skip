@@ -39,6 +39,9 @@ Host frontend-i2-bldc
 Host frontend-i2-wash2
     HostName frontend.tsds.wash2.net.internet2.edu
 
+Host grafana-cen
+    HostName grafana.net.cen.ct.gov
+
 Host grafana-intl
     HostName grafana.intl.grnoc.iu.edu
 
