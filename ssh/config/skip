@@ -153,6 +153,12 @@ Host snapp-onenet
 Host snapp-oshean
     HostName snapp.oshean.org
 
+Host snapp-services-01
+    HostName snapp-services-01.globalnoc.mcnc.org
+
+Host snapp-services-02
+    HostName snapp-services-02.globalnoc.mcnc.org
+
 Host syslog
     HostName syslog.grnoc.iu.edu
 
