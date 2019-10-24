@@ -5,6 +5,6 @@ unset DBUS_SESSION_BUS_ADDRESS
 
 export XKL_XMODMAP_DISABLE=1
 
-xrdb $HOME/.Xresources
+xrdb -cpp /usr/bin/cpp $HOME/.Xresources
 xsetroot -solid grey
 i3 &
