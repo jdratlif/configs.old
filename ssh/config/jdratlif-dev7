@@ -1,11 +1,13 @@
+Host *
+    ServerAliveCountMax 3
+    ServerAliveInterval 30
+
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
     Port                9722
     RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
-    ServerAliveInterval 30
-    ServerAliveCountMax 3
 
 Host skip
     HostName            skip.grnoc.iu.edu
@@ -24,8 +26,6 @@ Host xaiver
     Port                2202
     RemoteForward       192.168.1.2:5907 localhost:5901
     RemoteForward       192.168.1.2:9722 localhost:22
-    ServerAliveInterval 30
-    ServerAliveCountMax 3
 
 Host vmx
     HostName            140.182.45.188

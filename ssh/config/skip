@@ -1,4 +1,7 @@
-ForwardAgent yes
+Host *
+    ForwardAgent yes
+    ServerAliveCountMax 3
+    ServerAliveInterval 30
 
 Host alertmon-mcnc-1
     HostName mon-01.globalnoc.mcnc.org
