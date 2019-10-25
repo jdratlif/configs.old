@@ -1,5 +1,11 @@
 ForwardAgent yes
 
+Host alertmon-mcnc-1
+    HostName mon-01.globalnoc.mcnc.org
+
+Host alertmon-mcnc-2
+    HostName mon-02.globalnoc.mcnc.org
+
 Host burp
     HostName backup.grnoc.iu.edu
 
