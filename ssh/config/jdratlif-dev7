@@ -2,7 +2,10 @@ Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
     Port                9722
+    RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
 
 Host skip
     HostName            skip.grnoc.iu.edu
