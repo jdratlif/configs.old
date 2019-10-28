@@ -173,6 +173,16 @@ fi
 
 # Xresources
 
+# themes
+
+X_THEMES="${HOME}/.Xthemes"
+
+if [ ! -d $X_THEMES ]; then
+    mkdir $X_THEMES
+fi
+
+$CP -f ${GIT_DIR}/Xresources/themes/* $X_THEMES
+
 XR_FILE="${GIT_DIR}/Xresources/${HOST}"
 
 if [ -f $XR_FILE ]; then
