@@ -1,4 +1,4 @@
-! Dracula Xresources palette
+! Darcula Xresources palette
 URxvt*foreground:	#F8F8F2
 URxvt*background: 	#282A36
 URxvt*color0:		#000000
