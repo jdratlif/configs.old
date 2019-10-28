@@ -7,57 +7,57 @@ URxvt*scrollBar:	false
 URxvt*termName:		rxvt-256color
 URxvt*visualBell:	true
 
-!BLK Cursor
-#define _color0        #000d18
-#define _color8        #000d18
-!RED Tag
-#define _color1        #e89393
-#define _color9        #e89393
-!GRN SpecialKey
-#define _color2        #9ece9e
-#define _color10       #9ece9e
-!YEL Keyword
-#define _color3        #f0dfaf
-#define _color11       #f0dfaf
-!BLU Number
-#define _color4        #8cd0d3
-#define _color12       #8cd0d3
-!MAG Precondit
-#define _color5        #c0bed1
-#define _color13       #c0bed1
-!CYN Float
-#define _color6        #dfaf8f
-#define _color14       #dfaf8f
-!WHT Search
-#define _color7        #efefef
-#define _color15       #efefef
-!FMT Include, StatusLine, ErrorMsg
-#define _colorBD       #ffcfaf
-#define _colorUL       #ccdc90
-#define _colorIT       #80d4aa
-!TXT Normal, Normal, Cursor
-#define _foreground    #dcdccc
-#define _background    #1f1f1f
-#define _cursorColor   #8faf9f
-*color0         : _color0
-*color1         : _color1
-*color2         : _color2
-*color3         : _color3
-*color4         : _color4
-*color5         : _color5
-*color6         : _color6
-*color7         : _color7
-*color8         : _color8
-*color9         : _color9
-*color10        : _color10
-*color11        : _color11
-*color12        : _color12
-*color13        : _color13
-*color14        : _color14
-*color15        : _color15
-*colorBD        : _colorBD
-*colorIT        : _colorIT
-*colorUL        : _colorUL
-*foreground     : _foreground
-*background     : _background
-*cursorColor    : _cursorColor
+! Base16 Chalk
+! Scheme: Chris Kempson (http://chriskempson.com)
+
+#define base00 #151515
+#define base01 #202020
+#define base02 #303030
+#define base03 #505050
+#define base04 #b0b0b0
+#define base05 #d0d0d0
+#define base06 #e0e0e0
+#define base07 #f5f5f5
+#define base08 #fb9fb1
+#define base09 #eda987
+#define base0A #ddb26f
+#define base0B #acc267
+#define base0C #12cfc0
+#define base0D #6fc2ef
+#define base0E #e1a3ee
+#define base0F #deaf8f
+
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
+! use 'shell' template to set these if necessary
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
