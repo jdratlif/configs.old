@@ -7,4 +7,4 @@ URxvt*scrollBar:	false
 URxvt*termName:		rxvt-256color
 URxvt*visualBell:	true
 
-#include "/home/jdratlif/.Xthemes/base16-solarflare-256"
+#include "/home/jdratlif/.Xthemes/base16-materia-256"
