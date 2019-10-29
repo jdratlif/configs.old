@@ -72,6 +72,10 @@ BASE="${GIT_DIR}/i3/${HOST}"
 if [ -d $BASE ]; then
     I3BASE="${HOME}/.config/i3"
 
+    if [ ! -d "${I3BASE}" ]; then
+        $MKDIR -p "${I3BASE}"
+    fi
+
     $MKDIR $I3BASE 2> /dev/null
     $CP -f $BASE/i3.conf $I3BASE/config
     $CP -f $BASE/i3status.conf $HOME/.i3status.conf
@@ -82,7 +86,13 @@ fi
 QTERMINAL="${GIT_DIR}/qterminal/${HOST}.ini"
 
 if [ -f $QTERMINAL ]; then
-    $CP -f $QTERMINAL $HOME/.config/qterminal.org/qterminal.ini
+    QTERMINAL_CONFIG_DIR="${HOME}/.config/qterminal.org"
+
+    if [ ! -d "${QTERMINAL_CONFIG_DIR}" ]; then
+        $MKDIR -p "${QTERMINAL_CONFIG_DIR}"
+    fi
+
+    $CP -f $QTERMINAL "${QTERMINAL_CONFIG_DIR}/qterminal.ini"
 fi
 
 # perltidy
