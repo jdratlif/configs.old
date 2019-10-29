@@ -2,6 +2,14 @@ Host *
     ServerAliveCountMax 3
     ServerAliveInterval 30
 
+Host bldc-dev-tunnel
+    HostName            skip.grnoc.iu.edu
+    LocalForward        4522 jdratlif-dev7.bldc.grnoc.iu.edu:22
+
+Host jump
+    HostName            jump.grnoc.iu.edu
+    ForwardAgent        yes
+
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
@@ -9,24 +17,20 @@ Host laptop
     RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
 
-Host skip
-    HostName            skip.grnoc.iu.edu
-    ForwardAgent        yes
-
 Host leap
     HostName            leap.grnoc.iu.edu
     ForwardAgent        yes
 
-Host jump
-    HostName            jump.grnoc.iu.edu
+Host skip
+    HostName            skip.grnoc.iu.edu
     ForwardAgent        yes
+
+Host vmx
+    HostName            140.182.45.188
+    User                root
 
 Host xaiver
     HostName            xaiver.technoplaza.net
     Port                2202
     RemoteForward       192.168.1.2:5907 localhost:5901
     RemoteForward       192.168.1.2:9722 localhost:22
-
-Host vmx
-    HostName            140.182.45.188
-    User                root
