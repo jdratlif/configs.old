@@ -2,9 +2,13 @@ Host *
     ServerAliveCountMax 3
     ServerAliveInterval 30
 
+Host bldc-dev
+    HostName            localhost
+    Port                25222
+
 Host bldc-dev-tunnel
     HostName            skip.grnoc.iu.edu
-    LocalForward        4522 jdratlif-dev7.bldc.grnoc.iu.edu:22
+    LocalForward        25222 jdratlif-dev7.bldc.grnoc.iu.edu:22
 
 Host jump
     HostName            jump.grnoc.iu.edu
