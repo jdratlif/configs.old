@@ -25,8 +25,8 @@ HOSTNAME=$(/bin/hostname -s)
 if [ $HOSTNAME == "jdratlif-dev7" ]; then
     alias logstash='sudo /usr/share/logstash/bin/logstash'
     alias pyenv='source ~/venv/bin/activate'
-    alias ssh_laptop='ssh -f -N laptop'
-    alias ssh_xaiver='ssh -f -N xaiver'
+    alias ssh_laptop='autossh -M 20000 -f -N laptop'
+    alias ssh_xaiver='autossh -M 30000 -f -N xaiver'
     alias xrdb='xrdb -cpp /usr/bin/cpp'
 fi
 
