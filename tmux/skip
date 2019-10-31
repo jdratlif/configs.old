@@ -1,7 +1,3 @@
-# remap prefix to Ctrl-a
-set -g prefix C-a
-unbind C-b
-
 # force reload with prefix-R
 unbind r
 bind r source-file ~/.tmux.conf
@@ -21,8 +17,8 @@ bind -n C-n next-window
 bind -n C-p previous-window
 
 # swap panes
-unbind s
-bind s last-pane
+unbind b
+bind b last-pane
 
 # don't rename windows automatically
 set -g allow-rename off
