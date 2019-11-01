@@ -63,6 +63,9 @@ Host cosign-cen2
 Host data
     HostName simp-data2.bldc.grnoc.iu.edu
 
+Host db2-cen
+    HostName db.bldc.net.cen.ct.gov
+
 Host dev
     HostName jdratlif-dev7.grnoc.iu.edu
 
