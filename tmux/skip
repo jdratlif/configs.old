@@ -17,7 +17,7 @@ bind -n C-n next-window
 bind -n C-p previous-window
 
 # swap panes
-bind C-k last-pane
+bind -n C-k last-pane
 
 # don't rename windows automatically
 set -g allow-rename off
