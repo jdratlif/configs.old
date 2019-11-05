@@ -27,6 +27,7 @@ if [ $HOSTNAME == "jdratlif-dev7" ]; then
     alias pyenv='source ~/venv/bin/activate'
     alias ssh_laptop='AUTOSSH_POLL=30 AUTOSSH_LOGFILE=/tmp/autossh.log autossh -M 20000 -f -N laptop'
     alias ssh_xaiver='autossh -M 30000 -f -N xaiver'
+    alias cd_telegraf='cd ~/go/src/github.com/influxdata/telegraf'
     alias xrdb='xrdb -cpp /usr/bin/cpp'
 fi
 
