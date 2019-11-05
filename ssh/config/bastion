@@ -9,7 +9,7 @@ Host puppet
     HostName dist.nwave.noaa.gov
 
 Host tsds-bldc
-    HostName tsds.bldc.nwave.noaa.goc
+    HostName tsds.bldc.nwave.noaa.gov
 
 Host tsds-ctc
     HostName tsds.ctc.nwave.noaa.gov
