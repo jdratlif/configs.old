@@ -15,6 +15,15 @@ SUDO=/usr/bin/sudo
 TOUCH=/bin/touch
 
 ################################################################################
+# make sure we have git before proceeding
+
+if [ ! -x $GIT ]; then
+    echo "unable to find git. bailing out!"
+    # we don't have git, bailout!
+    exit 1
+fi
+
+################################################################################
 # global variables
 
 HOST=$($HOSTNAME -s)
@@ -25,13 +34,13 @@ GIT_DIR="${TEMP_DIR}/configs"
 ################################################################################
 # start of script
 
-if [ ! -x $GIT ]; then
-    # we don't have git, bailout!
-    exit 1
-fi
-
 # clone this repo so we can get files
 $GIT clone https://github.com/jdratlif/configs.git $GIT_DIR 2> /dev/null
+
+if [ $? -ne 0 ]; then
+    echo "git clone failed. Does nss need updating?"
+    exit 1
+fi
 
 # bash
 
