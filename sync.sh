@@ -130,7 +130,11 @@ fi
 
 # tmux
 
-TMUX_CONF="${GIT_DIR}/tmux/${HOST}"
+TMUX_DIR="${GIT_DIR}/tmux"
+
+$CP "${TMUX_DIR}/z_common.conf" $HOME/.tmux-common.conf
+
+TMUX_CONF="${TMUX_DIR}/${HOST}"
 
 if [ -f $TMUX_CONF ]; then
     $CP -f $TMUX_CONF $HOME/.tmux.conf
