@@ -1,0 +1,12 @@
+Host *
+    ServerAliveCountMax 3
+    ServerAliveInterval 30
+
+Host backup
+    HostName backup.ctc.nwave.noaa.gov
+
+Host tsds-bldc
+    HostName tsds.bldc.nwave.noaa.goc
+
+Host tsds-ctc
+    HostName tsds.ctc.nwave.noaa.gov
