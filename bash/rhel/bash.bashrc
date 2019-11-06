@@ -12,8 +12,9 @@ fi
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # global aliases
-alias ipt="sudo iptables --line-numbers -n -v -L"
+alias fix_perms='find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
 alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
+alias ipt="sudo iptables --line-numbers -n -v -L"
 alias puppet="sudo /opt/puppetlabs/puppet/bin/puppet agent --test"
 alias rpm5="rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
