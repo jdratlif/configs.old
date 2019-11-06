@@ -12,6 +12,8 @@ fi
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 # global aliases
+alias aide_run='sudo aide --update'
+alias aide_accept='sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db'
 alias fix_perms='find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
 alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
 alias ipt="sudo iptables --line-numbers -n -v -L"
