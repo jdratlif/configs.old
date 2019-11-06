@@ -16,6 +16,7 @@ alias fix_perms='find . -type f -exec chmod 644 {} \; ; find . -type d -exec chm
 alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
 alias ipt="sudo iptables --line-numbers -n -v -L"
 alias puppet="sudo /opt/puppetlabs/puppet/bin/puppet agent --test"
+alias puppet_lookup="sudo sudo /opt/puppetlabs/puppet/bin/puppet --merge deep --node"
 alias rpm5="rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
 alias rpm7="rpm --define='_gpg_name globalnoc@iu.edu'"
