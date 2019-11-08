@@ -48,20 +48,11 @@ Host cloud-ctc-4
 Host cloud-ctc-5
     HostName compute5.cloud.ctc.grnoc.iu.edu
 
-Host comp
-    HostName simp-comp.bldc.grnoc.iu.edu
-
-Host cosign
-    HostName cosign.grnoc.iu.edu
-
 Host cosign-cen
     HostName cosign.bldc.net.cen.ct.gov
 
 Host cosign-cen2
     HostName cosign.ehct.net.cen.ct.gov.
-
-Host data
-    HostName simp-data2.bldc.grnoc.iu.edu
 
 Host db2-cen
     HostName db.bldc.net.cen.ct.gov
@@ -71,9 +62,6 @@ Host dev
 
 Host dns
     HostName db2.grnoc.iu.edu
-
-Host flow-proc
-    HostName flow-proc.bldc.grnoc.iu.edu
 
 Host frontend-i2-bldc
     HostName frontend.tsds.bldc.net.internet2.edu
@@ -111,37 +99,34 @@ Host mongo-i2-wash2-2
 Host mongo-i2-wash2-3
     HostName mongo3.tsds.wash2.net.internet2.edu
 
-Host netsage-dev
-    HostName netsage-pipeline-dev2.bldc.grnoc.iu.edu
-
-Host netsage-probe
-    HostName netsage-probe1.grnoc.iu.edu
-
-Host io3
-    HostName io3.bldc.grnoc.iu.edu
-
 Host rabbitmq-i2-bldc
     HostName rabbitmq.tsds.bldc.net.internet2.edu
 
 Host rabbitmq-i2-wash2
     HostName rabbitmq.tsds.wash2.net.internet2.edu
 
-Host poller
-    HostName simp-poller.bldc.grnoc.iu.edu
-
 Host puppet
     HostName build.grnoc.iu.edu
+
+Host simp-comp simp-tsds
+    HostName simp-comp.bldc.grnoc.iu.edu
+
+Host simp-data
+    HostName simp-data2.bldc.grnoc.iu.edu
+
+Host simp-poller
+    HostName simp-poller.bldc.grnoc.iu.edu
 
 Host simp-i2
     HostName snapp-collector.bldc.net.internet2.edu
 
-Host snapp
-    HostName snapp.bldc.grnoc.iu.edu
-
 Host snapp-cen
     HostName snapp.net.cen.ct.gov
 
-Host snapp-el7-test
+Host snapp-cen-mig
+    HostNAme snapp-mig.net.cen.ct.gov
+
+Host snapp-cen-test
     HostName snapp-el7-test.net.cen.ct.gov
 
 Host snapp-i2-bldc
@@ -170,12 +155,6 @@ Host snapp-services-01
 
 Host snapp-services-02
     HostName snapp-services-02.globalnoc.mcnc.org
-
-Host syslog
-    HostName syslog.grnoc.iu.edu
-
-Host tsds
-    HostName simp-comp.bldc.grnoc.iu.edu
 
 Host tsds-i2-bldc
     HostName services.tsds.bldc.net.internet2.edu
