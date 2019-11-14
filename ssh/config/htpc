@@ -1,9 +1,21 @@
 Host dev
-    HostName    localhost
-    Port        9722
+    HostName        localhost
+    Port            9722
 
 Host qtbox
-    User        qtbox
+    User            qtbox
 
 Host xenial
-    ForwardX11  yes
+    ForwardX11      yes
+
+Host noaa-bldc
+    HostName        bastion.bldc.nwave.noaa.goc
+    PKCS11Provider /usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so
+
+Host noaa-boul
+    HostName        bastion.boul.nwave.noaa.goc
+    PKCS11Provider /usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so
+
+Host noaa-ctc
+    HostName        bastion.ctc.nwave.noaa.goc
+    PKCS11Provider /usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so
