@@ -20,7 +20,6 @@ alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.s
 alias ipt='sudo iptables --line-numbers -n -v -L'
 alias puppet='sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
 alias puppet_isenabled='sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock; if test $? -eq 0; then echo "puppet is disabled"; sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock | awk -F: '\''{print $2}'\'' | sed -e '\''s/["}]//g'\''; else echo "puppet is enabled"; fi'
-alias puppet_isenabled='sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock ; if test -z $? then echo "puppet is disabled" ; else echo "puppet is enabled" ; fi'
 alias puppet_lookup='sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
 alias puppet_test='sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
 alias rpm5="=rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
