@@ -9,7 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-export LIBVIRT_DEFAULT_URI="qemu:///system"
+export LIBVIRT_DEFAULT_URI='qemu:///system'
 
 # global aliases
 alias aide_accept='sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db'
@@ -17,17 +17,18 @@ alias aide_log='sudo truncate -s0 /var/log/aide/aide.log'
 alias aide_run='sudo aide --update | less -X'
 alias fix_perms='find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
 alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
-alias ipt="sudo iptables --line-numbers -n -v -L"
-alias puppet="sudo /opt/puppetlabs/puppet/bin/puppet agent --test"
-alias puppet_lookup="sudo sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node"
-alias rpm5="rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
+alias ipt='sudo iptables --line-numbers -n -v -L'
+alias puppet='sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
+alias puppet_lookup='sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
+alias puppet_test='sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
+alias rpm5="=rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
 alias rpm7="rpm --define='_gpg_name globalnoc@iu.edu'"
 
 HOSTNAME=$(/bin/hostname -s)
 
 # host specific aliases
-if [ $HOSTNAME == "jdratlif-dev7" ]; then
+if [ $HOSTNAME == 'jdratlif-dev7' ]; then
     alias logstash='sudo /usr/share/logstash/bin/logstash'
     alias pyenv='source ~/venv/bin/activate'
     alias ssh_laptop='AUTOSSH_POLL=30 AUTOSSH_LOGFILE=/tmp/autossh.log autossh -M 20000 -f -N laptop'
