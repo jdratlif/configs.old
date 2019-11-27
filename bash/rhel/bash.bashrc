@@ -19,11 +19,11 @@ alias aide_showlog='sudo cat /var/log/aide/aide.log'
 alias fix_perms='find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
 alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
 alias ipt='sudo iptables --line-numbers -n -v -L'
-alias puppet='sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
-alias puppet_environment='grep environment /etc/puppetlabs/puppet/puppet.conf | awk '\''{print $3}'\'
-alias puppet_enabled='sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock; if test $? -eq 0; then echo "puppet is disabled"; sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock | awk -F: '\''{print $2}'\'' | sed -e '\''s/["}]//g'\''; else echo "puppet is enabled"; fi'
-alias puppet_lookup='sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
-alias puppet_test='sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
+alias p='sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
+alias p_environment='grep environment /etc/puppetlabs/puppet/puppet.conf | awk '\''{print $3}'\'
+alias p_enabled='sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock; if test $? -eq 0; then echo "puppet is disabled"; sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock | awk -F: '\''{print $2}'\'' | sed -e '\''s/["}]//g'\''; else echo "puppet is enabled"; fi'
+alias p_lookup='sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
+alias p_test='sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
 alias rpm5="=rpm --define='_gpg_name rpmbuild@grnoc.iu.edu'"
 alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
 alias rpm7="rpm --define='_gpg_name globalnoc@iu.edu'"
