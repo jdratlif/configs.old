@@ -150,6 +150,9 @@ Host snapp-onenet
 Host snapp-oshean
     HostName snapp.oshean.org
 
+Host snapp-oshean-test
+    HostName 140.182.50.162
+
 Host snapp-services-01
     HostName snapp-services-01.globalnoc.mcnc.org
 
