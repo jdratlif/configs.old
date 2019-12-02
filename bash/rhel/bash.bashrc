@@ -45,6 +45,7 @@ fi
 echo $HOSTNAME | grep -E '^compute[0-9]?' > /dev/null
 
 if [ $? -eq 0 ]; then
+    alias cloud_auth='source /usr/local/bin/ecp-login'
     alias gcs='socks5 ; git config --global http.proxy socks5://127.0.0.1:17798 ; curl -x socks5://localhost:17798 https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh ; socks5_kill'
 else
     alias gcs='curl https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh'
