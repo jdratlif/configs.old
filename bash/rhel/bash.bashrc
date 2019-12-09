@@ -30,6 +30,7 @@ alias socks5='ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.i
 alias socks5_kill='ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
 
 HOSTNAME=$(/bin/hostname -s)
+FQDN=$(/bin/hostname -f)
 
 # host specific aliases
 if [ $HOSTNAME == 'jdratlif-dev7' ]; then
@@ -47,7 +48,14 @@ echo $HOSTNAME | grep -E '^compute[0-9]?' > /dev/null
 if [ $? -eq 0 ]; then
     # setup default openstack cli project/region
     export OS_PROJECT_NAME='ndca'
-    export OS_REGION_NAME='CTC'
+
+    echo $FQDN | grep -E '\.ctc\.' > /dev/null
+
+    if [ $? -eq 0 ]; then
+        export OS_REGION_NAME='CTC'
+    else
+        export OS_REGION_NAME='BLDC'
+    fi
 
     alias cloud_auth='source /usr/local/bin/ecp-login'
     alias gcs='socks5 ; git config --global http.proxy socks5://127.0.0.1:17798 ; curl -x socks5://localhost:17798 https://raw.githubusercontent.com/jdratlif/configs/master/sync.sh | sh ; socks5_kill'
