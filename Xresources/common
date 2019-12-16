@@ -1,3 +1,5 @@
+Xcursor.size: 10
+
 ! https://github.com/majutsushi/urxvt-font-size
 URxvt.perl-ext-common:	font-size
 URxvt.keysym.C-equal:	font-size:increase
