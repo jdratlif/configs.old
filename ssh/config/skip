@@ -135,6 +135,9 @@ Host snapp-i2-bldc
 Host snapp-i2-wash2
     HostName snapp-collector.wash2.net.internet2.edu
 
+Host snapp-mcnc-test
+    HostName snapp-test-01.globalnoc.mcnc.org
+
 Host snapp-mcnc-1
     HostName snapp-collector-01.globalnoc.mcnc.org
 
