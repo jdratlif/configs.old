@@ -138,22 +138,22 @@ Host snapp-i2-wash2
 Host snapp-mcnc-test
     HostName snapp-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-collector
+Host snapp-mcnc-test-collector
     HostName snapp-collector-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-frontend
+Host snapp-mcnc-test-frontend
     HostName snapp-frontend-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-portal
+Host snapp-mcnc-test-portal
     HostName snapp-portal-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-rabbit
+Host snapp-mcnc-test-rabbit
     HostName snapp-rabbit-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-services
+Host snapp-mcnc-test-services
     HostName snapp-services-test-01.globalnoc.mcnc.org
 
-Host snap-mcnc-test-shard
+Host snapp-mcnc-test-shard
     HostName snapp-shard-test-01.globalnoc.mcnc.org
 
 Host snapp-mcnc-1
