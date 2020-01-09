@@ -76,7 +76,7 @@ Host grafana-intl
     HostName grafana.intl.grnoc.iu.edu
 
 Host jdr7-test
-    HostName 140.182.48.72
+    HostName 140.182.48.172
 
 Host kvm
     HostName np-dev3.grnoc.iu.edu
