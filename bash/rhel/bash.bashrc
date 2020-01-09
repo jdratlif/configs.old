@@ -28,6 +28,7 @@ alias rpm6="rpm --define='_gpg_name syseng@grnoc.iu.edu'"
 alias rpm7="rpm --define='_gpg_name globalnoc@iu.edu'"
 alias socks5='ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
 alias socks5_kill='ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
+alias svim='sudo -E vim'
 
 HOSTNAME=$(/bin/hostname -s)
 FQDN=$(/bin/hostname -f)
