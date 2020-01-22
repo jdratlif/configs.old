@@ -58,7 +58,10 @@ Host db2-cen
     HostName db.bldc.net.cen.ct.gov
 
 Host dev
-    HostName jdratlif-dev7.grnoc.iu.edu
+    HostName jdratlif-dev7.ctc.grnoc.iu.edu
+
+Host dev6
+    HostName jdratlif-dev6.ctc.grnoc.iu.edu
 
 Host dns
     HostName db2.grnoc.iu.edu
