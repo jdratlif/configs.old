@@ -34,12 +34,14 @@ HOSTNAME=$(/bin/hostname -s)
 FQDN=$(/bin/hostname -f)
 
 # host specific aliases
-if [ $HOSTNAME == 'jdratlif-dev7' ]; then
+if [ $HOSTNAME == 'build-new' ]; then
+    alias cd_secrets='cd /etc/puppetlabs/code/secrets'
+elif [ $HOSTNAME == 'jdratlif-dev7' ]; then
+    alias cd_telegraf='cd ~/go/src/github.com/influxdata/telegraf'
     alias logstash='sudo /usr/share/logstash/bin/logstash'
     alias pyenv='source ~/venv/bin/activate'
     alias ssh_laptop='AUTOSSH_POLL=30 AUTOSSH_LOGFILE=/tmp/autossh.log autossh -M 20000 -f -N laptop'
     alias ssh_xaiver='autossh -M 30000 -f -N xaiver'
-    alias cd_telegraf='cd ~/go/src/github.com/influxdata/telegraf'
     alias xrdb='xrdb -cpp /usr/bin/cpp'
 fi
 
@@ -74,11 +76,11 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL="ignorespace:erasedups"
 
-if [ -z ${PROMPT_COMMAND+x} ]; then
-    export PROMPT_COMMAND="history -a"
-else
-    export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
-fi
+# I think this breaks things. We'll need to revisit this
+# if [ -z ${PROMPT_COMMAND+x} ]; then
+#     export PROMPT_COMMAND="history -a"
+# else
+#     export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+# fi
 
 shopt -s histappend
-shopt -s cmdhist
