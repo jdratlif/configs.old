@@ -36,7 +36,7 @@ FQDN=$(/bin/hostname -f)
 # host specific aliases
 if [ $HOSTNAME == 'build-new' ]; then
     alias cd_secrets='cd /etc/puppetlabs/code/secrets'
-if [ $HOSTNAME == 'skip' ]; then
+elif [ $HOSTNAME == 'skip' ]; then
     export PATH="$HOME/openssh/bin:$PATH"
 elif [ $HOSTNAME == 'jdratlif-dev7' ]; then
     alias cd_telegraf='cd ~/go/src/github.com/influxdata/telegraf'
