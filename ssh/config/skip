@@ -126,14 +126,14 @@ Host simp-poller
 Host simp-i2
     HostName snapp-collector.bldc.net.internet2.edu
 
+Host snapp-areon-frcy snapp-areon-1
+    HostName snapp.frcy.areon.net
+
+Host snapp-areon-fyvl snapp-areon-2
+    HostName snapp.fyvl.areon.net
+
 Host snapp-cen
     HostName snapp.net.cen.ct.gov
-
-Host snapp-cen-mig
-    HostNAme snapp-mig.net.cen.ct.gov
-
-Host snapp-cen-test
-    HostName snapp-el7-test.net.cen.ct.gov
 
 Host snapp-i2-bldc
     HostName snapp-collector.bldc.net.internet2.edu
