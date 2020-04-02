@@ -38,6 +38,8 @@ FQDN=$(/bin/hostname -f)
 # host specific aliases
 if [ $HOSTNAME == 'build-new' ]; then
     alias cd_secrets='cd /etc/puppetlabs/code/secrets'
+elif [ $HOSTNAME == 'compute' ]; then
+    export PATH="~/openstack-tools/bin:$PATH"
 elif [ $HOSTNAME == 'skip' ]; then
     export PATH="$HOME/openssh/bin:$PATH"
 elif [ $HOSTNAME == 'jdratlif-dev7' ]; then
