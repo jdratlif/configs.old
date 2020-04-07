@@ -2,6 +2,9 @@ Host *
     ServerAliveCountMax 3
     ServerAliveInterval 30
 
+Host snapp-test-01.areon.net snapp-test-02.areon.net snapp-test-03.areon.net
+    ProxyCommand ssh -W %h:%p -q skip.grnoc.iu.edu
+
 Host bldc-dev
     HostName            localhost
     Port                25222
