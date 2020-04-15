@@ -1,13 +1,5 @@
-Host *
-    ServerAliveCountMax 3
-    ServerAliveInterval 30
-
-Host jump
-    HostName            jump.grnoc.iu.edu
-    ForwardAgent        yes
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      5m
+Host jump laptop leap skip xaiver
+    ProxyCommand        none
 
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
@@ -15,20 +7,6 @@ Host laptop
     Port                9722
     RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
-
-Host leap
-    HostName            leap.grnoc.iu.edu
-    ForwardAgent        yes
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      5m
-
-Host skip
-    HostName            skip.grnoc.iu.edu
-    ForwardAgent        yes
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      5m
 
 Host vmx
     HostName            140.182.45.188
@@ -39,3 +17,13 @@ Host xaiver
     Port                2202
     RemoteForward       192.168.1.2:5907 localhost:5901
     RemoteForward       192.168.1.2:9722 localhost:22
+
+Host *
+    ControlMaster       auto
+    ControlPath         ~/.ssh/sockets/%r@%h:%p
+    ControlPersist      5m
+
+    ForwardAgent        yes
+
+    ServerAliveCountMax 3
+    ServerAliveInterval 30
