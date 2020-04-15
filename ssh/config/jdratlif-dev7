@@ -25,5 +25,7 @@ Host *
 
     ForwardAgent        yes
 
+    ProxyCommand        ssh -W %h:%p skip
+
     ServerAliveCountMax 3
     ServerAliveInterval 30
