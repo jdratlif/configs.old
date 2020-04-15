@@ -1,21 +1,13 @@
 Host *
-    ProxyCommand        ssh -W %h:%p -q skip
-
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      15m
-
     ServerAliveCountMax 3
     ServerAliveInterval 30
 
-Host skip leap jump laptop xaiver
-    ProxyCommand        none
-
-Host skip leap jump
-    ForwardAgent        yes
-
 Host jump
     HostName            jump.grnoc.iu.edu
+    ForwardAgent        yes
+    ControlMaster       auto
+    ControlPath         ~/.ssh/sockets/%r@%h:%p
+    ControlPersist      5m
 
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
@@ -26,9 +18,17 @@ Host laptop
 
 Host leap
     HostName            leap.grnoc.iu.edu
+    ForwardAgent        yes
+    ControlMaster       auto
+    ControlPath         ~/.ssh/sockets/%r@%h:%p
+    ControlPersist      5m
 
 Host skip
     HostName            skip.grnoc.iu.edu
+    ForwardAgent        yes
+    ControlMaster       auto
+    ControlPath         ~/.ssh/sockets/%r@%h:%p
+    ControlPersist      5m
 
 Host vmx
     HostName            140.182.45.188
