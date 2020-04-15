@@ -1,9 +1,3 @@
-Host github.com jump laptop leap skip xaiver
-    ProxyCommand        none
-
-Host github.com laptop xaiver vmx
-    ControlMaster       no
-
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
@@ -22,13 +16,7 @@ Host xaiver
     RemoteForward       192.168.1.2:9722 localhost:22
 
 Host *
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      15m
-
     ForwardAgent        yes
-
-    ProxyCommand        ssh -W %h:%p -q skip
 
     ServerAliveCountMax 3
     ServerAliveInterval 30
