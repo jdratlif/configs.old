@@ -44,8 +44,9 @@ elif [ $HOSTNAME == 'skip' ]; then
     export PATH="$HOME/openssh/bin:$PATH"
 elif [ $HOSTNAME == 'jdratlif-dev7' ]; then
     alias cd_telegraf='cd ~/go/src/github.com/influxdata/telegraf'
+    alias kill_skip='pkill -f "jdratlif@skip.grnoc.iu.edu"'
     alias logstash='sudo /usr/share/logstash/bin/logstash'
-    alias pyenv='source ~/venv/bin/activate'
+    alias myansile='source ~/myansible/bin/activate; export ANSIBLE_VAULT_PASSWORD_FILE=~/vault/areon-vault.pw'
     alias ssh_laptop='AUTOSSH_POLL=30 AUTOSSH_LOGFILE=/tmp/autossh.log autossh -M 20000 -f -N laptop'
     alias ssh_xaiver='autossh -M 30000 -f -N xaiver'
     alias xrdb='xrdb -cpp /usr/bin/cpp'
