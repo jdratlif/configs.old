@@ -11,9 +11,6 @@ Host laptop
     RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
 
-Host skip
-    HostName            skip.grnoc.iu.edu
-
 Host vmx
     HostName            140.182.45.188
     User                root
@@ -31,7 +28,7 @@ Host *
 
     ForwardAgent        yes
 
-    ProxyCommand        ssh -W %h:%p skip
+    ProxyCommand        ssh -W %h:%p -q skip
 
     ServerAliveCountMax 3
     ServerAliveInterval 30
