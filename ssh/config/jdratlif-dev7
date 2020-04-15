@@ -1,6 +1,9 @@
 Host jump laptop leap skip xaiver
     ProxyCommand        none
 
+Host github.com laptop xaiver vmx
+    ControlMaster       no
+
 Host laptop
     HostName            jdratlif-yoga2.uits.iu.edu
     User                john@technoplaza.net
