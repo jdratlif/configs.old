@@ -1,34 +1,16 @@
-Host jump laptop leap skip xaiver
-    ProxyCommand        none
-
-Host github.com laptop xaiver vmx
-    ControlMaster       no
-
-Host laptop
-    HostName            jdratlif-yoga2.uits.iu.edu
-    User                john@technoplaza.net
-    Port                9722
-    RemoteForward       2222 localhost:22
-    RemoteForward       5907 localhost:5901
-
-Host vmx
-    HostName            140.182.45.188
-    User                root
-
-Host xaiver
-    HostName            xaiver.technoplaza.net
-    Port                2202
-    RemoteForward       192.168.1.2:5907 localhost:5901
-    RemoteForward       192.168.1.2:9722 localhost:22
-
-Host *
-    ControlMaster       auto
-    ControlPath         ~/.ssh/sockets/%r@%h:%p
-    ControlPersist      5m
+Host skip
+    HostName            skip.grnoc.iu.edu
 
     ForwardAgent        yes
 
-    ProxyCommand        ssh -W %h:%p -q skip
+    ControlMaster       auto
+    ControlPath         ~/.ssh/sockets/%r@%h:%p
+    ControlPersist      15m
+
+    ProxyCommand        none
+
+Host *
+    ProxyCommand        ssh -W %h:%p skip
 
     ServerAliveCountMax 3
     ServerAliveInterval 30
