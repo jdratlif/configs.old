@@ -1,8 +1,3 @@
-Host *
-    ForwardAgent yes
-    ServerAliveCountMax 3
-    ServerAliveInterval 30
-
 Host alertmon-mcnc-1
     HostName mon-01.globalnoc.mcnc.org
 
@@ -12,7 +7,7 @@ Host alertmon-mcnc-2
 Host burp
     HostName backup.grnoc.iu.edu
 
-Host burp2
+Host burp-ctc
     HostName backup.ictc.ilight.net
 
 Host burp-i2
@@ -77,9 +72,6 @@ Host grafana-cen
 
 Host grafana-intl
     HostName grafana.intl.grnoc.iu.edu
-
-Host jdr7-test
-    HostName 140.182.48.172
 
 Host kvm
     HostName np-dev3.grnoc.iu.edu
@@ -201,3 +193,17 @@ Host vn-wash2
 Host vmx
     HostName 140.182.45.188
     User root
+
+Host st1
+    HostName snapp-test-01.areon.net
+
+Host st2
+    HostName snapp-test-02.areon.net
+
+Host st3
+    HostName snapp-test-03.areon.net
+
+Host *
+    ForwardAgent yes
+    ServerAliveCountMax 3
+    ServerAliveInterval 30
