@@ -1,9 +1,11 @@
 Host *
-    ProxyCommand        ssh -W %h:%p -q skip
+    Compression         yes
 
     ControlMaster       auto
     ControlPath         ~/.ssh/sockets/%r@%h:%p
     ControlPersist      15m
+
+    ProxyCommand        ssh -W %h:%p -q skip
 
     ServerAliveCountMax 3
     ServerAliveInterval 30
