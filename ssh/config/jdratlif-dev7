@@ -5,6 +5,15 @@ Host laptop
     RemoteForward       2222 localhost:22
     RemoteForward       5907 localhost:5901
 
+Host leap
+    HostName            leap.grnoc.iu.edu
+
+Host jump
+    HostName            jump.grnoc.iu.edu
+
+Host skip
+    HostName            skip.grnoc.iu.edu
+
 Host vmx
     HostName            140.182.45.188
     User                root
