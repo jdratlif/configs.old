@@ -9,6 +9,6 @@ fi
 
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/go/bin:$PATH
 
-if [ -x "/usr/local/keychain/keychain" ]; then
-    eval `/usr/local/keychain/keychain --eval --agents ssh id_rsa`
+if [ -x "/usr/local/bin/keychain" ]; then
+    eval `/usr/local/bin/keychain --eval --agents ssh id_rsa`
 fi
