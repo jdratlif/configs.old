@@ -106,6 +106,12 @@ Host rabbitmq-i2-wash2
 Host puppet
     HostName build.grnoc.iu.edu
 
+Host services-i2-bldc
+    HostName services.tsds.bldc.net.internet2.edu
+
+Host services-i2-wash2
+    HostName services.tsds.wash2.net.internet2.edu
+
 Host simp-comp simp-tsds
     HostName simp-comp.bldc.grnoc.iu.edu
 
