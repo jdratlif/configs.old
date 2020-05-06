@@ -72,9 +72,11 @@ fi
 
 # dircolors
 
-if [ -f /etc/redhat-release ]; then
-    $CP -f $GIT_DIR/dircolors/rhel/dircolors ~/.dircolors
-fi
+# if [ -f /etc/redhat-release ]; then
+#     $CP -f $GIT_DIR/dircolors/rhel/dircolors ~/.dircolors
+# fi
+
+rm -f ~/.dircolors
 
 # git
 
