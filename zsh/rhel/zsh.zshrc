@@ -111,11 +111,11 @@ HOSTNAME=$(/bin/hostname -s)
 FQDN=$(/bin/hostname -f)
 
 # host specific configs
-if [ $HOSTNAME == 'build-new' ]; then
+if [[ $HOSTNAME == 'build-new' ]]; then
     alias cd_secrets='cd /etc/puppetlabs/code/secrets'
-elif [ $HOSTNAME == 'skip' ]; then
+elif [[ $HOSTNAME == 'skip' ]]; then
     export PATH="$HOME/openssh/bin:$PATH"
-elif [ $HOSTNAME == 'jdratlif-dev7' ]; then
+elif [[ $HOSTNAME == 'jdratlif-dev7' ]]; then
     alias ssh_laptop='autossh -M 20000 -f -N laptop'
     alias ssh_xaiver='autossh -M 30000 -f -N xaiver'
     alias xrdb='xrdb -cpp /usr/bin/cpp'
@@ -124,13 +124,13 @@ fi
 # use ssh-proxy if we are on a cloud compute node
 echo $HOSTNAME | grep -E '^compute[0-9]?' > /dev/null
 
-if [ $? -eq 0 ]; then
+if [[ $? -eq 0 ]]; then
     # setup default openstack cli project/region
     export OS_PROJECT_NAME='ndca'
 
     echo $FQDN | grep -E '\.ctc\.' > /dev/null
 
-    if [ $? -eq 0 ]; then
+    if [[ $? -eq 0 ]]; then
         export OS_REGION_NAME='CTC'
     else
         export OS_REGION_NAME='BLDC'
