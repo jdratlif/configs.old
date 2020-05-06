@@ -42,7 +42,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# bash
+# bash / zsh
 
 if [ -f /etc/redhat-release ]; then
     # test for RedHat/CentOS > 5
@@ -51,6 +51,9 @@ if [ -f /etc/redhat-release ]; then
     if [ $? -eq 0 ]; then
         $CP -f $GIT_DIR/bash/rhel/bash.bashrc ~/.bashrc
         $CP -f $GIT_DIR/bash/rhel/bash.profile ~/.bash_profile
+
+        $CP -f $GIT_DIR/zsh/rhel/zsh.zshrc ~/.zshrc
+        $CP -f $GIT_DIR/zsh/rhel/zsh.profile ~/.zprofile
     fi
 elif [ -f /etc/debian_version ]; then
     $CP -f $GIT_DIR/bash/debian/bash.bashrc ~/.bashrc
@@ -88,20 +91,6 @@ if [ -d $BASE ]; then
     $MKDIR $I3BASE 2> /dev/null
     $CP -f $BASE/i3.conf $I3BASE/config
     $CP -f $BASE/i3status.conf $HOME/.i3status.conf
-fi
-
-# qterminal
-
-QTERMINAL="${GIT_DIR}/qterminal/${HOST}.ini"
-
-if [ -f $QTERMINAL ]; then
-    QTERMINAL_CONFIG_DIR="${HOME}/.config/qterminal.org"
-
-    if [ ! -d "${QTERMINAL_CONFIG_DIR}" ]; then
-        $MKDIR -p "${QTERMINAL_CONFIG_DIR}"
-    fi
-
-    $CP -f $QTERMINAL "${QTERMINAL_CONFIG_DIR}/qterminal.ini"
 fi
 
 # perltidy
