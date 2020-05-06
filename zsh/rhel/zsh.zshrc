@@ -76,6 +76,8 @@ source $ZSH/oh-my-zsh.sh
 
 # setup vi key bindings
 bindkey -v
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 
 export EDITOR=vim
 export LIBVIRT_DEFAULT_URI='qemu:///system'
