@@ -42,6 +42,11 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# oh-my-zsh
+if [ ! -d ~/.oh-my-zsh ]; then
+    $GIT clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+fi
+
 # bash / zsh
 
 if [ -f /etc/redhat-release ]; then
