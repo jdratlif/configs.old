@@ -14,7 +14,7 @@ PROMPT_COMMAND=my_prompt
 my_prompt() {
     local exit_code="$?"
 
-    PS1="(${exit_code}) \u@\H:\W \$ "
+    PS1="(${exit_code}) \u@\H:\w \$ "
 }
 
 export PAGER='less -X'
