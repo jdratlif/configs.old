@@ -19,7 +19,7 @@ my_prompt() {
     local red='\[\e[0;31m\]'
     local green='\[\e[0;32m\]'
 
-    if [ $ecode != 0 ]; then
+    if [ $exit_code != 0 ]; then
         PS1+="${red}\u${reset}"
     else
         PS1+="${green}\u${reset}"
