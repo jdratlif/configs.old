@@ -9,6 +9,9 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+export PS1="[($?) \u@\H \W]\$ "
+
+export PAGER='less -X'
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 
 # global aliases
@@ -81,12 +84,5 @@ export HISTTIMEFORMAT="%h %d %H:%M:%S "
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL="ignorespace:erasedups"
-
-# I think this breaks things. We'll need to revisit this
-# if [ -z ${PROMPT_COMMAND+x} ]; then
-#     export PROMPT_COMMAND="history -a"
-# else
-#     export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
-# fi
 
 shopt -s histappend
