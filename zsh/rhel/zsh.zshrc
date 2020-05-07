@@ -78,33 +78,33 @@ source $ZSH/oh-my-zsh.sh
 # setup vi key bindings
 bindkey -v
 
-# typeset -A key
-# key=(
-#     BackSpace  "${terminfo[kbs]}"
-#     Home       "${terminfo[khome]}"
-#     End        "${terminfo[kend]}"
-#     Insert     "${terminfo[kich1]}"
-#     Delete     "${terminfo[kdch1]}"
-#     Up         "${terminfo[kcuu1]}"
-#     Down       "${terminfo[kcud1]}"
-#     Left       "${terminfo[kcub1]}"
-#     Right      "${terminfo[kcuf1]}"
-#     PageUp     "${terminfo[kpp]}"
-#     PageDown   "${terminfo[knp]}"
-# )
+typeset -A key
+key=(
+    BackSpace  "${terminfo[kbs]}"
+    Home       "${terminfo[khome]}"
+    End        "${terminfo[kend]}"
+    Insert     "${terminfo[kich1]}"
+    Delete     "${terminfo[kdch1]}"
+    Up         "${terminfo[kcuu1]}"
+    Down       "${terminfo[kcud1]}"
+    Left       "${terminfo[kcub1]}"
+    Right      "${terminfo[kcuf1]}"
+    PageUp     "${terminfo[kpp]}"
+    PageDown   "${terminfo[knp]}"
+)
 
-# # Setup key accordingly
-# [[ -n "${key[BackSpace]}" ]] && bindkey "${key[BackSpace]}" backward-delete-char
-# [[ -n "${key[Home]}"      ]] && bindkey "${key[Home]}" beginning-of-line
-# [[ -n "${key[End]}"       ]] && bindkey "${key[End]}" end-of-line
-# [[ -n "${key[Insert]}"    ]] && bindkey "${key[Insert]}" overwrite-mode
-# [[ -n "${key[Delete]}"    ]] && bindkey "${key[Delete]}" delete-char
-# [[ -n "${key[Up]}"        ]] && bindkey "${key[Up]}" up-line-or-beginning-search
-# [[ -n "${key[Down]}"      ]] && bindkey "${key[Down]}" down-line-or-beginning-search
-# [[ -n "${key[PageUp]}"    ]] && bindkey "${key[PageUp]}" beginning-of-buffer-or-history
-# [[ -n "${key[PageDown]}"  ]] && bindkey "${key[PageDown]}" end-of-buffer-or-history
-# [[ -n "${key[Home]}"      ]] && bindkey -M vicmd "${key[Home]}" beginning-of-line
-# [[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
+# Setup key accordingly
+[[ -n "${key[BackSpace]}" ]] && bindkey "${key[BackSpace]}" backward-delete-char
+[[ -n "${key[Home]}"      ]] && bindkey "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey "${key[End]}" end-of-line
+[[ -n "${key[Insert]}"    ]] && bindkey "${key[Insert]}" overwrite-mode
+[[ -n "${key[Delete]}"    ]] && bindkey "${key[Delete]}" delete-char
+[[ -n "${key[Up]}"        ]] && bindkey "${key[Up]}" up-line-or-beginning-search
+[[ -n "${key[Down]}"      ]] && bindkey "${key[Down]}" down-line-or-beginning-search
+[[ -n "${key[PageUp]}"    ]] && bindkey "${key[PageUp]}" beginning-of-buffer-or-history
+[[ -n "${key[PageDown]}"  ]] && bindkey "${key[PageDown]}" end-of-buffer-or-history
+[[ -n "${key[Home]}"      ]] && bindkey -M vicmd "${key[Home]}" beginning-of-line
+[[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
 
 export EDITOR=vim
 export PAGER='less -X'
