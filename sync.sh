@@ -43,13 +43,13 @@ if [ $? -ne 0 ]; then
 fi
 
 # oh-my-zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-    $GIT clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-else
-    pushd ~/.oh-my-zsh
-    $GIT pull
-    popd
-fi
+# if [ ! -d ~/.oh-my-zsh ]; then
+#     $GIT clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+# else
+#     pushd ~/.oh-my-zsh
+#     $GIT pull
+#     popd
+# fi
 
 # bash / zsh
 
