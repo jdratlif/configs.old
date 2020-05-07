@@ -77,6 +77,7 @@ source $ZSH/oh-my-zsh.sh
 
 # setup vi key bindings
 bindkey -v
+bindkey -r "^[/"
 
 typeset -A key
 key=(
