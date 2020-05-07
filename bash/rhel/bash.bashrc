@@ -13,19 +13,8 @@ PROMPT_COMMAND=my_prompt
 
 my_prompt() {
     local exit_code="$?"
-    PS1="["
 
-    local reset='\[\e[0m\]'
-    local red='\[\e[0;31m\]'
-    local green='\[\e[0;32m\]'
-
-    if [ $exit_code != 0 ]; then
-        PS1+="${red}\u${reset}"
-    else
-        PS1+="${green}\u${reset}"
-    fi
-
-    PS1+="@\H \W]\$ "
+    PS1="(${exit_code}) \u@\H:\W \$"
 }
 
 export PAGER='less -X'
