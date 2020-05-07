@@ -107,6 +107,7 @@ key=(
 [[ -n "${key[End]}"       ]] && bindkey -M vicmd "${key[End]}" end-of-line
 
 export EDITOR=vim
+export PAGER='less -X'
 export LIBVIRT_DEFAULT_URI='qemu:///system'
 
 # global aliases
