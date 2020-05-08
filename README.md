@@ -1,3 +1,3 @@
 # jdratlif Linux Configs
 
-My Linux configuration files.
+An ansible playbook to setup my linux configuration.
