@@ -1,0 +1,26 @@
+[user]
+    name = {{ gitconfig.name }}
+    email = {{ gitconfig.email }}
+
+[branch]
+    autosetuprebase = always
+{% for c in gitconfig.credentials %}
+
+[credential "{{ c.name }}"]
+    username = {{ c.username }}
+    helper = {{ c.helper }}
+{% endfor %}
+{% if use_vscode_git %}
+
+[core]
+    editor = code --wait
+
+[diff]
+    tool = default-difftool
+
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[commit]
+    template = /dev/null
+{% endif %}

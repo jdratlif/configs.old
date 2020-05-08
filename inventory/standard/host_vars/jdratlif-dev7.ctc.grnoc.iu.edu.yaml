@@ -1,0 +1,24 @@
+---
+aliases:
+  rpm6: 'rpm --define="_gpg_name syseng@grnoc.iu.edu"'
+  rpm7: 'rpm --define="_gpg_name globalnoc@iu.edu"'
+  ssh_laptop: 'autossh -M 20000 -f -N laptop'
+  ssh_xaiver: 'autossh -M 30000 -f -N xaiver'
+
+keychain_bin: '/usr/local/bin/keychain'
+
+ssh_host_configs:
+  leap:
+    HostName: leap.grnoc.iu.edu
+  jump:
+    HostName: jump.grnoc.iu.edu
+  skip:
+    HostName: skip.grnoc.iu.edu
+  xaiver:
+    HostName: xaiver.technoplaza.net
+    Port: 2202
+
+use_i3: true
+use_keychain: true
+use_vnc: true
+use_vscode_git: true

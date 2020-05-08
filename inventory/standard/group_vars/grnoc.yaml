@@ -1,0 +1,34 @@
+---
+aliases:
+  p: 'sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
+  p_environment: >-
+    grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
+  p_enabled: >-
+    sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock;
+    if test $? -eq 0; then
+    echo "puppet is disabled";
+    sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
+    | awk -F: "{print \$2}"
+    | sed -e '\''s/["}]//g'\'';
+    else
+    echo "puppet is enabled";
+    fi
+  p_lookup: 'sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
+  p_force: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --agent_disabled_lockfile=/nonexisting'
+  p_test: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
+  socks5: 'ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
+  socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
+  svim: 'sudo env HOME=~ vim'
+
+gitconfig:
+  name: 'John Ratliff'
+  email: 'jdratlif@globalnoc.iu.edu'
+  credentials:
+    - name: 'https://github.grnoc.iu.edu'
+      username: jdratlif
+      helper: 'cache --timeout 43200'
+
+ssh_authorized_keys:
+  - 'ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAgEAsJAZqYykuMPnE2yocIeXHxq9usy590RQZ1Ss/uQbsbnxtS9gvowitNc2lH2jwauB7SCP4VJAUHOwR5p5AbD3Vghy0n39d9+FWzDdgBTeFwDlxjSRu+f7ttdtzCHEPkqx9SOpdBwzV1OVAMYoJ04gon/n3nHAxjOeJpS2BSkPY4Yd7K065PkCLztGHkZbz7bTlUOUtaVbLRW2oHkhsrzQECNLsBO5XV/N49uvQSYoj3ivCpVtsSEO9BGEqOe24pFh7BWS23DSD3cdFn71bL/L+Tlv3Xv7QWSTcJRaSjbxn4TZCMyKEIpwt424LWzs0LnV5hjr37PpBR1jgoU33rOWXxOW2rmZTl+IQZozdoWTiIbUeDHMPRp88NJO5lb87vRReB0lEZaaeeuo4aomWDPDQCpUvgGMqTm1D1/LUckLUr7+DvDlyNOC6pBT0dw3Zp8OAdimfQ9CBEX7SjzmWeNSjkXGCoGg6I1+M2DZv9RJ/pvNZyLzrAdfTrZeqrW/A5cozidZIwNFDj6im8MOfzvZxED+JuoUkJEfbMEZvm07SqaWZQj/FhcRsPEURy69lzKFJvW1bzUI10DErIRU4FcIeN7F6PUWwoxNxV/CufSJpx0+4+vrLpgXQobJlhKxwgtObyGey4WkAo7ErwxaeJ4lI6e5NunoyTzyrmJicllXO4s= rsa-key-20160308'
+  - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5e6OGRlpx09yHx5Ea2ik9f1Xb2X73lxuwkSdfwJb58a+73PV+0zq3GZ8lnv3mwuCWrVYOKvCMsdfIe/jsAWHSCVT6Ab6yKyeS2tfoRKBLfxGSIGtVbNwgY+jpJlDGrTqHOq6Ie45+CXYLHodmIDjMOA+imKGC1tWud7OdIaYr/Izug4oKVfWYFmlCr7ROalXV5eEVYja4pxlYOP6kzwlRMNwD/p9q89C8moykPPyC0cRvfOX7bwYpfdIecQKYTDJFR50T1YOh387/9RWzO8CkJ7L0SzTgWM8BkzMEjstdyWx2xX/oBvkDxF2/wiDUyi0mMpYBTUEET+A0GB82HKsd4cP9LiQyA8kdSCbycmNu0IIAmtr8sZNBwn8SX1IgqohCw1zFkQuxAOJUsTs3RBopQzeO85hZMaY1yEWFCJivKjYKrDBtUHHPHikyqupYeXhrHOMpXWP6fTmoMQvtISBaYw1vn7D+665qW2f06jp0FS+UoTOkFHF/wn0rrnknc3odYGABmJ4Ltqb2sr5AucU+BYly4nx2OpkKnFur2gbibYdHRnED4SW3IQfFX8sxv9Le6iZwPhfAjsN2lvjv29rKdxuSdXrJKBwZoCSAChtaOGpJeV2Y5jwYasqtlQOm8+4f07SlQYzIlzn9w6ugfZqfvXE8RZRh2zpWTb2m/4iJSw== jdratlif@htpc'
+  - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/mA8Y0PLP4xGX3kqO2LYbvVoPApV/fzikVgHDsPFAFwBQpgx54bnqu+vHbHp81z8DhRBde9EvtAmsmGMxzsNPYVbcoVRPTymwH5QMA/aXPUCvHgUsPysNaZhC/KlG8vYI7wTmfAbomXjLMKH3VHTwr/UBwFGfgWhOF93llYoJUflaElGDHqAs30/xB90gY2Q11tYNw66nTleuZLRrtvxHiEg4TP/MmpwrmtqSEOAr1gySgACXqHN+fPxG1CWffQm36yqJw9vCKFkaFL4HAwHBL6Hf4UWEXHC140K5SA8KudvwwcIgVZphuV8XYl+jXH4uuruNlfvzPR8uevytxdMXvqcyDjmmw63x+TJaqtuyjyRBf5WK6VbXAZXHGWk5/C7mAB0POsQdivU/oyhX5s15aJVheHNSNQD5++WfkRbe98nN7BGTr2wsMhAxhMNWXb9lHcD2g+QxN2zAo9ym5Ty0QehhosV742WVtTwEISwy7c8MVAHLp5N8HuIJBsfJKZfwG087VH+8KffqwUU3ZRnyE7yEH3kSZ9Wl0vj54dkDeYPJZICJWo4kztCe+vgXg7J9MjIdhygJFXBcw4+hsjCAd9BHLLhGiYIiwc9BnjZzzVNvnXz+MaDFqxY3+knKbiV9Q2h80RpzIJopYhh3BYMuLbys4rzUGX5ShXSlU0K5nQ== /home/jdratlif/.ssh/id_rsa'

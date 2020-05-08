@@ -1,0 +1,75 @@
+---
+- name: config setup playbook
+  gather_facts: false
+  hosts: '{{ host_override | default("skip.grnoc.iu.edu") }}'
+  tasks:
+    - name: import common values
+      import_role:
+        name: common
+
+    - name: ensure home directory exists
+      file:
+        path: '{{ home_dir }}'
+        state: directory
+        owner: '{{ user }}'
+        group: '{{ group }}'
+        mode: '0700'
+
+    - name: setup bash profile
+      import_role:
+        name: bash
+
+    - name: remove dircolors file
+      file:
+        path: '{{ home_dir }}/.dircolors'
+        state: absent
+
+    - name: setup gitconfig
+      import_role:
+        name: gitconfig
+
+    - name: setup i3
+      import_role:
+        name: i3
+      when: use_i3
+
+    - name: setup perltidy
+      import_role:
+        name: perltidy
+
+    - name: setup ssh configs
+      import_role:
+        name: ssh
+
+    - name: setup tmux config
+      import_role:
+        name: tmux
+      when: use_tmux
+
+    - name: setup vim
+      import_role:
+        name: vim
+
+    - name: setup vnc
+      import_role:
+        name: vnc
+      when: use_vnc
+
+    - name: special dev host tasks
+      block:
+        - name: increase sudo timeout
+          copy:
+            content: |
+              Defaults timestamp_timeout=720
+            dest: /etc/sudoers.d/90-timeout
+            owner: root
+            group: root
+            mode: '0440'
+        - name: set inotify user watches
+          copy:
+            content: |
+              fs.inotify.max_user_watches=65536
+            dest: /etc/sysctl.d/90-inotify.conf
+            owner: root
+            group: root
+      when: inventory_hostname == 'jdratlif-dev7.ctc.grnoc.iu.edu'

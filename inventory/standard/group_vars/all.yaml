@@ -1,0 +1,11 @@
+---
+aliases:
+  ipt: 'sudo iptables --line-numbers -n -v -L'
+  fix_perms: 'find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
+
+ansible_become_pass: '{{ ansible_ssh_pass | default("") }}'
+
+ssh_host_common_configs:
+  ForwardAgent: 'yes'
+  ServerAliveCountMax: 3
+  ServerAliveInterval: 30

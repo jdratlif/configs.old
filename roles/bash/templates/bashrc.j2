@@ -1,0 +1,52 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific aliases and functions
+PROMPT_COMMAND=my_prompt
+
+my_prompt() {
+    local exit_code="$?"
+    PS1="(${exit_code}) \u@\H:\w \$ "
+}
+
+# use vi line editing mode
+set -o vi
+bind -m vi-insert "\C-l":clear-screen
+
+# history options
+shopt -s histappend
+
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL="ignorespace:erasedups"
+
+export PAGER='less -X'
+export LIBVIRT_DEFAULT_URI='qemu:///system'
+
+# begin local path augments
+{% if path_local_pre is defined %}
+PATH="{{ path_local_pre | join(':') }}:$PATH"
+{% endif %}
+{% if path_local_post is defined %}
+PATH="$PATH:{{ path_local_post | join(':') }}"
+{% endif %}
+# end local path augments
+
+# begin local exports
+{% if exports is defined %}
+{% for item in exports | dictsort %}
+export {{ item[0] }}='{{ item[1] }}'
+{% endfor %}
+{% endif %}
+# end local exports
+
+# begin aliases
+{% for item in aliases | dictsort %}
+alias {{ item[0] }}='{{ item[1] }}'
+{% endfor %}
+# end aliases

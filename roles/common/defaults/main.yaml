@@ -1,0 +1,16 @@
+---
+group: jdratlif
+
+home_dir: /home/jdratlif
+
+keychain_bin: /usr/bin/keychain
+
+ssh_host_configs: {}
+
+use_i3: false
+use_keychain: false
+use_tmux: false
+use_vnc: false
+use_vscode_git: false
+
+user: jdratlif

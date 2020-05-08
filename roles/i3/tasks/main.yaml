@@ -1,0 +1,13 @@
+---
+- name: setup i3 config
+  copy:
+    src: i3.conf
+    dest: '{{ home_dir }}/.config/i3/config'
+    owner: '{{ user }}'
+    group: '{{ group }}'
+- name: setup i3status config
+  copy:
+    src: i3status.conf
+    dest: '{{ home_dir }}/.i3status'
+    owner: '{{ user }}'
+    group: '{{ group }}'
