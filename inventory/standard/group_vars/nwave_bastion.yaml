@@ -1,4 +1,7 @@
 ---
+aliases:
+  myansible: 'eval $(ssh-agent) ; sudo -E ssh-add /home/syscnf/.ssh/id_rsa'
+
 ansible_connection: local
 
 ssh_host_configs:
