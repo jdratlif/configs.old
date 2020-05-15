@@ -15,14 +15,13 @@
         group: '{{ group }}'
         mode: '0700'
 
+    - name: cleanup old config files
+      import_role:
+        name: cleanup
+
     - name: setup bash profile
       import_role:
         name: bash
-
-    - name: remove dircolors file
-      file:
-        path: '{{ home_dir }}/.dircolors'
-        state: absent
 
     - name: setup gitconfig
       import_role:
