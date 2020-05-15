@@ -1,4 +1,8 @@
 ---
 ansible_connection: local
 
+ssh_host_configs:
+  simp-test-silv:
+    HostName: '140.172.80.9'
+
 use_tmux: true

@@ -96,6 +96,7 @@ all:
                 simp-poller.silv2.nwave.noaa.gov:
                 simp-data-silv.ctc.nwave.noaa.gov:
                 simp-comp-silv.ctc.nwave.noaa.gov:
+                simp-test.silv.nwave.noaa.gov:
                 snapp.bldc.nwave.noaa.gov:
                 snapp.ctc.nwave.noaa.gov:
                 snapp.boul.nwave.noaa.gov:
