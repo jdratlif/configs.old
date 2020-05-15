@@ -4,3 +4,5 @@ aliases:
   aide_nagios: 'sudo truncate -s0 /var/log/aide/aide.log'
   aide_run: 'sudo aide --update | less -X'
   aide_showlog: 'sudo cat /var/log/aide/aide.log'
+
+ansible_user: syscnf
