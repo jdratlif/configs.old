@@ -82,12 +82,12 @@ all:
             vn.wash2.net.internet2.edu:
         nwave:
           children:
-            nwave-bastion:
+            nwave_bastion:
               hosts:
                 bastion.bldc.nwave.noaa.gov:
                 bastion.ctc.nwave.noaa.gov:
                 bastion.boul.nwave.noaa.gov:
-            nwave-internal:
+            nwave_internal:
               hosts:
                 sc.bldc.nwave.noaa.gov:
                 sc.ctc.nwave.noaa.gov:
