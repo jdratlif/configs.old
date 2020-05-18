@@ -89,6 +89,9 @@ all:
                 bastion.boul.nwave.noaa.gov:
             nwave_internal:
               hosts:
+                carto.bldc.nwave.noaa.gov:
+                carto.ctc.nwave.noaa.gov:
+                carto.boul.nwave.noaa.gov:
                 sc.bldc.nwave.noaa.gov:
                 sc.ctc.nwave.noaa.gov:
                 sc.boul.nwave.noaa.gov:
