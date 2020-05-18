@@ -51,7 +51,13 @@ export {{ item[0] }}='{{ item[1] }}'
 {% endif %}
 # end local exports
 
-# begin aliases
+# begin local functions
+{% for item in functions | dictsort %}
+function {{ item[0] }} { {{ item[1] }} }
+{% endfor %}
+# end local functions
+
+# begin local aliases
 {% for item in aliases | dictsort %}
 alias {{ item[0] }}='{{ item[1] }}'
 {% endfor %}
