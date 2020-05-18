@@ -4,6 +4,10 @@ aliases:
 
 ansible_connection: local
 
+functions:
+  config_host: |-
+    ansible-playbook main.yaml -b -e "host_override=$1"
+
 ssh_host_configs:
   simp-test-silv:
     HostName: '140.172.80.9'
