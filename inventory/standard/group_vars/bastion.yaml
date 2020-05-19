@@ -48,6 +48,8 @@ ssh_host_configs:
     HostName: grafana.net.cen.ct.gov
   grafana-intl:
     HostName: grafana.intl.grnoc.iu.edu
+  grafana-onenet:
+    HostName: snapp-portal.noc.onenet.net
   mongo-i2-bldc-1:
     HostName: mongo1.tsds.bldc.net.internet2.edu
   mongo-i2-bldc-2:
@@ -114,8 +116,6 @@ ssh_host_configs:
     HostName: snapp.noc.onenet.net
   snapp-oshean:
     HostName: snapp.oshean.org
-  snapp-portal-onenet:
-    HostName: snapp.noc.onenet.net
   snapp-services-01:
     HostName: snapp-services-01.globalnoc.mcnc.org
   snapp-services-02:
