@@ -50,6 +50,7 @@ all:
             snapp-frontend-01.globalnoc.mcnc.org:
             snapp-frontend-02.globalnoc.mcnc.org:
             snapp-frontend-test-01.globalnoc.mcnc.org:
+            snapp-portal.noc.onenet.net:
             snapp-portal-01.globalnoc.mcnc.org:
             snapp-portal-02.globalnoc.mcnc.org:
             snapp-portal-test-01.globalnoc.mcnc.org:
