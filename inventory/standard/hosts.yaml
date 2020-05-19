@@ -33,6 +33,7 @@ all:
             frontend.tsds.bldc.grnoc.iu.edu:
             frontend.tsds.ctc.grnoc.iu.edu:
             io3.bldc.grnoc.iu.edu:
+            irnc-grm.grnoc.iu.edu:
             jdratlif-dev7.ctc.grnoc.iu.edu:
             mongo-arbiter.areon.net:
             simp-comp.bldc.grnoc.iu.edu:
