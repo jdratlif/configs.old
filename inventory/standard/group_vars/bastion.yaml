@@ -114,6 +114,8 @@ ssh_host_configs:
     HostName: snapp.noc.onenet.net
   snapp-oshean:
     HostName: snapp.oshean.org
+  snapp-portal-onenet:
+    HostName: snapp.noc.onenet.net
   snapp-services-01:
     HostName: snapp-services-01.globalnoc.mcnc.org
   snapp-services-02:
