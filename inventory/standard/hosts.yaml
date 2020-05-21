@@ -40,6 +40,7 @@ all:
             simp-comp.bldc.grnoc.iu.edu:
             simp-data2.bldc.grnoc.iu.edu:
             simp-poller.bldc.grnoc.iu.edu:
+            snapp.bldc.grnoc.iu.edu:
             snapp.frcy.areon.net:
             snapp.fyvl.areon.net:
             snapp.oshean.org:
