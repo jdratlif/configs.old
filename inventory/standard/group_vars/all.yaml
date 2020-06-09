@@ -1,7 +1,8 @@
 ---
 aliases:
-  ipt: 'sudo iptables --line-numbers -n -v -L'
   fix_perms: 'find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
+  git_oneline: 'git log --oneline'
+  ipt: 'sudo iptables --line-numbers -n -v -L'
 
 ansible_become_pass: '{{ ansible_ssh_pass | default("") }}'
 
