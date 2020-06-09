@@ -11,7 +11,7 @@ functions:
 ssh_host_configs:
   puppet:
     HostName: 'dist.nwave.noaa.gov'
-  simp-test-silv:
+  simp-test.silv:
     HostName: '140.172.80.9'
 
 use_tmux: true
