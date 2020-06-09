@@ -30,6 +30,9 @@ all:
             build.grnoc.iu.edu:
             carto.noc.onenet.net:
             db2.grnoc.iu.edu:
+            flow-es-1.bldc.grnoc.iu.edu:
+            flow-es-2.bldc.grnoc.iu.edu:
+            flow-es-3.bldc.grnoc.iu.edu:
             frontend.tsds.bldc.grnoc.iu.edu:
             frontend.tsds.ctc.grnoc.iu.edu:
             io3.bldc.grnoc.iu.edu:
