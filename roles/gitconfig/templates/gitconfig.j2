@@ -4,6 +4,9 @@
 
 [branch]
     autosetuprebase = always
+
+[gc]
+    autoDetach = false
 {% for c in gitconfig.credentials %}
 
 [credential "{{ c.name }}"]
