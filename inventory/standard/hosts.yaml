@@ -96,25 +96,32 @@ all:
                 bastion.ctc.nwave.noaa.gov:
                 bastion.boul.nwave.noaa.gov:
             nwave_internal:
-              hosts:
-                carto.bldc.nwave.noaa.gov:
-                carto.ctc.nwave.noaa.gov:
-                carto.boul.nwave.noaa.gov:
-                sc.bldc.nwave.noaa.gov:
-                sc.ctc.nwave.noaa.gov:
-                sc.boul.nwave.noaa.gov:
-                simp-poller.silv.nwave.noaa.gov:
-                simp-poller.silv2.nwave.noaa.gov:
-                simp-data-silv.ctc.nwave.noaa.gov:
-                simp-comp-silv.ctc.nwave.noaa.gov:
-                simp-test.silv.nwave.noaa.gov:
-                snapp.bldc.nwave.noaa.gov:
-                snapp.ctc.nwave.noaa.gov:
-                snapp.boul.nwave.noaa.gov:
-                snapp-portal.bldc.nwave.noaa.gov:
-                tsds.bldc.nwave.noaa.gov:
-                tsds.ctc.nwave.noaa.gov:
-                tsds.boul.nwave.noaa.gov:
+              children:
+                ndca_nwave:
+                  hosts:
+                    carto.bldc.nwave.noaa.gov:
+                    carto.ctc.nwave.noaa.gov:
+                    carto.boul.nwave.noaa.gov:
+                    sc.bldc.nwave.noaa.gov:
+                    sc.ctc.nwave.noaa.gov:
+                    sc.boul.nwave.noaa.gov:
+                    simp-poller.silv.nwave.noaa.gov:
+                    simp-poller.silv2.nwave.noaa.gov:
+                    simp-data-silv.ctc.nwave.noaa.gov:
+                    simp-comp-silv.ctc.nwave.noaa.gov:
+                    simp-test.silv.nwave.noaa.gov:
+                    snapp.bldc.nwave.noaa.gov:
+                    snapp.ctc.nwave.noaa.gov:
+                    snapp.boul.nwave.noaa.gov:
+                    snapp-portal.bldc.nwave.noaa.gov:
+                    tsds.bldc.nwave.noaa.gov:
+                    tsds.ctc.nwave.noaa.gov:
+                    tsds.boul.nwave.noaa.gov:
+                non_ndca_nwave:
+                  hosts:
+                    awx.ctc.nwave.noaa.gov:
+                    perf.dall.nwave.noaa.gov:
+                    tools2.bldc.nwave.noaa.gov:
     xaiver:
       hosts:
         htpc:
