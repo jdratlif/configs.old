@@ -54,13 +54,19 @@ ssh_host_configs:
   cloud-ctc-5:
     HostName: compute5.cloud.ctc.grnoc.iu.edu
 
-  # my dev host
+  # dev servers
   dev:
     HostName: jdratlif-dev7.ctc.grnoc.iu.edu
 
-  # DNS host
+  # DNS servers
   dns:
     HostName: db2.grnoc.iu.edu
+
+  # NAGIOS servers
+  mon-bldc:
+    HostName: nocmon.bldc.grnoc.iu.edu
+  mon-ctc:
+    HostNAme: nocmon.ctc.grnoc.iu.edu
 
   # portal servers
   portal-intl:
@@ -94,6 +100,12 @@ ssh_host_configs:
     HostName: frontend.tsds.bldc.net.internet2.edu
   i2-frontend-wash2:
     HostName: frontend.tsds.wash2.net.internet2.edu
+
+  # NAGIOS servers
+  i2-mon-bldc:
+    HostName: mon.bldc.net.internet2.edu
+  i2-mon-wash2:
+    HostName: mon.wash2.net.internet2.edu
 
   # mongo servers
   i2-mongo-bldc-1:
