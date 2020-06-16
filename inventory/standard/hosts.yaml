@@ -40,6 +40,8 @@ all:
             jdratlif-dev7.ctc.grnoc.iu.edu:
             mongo-arbiter.areon.net:
             netsage-probe1.grnoc.iu.edu:
+            nocmon.bldc.grnoc.iu.edu:
+            nocmon.ctc.grnoc.iu.edu:
             simp-comp.bldc.grnoc.iu.edu:
             simp-data2.bldc.grnoc.iu.edu:
             simp-poller.bldc.grnoc.iu.edu:
@@ -74,6 +76,8 @@ all:
             backup.ctc.net.internet2.edu:
             frontend.tsds.bldc.net.internet2.edu:
             frontend.tsds.wash2.net.internet2.edu:
+            mon.bldc.net.internet2.edu:
+            mon.wash2.net.internet2.edu:
             mongo1.tsds.bldc.net.internet2.edu:
             mongo2.tsds.bldc.net.internet2.edu:
             mongo3.tsds.bldc.net.internet2.edu:
