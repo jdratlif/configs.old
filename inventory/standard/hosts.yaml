@@ -38,6 +38,8 @@ all:
             io3.bldc.grnoc.iu.edu:
             irnc-grm.grnoc.iu.edu:
             jdratlif-dev7.ctc.grnoc.iu.edu:
+            mon.bldc.net.cen.ct.gov:
+            mon.ehct.net.cen.ct.gov:
             mongo-arbiter.areon.net:
             netsage-probe1.grnoc.iu.edu:
             nocmon.bldc.grnoc.iu.edu:
