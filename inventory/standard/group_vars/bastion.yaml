@@ -16,6 +16,12 @@ ssh_host_configs:
 
   # CEN hosts
 
+  # nagios servers
+  cen-mon-bldc:
+    HostName: mon.bldc.net.cen.ct.gov
+  cen-mon-ehct:
+    HostName: mon.ehct.net.cen.ct.gov
+
   # portal servers
   cen-portal:
     HostName: grafana.net.cen.ct.gov
