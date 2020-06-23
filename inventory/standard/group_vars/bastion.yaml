@@ -82,6 +82,14 @@ ssh_host_configs:
   puppet:
     HostName: build.grnoc.iu.edu
 
+  # rabbit hosts
+  rabbit:
+    HostName: rabbitmq.tsds.bldc.grnoc.iu.edu
+
+  # TSDS services hosts
+  services:
+    HostName: services.tsds.bldc.grnoc.iu.edu
+
   # SIMP hosts
   'simp-comp simp-tsds':
     HostName: simp-comp.bldc.grnoc.iu.edu
@@ -89,6 +97,10 @@ ssh_host_configs:
     HostName: simp-data2.bldc.grnoc.iu.edu
   simp-poller:
     HostName: simp-poller.bldc.grnoc.iu.edu
+
+  # SNAPP host
+  snapp:
+    HostName: snapp.bldc.grnoc.iu.edu
 
   # Juniper VMX servers
   vmx:
