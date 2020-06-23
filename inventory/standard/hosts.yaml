@@ -44,6 +44,8 @@ all:
             netsage-probe1.grnoc.iu.edu:
             nocmon.bldc.grnoc.iu.edu:
             nocmon.ctc.grnoc.iu.edu:
+            rabbitmq.tsds.bldc.grnoc.iu.edu:
+            services.tsds.bldc.grnoc.iu.edu:
             simp-comp.bldc.grnoc.iu.edu:
             simp-data2.bldc.grnoc.iu.edu:
             simp-poller.bldc.grnoc.iu.edu:
