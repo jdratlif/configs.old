@@ -29,6 +29,8 @@ all:
             backup.ictc.ilight.net:
             build.grnoc.iu.edu:
             carto.noc.onenet.net:
+            db-01.grnoc.iu.edu:
+            db-02.grnoc.iu.edu:
             db2.grnoc.iu.edu:
             flow-es-1.bldc.grnoc.iu.edu:
             flow-es-2.bldc.grnoc.iu.edu:
