@@ -116,6 +116,8 @@ all:
                     flow.bldc.nwave.noaa.gov:
                     flow.ctc.nwave.noaa.gov:
                     flow.boul.nwave.noaa.gov:
+                    portal-demo.bldc.nwave.noaa.gov:
+                    portal-demo.ctc.nwave.noaa.gov:
                     sc.bldc.nwave.noaa.gov:
                     sc.ctc.nwave.noaa.gov:
                     sc.boul.nwave.noaa.gov:
