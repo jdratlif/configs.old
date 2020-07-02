@@ -74,6 +74,10 @@ ssh_host_configs:
   mon-ctc:
     HostNAme: nocmon.ctc.grnoc.iu.edu
 
+  # NetFlow servers
+  netflow-dev-master:
+    HostName: netflow-dev-es-master-01.ctc.grnoc.iu.edu
+
   # portal servers
   portal-intl:
     HostName: grafana.intl.grnoc.iu.edu
