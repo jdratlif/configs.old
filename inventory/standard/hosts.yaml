@@ -39,6 +39,8 @@ all:
             jdratlif-dev7.ctc.grnoc.iu.edu:
             mon.bldc.net.cen.ct.gov:
             mon.ehct.net.cen.ct.gov:
+            mon-01.grnoc.iu.edu:
+            mon-02.grnoc.iu.edu:
             mongo-arbiter.areon.net:
             netflow-dev-es-master-01.ctc.grnoc.iu.edu:
             netsage-probe1.grnoc.iu.edu:
