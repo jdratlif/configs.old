@@ -168,6 +168,12 @@ ssh_host_configs:
   i2-vn-wash2:
     HostName: vn.wash2.net.internet2.edu
 
+  # old network devices
+  sdn-dcp2.ashb.net.internet2.edu:
+    KexAlgorithms: diffie-hellman-group1-sha1
+    HostKeyAlgorithms: ssh-dss
+    Ciphers: aes256-cbc
+
   # MCNC hosts
 
   # AlertMon servers
