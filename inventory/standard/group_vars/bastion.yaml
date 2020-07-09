@@ -91,8 +91,10 @@ ssh_host_configs:
     HostName: rabbitmq.tsds.bldc.grnoc.iu.edu
 
   # TSDS services hosts
-  services:
+  services-bldc:
     HostName: services.tsds.bldc.grnoc.iu.edu
+  services-ctc:
+    HostName: services.tsds.ctc.grnoc.iu.edu
 
   # SIMP hosts
   'simp-comp simp-tsds':
