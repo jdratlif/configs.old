@@ -79,6 +79,7 @@ all:
             snapp-shard-01.globalnoc.mcnc.org:
             snapp-shard-02.globalnoc.mcnc.org:
             snapp-shard-test-01.globalnoc.mcnc.org:
+            ssh-collector.bldc.grnoc.iu.edu:
             webdoc-01.grnoc.iu.edu:
         i2:
           hosts:
