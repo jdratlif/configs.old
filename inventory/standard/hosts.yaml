@@ -43,6 +43,7 @@ all:
             mon-02.grnoc.iu.edu:
             mongo-arbiter.areon.net:
             netflow-dev-es-master-01.ctc.grnoc.iu.edu:
+            netsage-archive.grnoc.iu.edu:
             netsage-probe1.grnoc.iu.edu:
             netsage-portal-sox.grnoc.iu.edu:
             nocmon.bldc.grnoc.iu.edu:
