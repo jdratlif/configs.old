@@ -77,6 +77,10 @@ ssh_host_configs:
   # NetFlow servers
   netflow-dev-master:
     HostName: netflow-dev-es-master-01.ctc.grnoc.iu.edu
+  netflow-dev-agg-bldc:
+    HostName: netflow-dev-es-agg-01.bldc.grnoc.iu.edu
+  netflow-dev-agg-ctc:
+    HostName: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
 
   # portal servers
   portal-intl:
