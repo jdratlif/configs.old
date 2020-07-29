@@ -8,6 +8,10 @@ functions:
   config_host: |-
     ansible-playbook main.yaml -e "host_override=$1"
 
+ssh_host_common_configs:
+  ControlMaster: 'auto'
+  ControlPath: '~/.ssh/sockets/%r@h:%p'
+
 ssh_host_configs:
   puppet:
     HostName: 'dist.nwave.noaa.gov'
