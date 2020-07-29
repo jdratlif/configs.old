@@ -3,7 +3,7 @@ ansible_connection: local
 
 functions:
   config_host: |-
-    ansible-playbook main.yaml -b -e "host_override=$1"
+    ansible-playbook main.yaml -e "host_override=$1" --ask-pass
 
 ssh_host_configs:
   # AREON hosts
