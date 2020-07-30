@@ -28,6 +28,7 @@ all:
             backup.grnoc.iu.edu:
             backup.ictc.ilight.net:
             build.grnoc.iu.edu:
+            carto.bldc.grnoc.iu.edu:
             carto.noc.onenet.net:
             db-01.grnoc.iu.edu:
             db-02.grnoc.iu.edu:
