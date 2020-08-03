@@ -124,6 +124,7 @@ all:
                     carto.bldc.nwave.noaa.gov:
                     carto.ctc.nwave.noaa.gov:
                     carto.boul.nwave.noaa.gov:
+                    carto-el7-test.ctc.nwave.noaa.gov:
                     flow.bldc.nwave.noaa.gov:
                     flow.ctc.nwave.noaa.gov:
                     flow.boul.nwave.noaa.gov:

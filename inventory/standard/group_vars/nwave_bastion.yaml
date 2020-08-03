@@ -15,5 +15,7 @@ ssh_host_common_configs:
 ssh_host_configs:
   puppet:
     HostName: 'dist.nwave.noaa.gov'
+  carto-el7-test.ctc.nwave.noaa.gov:
+    HostName: '140.182.54.38'
 
 use_tmux: true
