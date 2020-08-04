@@ -13,6 +13,8 @@ ssh_host_common_configs:
   ControlPath: '~/.ssh/sockets/%r@%h:%p'
 
 ssh_host_configs:
+  dns:
+    HostName: 'mysql.bldc.nwave.noaa.gov'
   puppet:
     HostName: 'dist.nwave.noaa.gov'
   carto-el7-test.ctc.nwave.noaa.gov:

@@ -149,6 +149,8 @@ all:
                   hosts:
                     awx.ctc.nwave.noaa.gov:
                     dist.bldc.nwave.noaa.gov:
+                    mysql.bldc.nwave.noaa.gov:
+                    mysql.ctc.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
                     ps.ctc.nwave.noaa.gov:
                     tools-new.bldc.nwave.noaa.gov:
