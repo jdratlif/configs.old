@@ -68,6 +68,12 @@ ssh_host_configs:
   dns:
     HostName: db2.grnoc.iu.edu
 
+  # Frontend servers
+  frontend-bldc:
+    HostName: frontend.tsds.bldc.grnoc.iu.edu
+  frontend-ctc:
+    HostName: frontend.tsds.ctc.grnoc.iu.edu
+
   # NAGIOS servers
   mon-bldc:
     HostName: nocmon.bldc.grnoc.iu.edu
