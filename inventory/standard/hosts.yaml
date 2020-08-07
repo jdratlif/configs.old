@@ -50,6 +50,7 @@ all:
             netflow-dev-es-data-01.ctc.grnoc.iu.edu:
             netsage-archive.grnoc.iu.edu:
             netsage-probe1.grnoc.iu.edu:
+            netsage-portal.grnoc.iu.edu:
             netsage-portal-sox.grnoc.iu.edu:
             nocmon.bldc.grnoc.iu.edu:
             nocmon.ctc.grnoc.iu.edu:
