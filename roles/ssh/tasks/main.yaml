@@ -6,12 +6,6 @@
     owner: '{{ user }}'
     group: '{{ group }}'
     mode: '0700'
-- name: make ssh sockets directory
-  file:
-    path: '{{ home_dir }}/.ssh/sockets'
-    state: directory
-    owner: '{{ user }}'
-    group: '{{ group }}'
 - name: setup authorized_keys
   template:
     src: authorized_keys.j2
