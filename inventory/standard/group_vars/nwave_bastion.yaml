@@ -10,7 +10,7 @@ functions:
 
 ssh_host_common_configs:
   ControlMaster: 'auto'
-  ControlPath: '~/.ssh/sockets/%r@%h:%p'
+  ControlPath: '~/.ssh/%r@%h:%p'
 
 ssh_host_configs:
   dns:
