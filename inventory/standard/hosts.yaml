@@ -152,6 +152,7 @@ all:
                     tsds.boul.nwave.noaa.gov:
                 non_ndca_nwave:
                   hosts:
+                    awx.bldc.nwave.noaa.gov:
                     awx.ctc.nwave.noaa.gov:
                     dist.bldc.nwave.noaa.gov:
                     mysql.bldc.nwave.noaa.gov:
