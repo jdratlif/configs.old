@@ -144,8 +144,9 @@ all:
                     snapp.ctc.nwave.noaa.gov:
                     snapp.boul.nwave.noaa.gov:
                     snapp-portal.bldc.nwave.noaa.gov:
-                    snapp-shard-01.bldc.nwave.noaa.gov:
-                    snapp-shard-01.ctc.nwave.noaa.gov:
+                    snapp-services.bldc.nwave.noaa.gov:
+                    snapp-shard.bldc.nwave.noaa.gov:
+                    snapp-shard.ctc.nwave.noaa.gov:
                     tsds.bldc.nwave.noaa.gov:
                     tsds.ctc.nwave.noaa.gov:
                     tsds.boul.nwave.noaa.gov:
