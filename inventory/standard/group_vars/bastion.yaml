@@ -123,6 +123,19 @@ ssh_host_configs:
   snapp:
     HostName: snapp.bldc.grnoc.iu.edu
 
+  # Campus Network Switches
+  switch-bldc-bc10:
+    HostName: 10.240.120.37
+    User: cni_rancid
+
+  switch-bldc-ak23:
+    HostName: 10.240.120.71
+    User: cni_rancid
+
+  switch-ctc-n13:
+    HostName: 10.241.120.43
+    User: cni_rancid
+
   # Juniper VMX servers
   vmx:
     HostName: 140.182.45.188
