@@ -5,6 +5,8 @@ all:
       children:
         bastion:
           hosts:
+            jump.grnoc.iu.edu:
+            leap.grnoc.iu.edu:
             skip.grnoc.iu.edu:
         internal:
           children:
@@ -38,6 +40,7 @@ all:
             io3.bldc.grnoc.iu.edu:
             irnc-grm.grnoc.iu.edu:
             jdratlif-dev7.ctc.grnoc.iu.edu:
+            jdratlif-dev-new.ctc.grnoc.iu.edu:
             mon.bldc.net.cen.ct.gov:
             mon.ehct.net.cen.ct.gov:
             mon-01.grnoc.iu.edu:
