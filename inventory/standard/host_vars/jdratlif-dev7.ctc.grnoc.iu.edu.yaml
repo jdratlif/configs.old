@@ -5,8 +5,6 @@ aliases:
   ssh_laptop: 'autossh -M 20000 -f -N laptop'
   ssh_xaiver: 'autossh -M 30000 -f -N xaiver'
 
-ansible_become: true
-
 keychain_bin: '/usr/local/bin/keychain'
 
 ssh_host_configs:
