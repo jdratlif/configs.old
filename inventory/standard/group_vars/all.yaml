@@ -4,8 +4,6 @@ aliases:
   git_oneline: 'git log --oneline'
   ipt: 'sudo iptables --line-numbers -n -v -L'
 
-ansible_become_pass: '{{ ansible_ssh_pass | default("") }}'
-
 ssh_host_common_configs:
   ServerAliveCountMax: 3
   ServerAliveInterval: 30
