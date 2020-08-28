@@ -40,7 +40,6 @@ all:
             io3.bldc.grnoc.iu.edu:
             irnc-grm.grnoc.iu.edu:
             jdratlif-dev7.ctc.grnoc.iu.edu:
-            jdratlif-dev-new.ctc.grnoc.iu.edu:
             mon.bldc.net.cen.ct.gov:
             mon.ehct.net.cen.ct.gov:
             mon-01.grnoc.iu.edu:
@@ -67,7 +66,6 @@ all:
             snapp.frcy.areon.net:
             snapp.fyvl.areon.net:
             snapp.oshean.org:
-            snappng-test.ncren.net:
             snapp.net.cen.ct.gov:
             snapp.noc.onenet.net:
             snapp-test-01.globalnoc.mcnc.org:
