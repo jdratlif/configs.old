@@ -7,6 +7,9 @@ aliases:
 
 keychain_bin: '/usr/local/bin/keychain'
 
+ssh_host_common_configs:
+  ForwardAgent: 'yes'
+
 ssh_host_configs:
   leap:
     HostName: leap.grnoc.iu.edu
@@ -15,10 +18,8 @@ ssh_host_configs:
   skip:
     HostName: skip.grnoc.iu.edu
   xaiver:
-    HostName: xaiver.technoplaza.net
-    Port: 2202
+    HostName: 192.168.5.1
 
-use_i3: true
 use_keychain: true
 use_vnc: true
 use_vscode_git: true
