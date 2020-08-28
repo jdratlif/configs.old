@@ -34,7 +34,6 @@ all:
             carto.noc.onenet.net:
             db-01.grnoc.iu.edu:
             db-02.grnoc.iu.edu:
-            db2.grnoc.iu.edu:
             frontend.tsds.bldc.grnoc.iu.edu:
             frontend.tsds.ctc.grnoc.iu.edu:
             io3.bldc.grnoc.iu.edu:
