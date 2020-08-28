@@ -56,7 +56,7 @@
       when: use_vnc
 
     - name: special dev host tasks
-      ansible_become: true
+      become: true
       block:
         - name: increase sudo timeout
           copy:
