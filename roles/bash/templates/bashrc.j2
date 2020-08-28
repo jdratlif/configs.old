@@ -53,7 +53,11 @@ export {{ item[0] }}='{{ item[1] }}'
 
 # begin local functions
 {% for item in functions | dictsort %}
-function {{ item[0] }} { {{ item[1] }} ; }
+function {{ item[0] }} {
+{% for line in item[1] %}
+     {{ line }}
+{% endfor %}
+}
 {% endfor %}
 # end local functions
 
