@@ -53,6 +53,7 @@ all:
             netsage-probe1.grnoc.iu.edu:
             netsage-portal.grnoc.iu.edu:
             netsage-portal-sox.grnoc.iu.edu:
+            netsage-simp.grnoc.iu.edu:
             nocmon.bldc.grnoc.iu.edu:
             nocmon.ctc.grnoc.iu.edu:
             rabbitmq.tsds.bldc.grnoc.iu.edu:
