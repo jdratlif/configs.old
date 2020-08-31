@@ -161,6 +161,7 @@ all:
                     perf.dall.nwave.noaa.gov:
                     ps.ctc.nwave.noaa.gov:
                     tools-new.bldc.nwave.noaa.gov:
+                    tools-new.ctc.nwave.noaa.gov:
                     tools2.bldc.nwave.noaa.gov:
                     tools2.ctc.nwave.noaa.gov:
                     tools2.silv.nwave.noaa.gov:
