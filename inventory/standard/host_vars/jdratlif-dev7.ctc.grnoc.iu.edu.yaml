@@ -18,7 +18,7 @@ ssh_host_configs:
   skip:
     HostName: skip.grnoc.iu.edu
   xaiver:
-    HostName: 192.168.5.1
+    HostName: 192.168.5.2
 
 use_keychain: true
 use_vnc: true
