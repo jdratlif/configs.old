@@ -5,7 +5,7 @@ functions:
   config_host:
     - name=$1
     - shift
-    - ansible-playbook main.yaml -e "host_override=$name" --ask-pass "$@"
+    - ansible-playbook main.yaml -e "host_override=$name" "$@"
 
 ssh_host_common_configs:
   ControlMaster: 'auto'
