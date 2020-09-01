@@ -27,6 +27,8 @@ all:
                     compute4.cloud.ctc.grnoc.iu.edu:
                     compute5.cloud.ctc.grnoc.iu.edu:
           hosts:
+            awx.grnoc.iu.edu:
+            awx-test.bldc.grnoc.iu.edu:
             backup.grnoc.iu.edu:
             backup.ictc.ilight.net:
             build.grnoc.iu.edu:
