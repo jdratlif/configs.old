@@ -74,3 +74,4 @@
             owner: root
             group: root
       when: inventory_hostname == 'jdratlif-dev7.ctc.grnoc.iu.edu'
+      failed_when: false
