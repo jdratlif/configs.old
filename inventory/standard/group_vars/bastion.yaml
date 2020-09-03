@@ -95,6 +95,12 @@ ssh_host_configs:
   netflow-dev-agg-ctc:
     HostName: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
 
+  # out of band devices
+  oob-n13:
+    HostName: oob.n13.ctc.grnoc.iu.edu
+    KexAlgorithms: diffie-hellman-group1-sha1
+    Ciphers: aes256-cbc
+
   # portal servers
   portal-intl:
     HostName: grafana.intl.grnoc.iu.edu
