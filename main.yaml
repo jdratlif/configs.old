@@ -66,6 +66,7 @@
             owner: root
             group: root
             mode: '0440'
+          failed_when: false
         - name: set inotify user watches
           copy:
             content: |
@@ -73,5 +74,5 @@
             dest: /etc/sysctl.d/90-inotify.conf
             owner: root
             group: root
+          failed_when: false
       when: inventory_hostname == 'jdratlif-dev7.ctc.grnoc.iu.edu'
-      failed_when: false
