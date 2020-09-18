@@ -2,7 +2,7 @@
 aliases:
   rpm6: 'rpm --define="_gpg_name syseng@grnoc.iu.edu"'
   rpm7: 'rpm --define="_gpg_name globalnoc@iu.edu"'
-  vpn: 'sudo openconnect --juniper -s "vpn-slice 10.0.0.0/8 awx-test.bldc.grnoc.iu.edu awx.grnoc.iu.edu oob2.n13.ctc.grnoc.iu.edu" -u jdratlif https://vpn.iu.edu/groups'
+  vpn: 'sudo openconnect --juniper -s "vpn-slice 10.0.0.0/8 awx-test.bldc.grnoc.iu.edu awx.grnoc.iu.edu oob2.n13.ctc.grnoc.iu.edu account.bldc.net.internet2.edu account.wash2.net.internet2.edu" -u jdratlif https://vpn.iu.edu/groups'
 
 keychain_bin: '/usr/local/bin/keychain'
 
