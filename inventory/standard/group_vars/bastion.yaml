@@ -70,6 +70,7 @@ ssh_host_configs:
   # dev servers
   dev:
     HostName: jdratlif-dev7.ctc.grnoc.iu.edu
+    LocalForward: '29999 localhost:5901'
 
   # DNS servers
   dns:
