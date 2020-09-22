@@ -4,7 +4,7 @@ aliases:
   rpm7: 'rpm --define="_gpg_name globalnoc@iu.edu"'
   vpn: >-
     sudo openconnect --juniper
-    -s "vpn-slice 10.0.0.0/8 {{ vpn_hosts | join(\" \") }}"
+    -s "vpn-slice 10.0.0.0/8 {{ vpn_hosts | join(\\" \\") }}"
     -u jdratlif https://vpn.iu.edu/groups
 
 keychain_bin: '/usr/local/bin/keychain'
