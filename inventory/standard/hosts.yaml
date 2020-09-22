@@ -76,13 +76,13 @@ all:
                             compute3.cloud.bldc.grnoc.iu.edu:
                             compute4.cloud.bldc.grnoc.iu.edu:
                             compute5.cloud.bldc.grnoc.iu.edu:
-                          compute_ctc:
-                            hosts:
-                              compute.cloud.ctc.grnoc.iu.edu:
-                              compute2.cloud.ctc.grnoc.iu.edu:
-                              compute3.cloud.ctc.grnoc.iu.edu:
-                              compute4.cloud.ctc.grnoc.iu.edu:
-                              compute5.cloud.ctc.grnoc.iu.edu:
+                        compute_ctc:
+                          hosts:
+                            compute.cloud.ctc.grnoc.iu.edu:
+                            compute2.cloud.ctc.grnoc.iu.edu:
+                            compute3.cloud.ctc.grnoc.iu.edu:
+                            compute4.cloud.ctc.grnoc.iu.edu:
+                            compute5.cloud.ctc.grnoc.iu.edu:
                     awx:
                       hosts:
                         awx.grnoc.iu.edu:
