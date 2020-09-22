@@ -24,7 +24,7 @@ ssh_host_configs:
   # CEN hosts
 
   # nagios servers
-  cen-mon-bldc:
+  'cen-mon-bldc cen-mon':
     HostName: mon.bldc.net.cen.ct.gov
   cen-mon-ehct:
     HostName: mon.ehct.net.cen.ct.gov
@@ -70,20 +70,19 @@ ssh_host_configs:
   # dev servers
   dev:
     HostName: jdratlif-dev7.ctc.grnoc.iu.edu
-    LocalForward: '29999 localhost:5901'
 
   # DNS servers
   dns:
     HostName: db2.grnoc.iu.edu
 
   # Frontend servers
-  frontend-bldc:
+  'frontend-bldc frontend':
     HostName: frontend.tsds.bldc.grnoc.iu.edu
   frontend-ctc:
     HostName: frontend.tsds.ctc.grnoc.iu.edu
 
   # NAGIOS servers
-  mon-bldc:
+  'mon-bldc mon nocmon':
     HostName: nocmon.bldc.grnoc.iu.edu
   mon-ctc:
     HostNAme: nocmon.ctc.grnoc.iu.edu
@@ -111,11 +110,11 @@ ssh_host_configs:
     HostName: build.grnoc.iu.edu
 
   # rabbit hosts
-  rabbit:
+  'rabbit-bldc rabbit':
     HostName: rabbitmq.tsds.bldc.grnoc.iu.edu
 
   # TSDS services hosts
-  services-bldc:
+  'services-bldc services':
     HostName: services.tsds.bldc.grnoc.iu.edu
   services-ctc:
     HostName: services.tsds.ctc.grnoc.iu.edu
@@ -152,20 +151,26 @@ ssh_host_configs:
 
   # Internet2 hosts
 
+  # Bastion hosts
+  'i2-bastion-bldc i2-bastion':
+    HostName: bastion.bldc.net.internet2.edu
+  i2-bastion-wash2:
+    HostName: bastion.wash2.net.internet2.edu
+
   # BURP servers
-  'i2-burp i2-burp-bldc i2-burp-wash2':
+  'i2-burp-bldc i2-burp-wash2 i2-burp':
     HostName: backup.ctc.net.internet2.edu
 
   # frontend servers
-  i2-frontend-bldc:
+  'i2-frontend-bldc i2-frontend':
     HostName: frontend.tsds.bldc.net.internet2.edu
   i2-frontend-wash2:
     HostName: frontend.tsds.wash2.net.internet2.edu
 
   # NAGIOS servers
-  i2-mon-bldc:
+  'i2-mon-bldc i2-mon i2-nocmon':
     HostName: mon.bldc.net.internet2.edu
-  i2-mon-wash2:
+  'i2-mon-wash2 i2-nocmon-wash2':
     HostName: mon.wash2.net.internet2.edu
 
   # mongo servers
@@ -184,25 +189,25 @@ ssh_host_configs:
     HostName: mongo3.tsds.wash2.net.internet2.edu
 
   # rabbit servers
-  i2-rabbit-bldc:
+  'i2-rabbit-bldc i2-rabbit':
     HostName: rabbitmq.tsds.bldc.net.internet2.edu
   i2-rabbit-wash2:
     HostName: rabbitmq.tsds.wash2.net.internet2.edu
 
   # TSDS services servers
-  i2-services-bldc:
+  'i2-services-bldc i2-services':
     HostName: services.tsds.bldc.net.internet2.edu
   i2-services-wash2:
     HostName: services.tsds.wash2.net.internet2.edu
 
   # SNAPP servers
-  'i2-snapp-bldc i2-simp-bldc':
+  'i2-snapp-bldc i2-simp-bldc i2-snapp i2-simp':
     HostName: snapp-collector.bldc.net.internet2.edu
   'i2-snapp-wash2 i2-simp-wash2':
     HostName: snapp-collector.wash2.net.internet2.edu
 
   # Visual Network servers
-  i2-vn-bldc:
+  'i2-vn-bldc i2-vn':
     HostName: vn.bldc.net.internet2.edu
   i2-vn-wash2:
     HostName: vn.wash2.net.internet2.edu
@@ -216,13 +221,13 @@ ssh_host_configs:
   # MCNC hosts
 
   # AlertMon servers
-  mcnc-alertmon-1:
+  'mcnc-alertmon-1 mcnc-alertmon':
     HostName: mon-01.globalnoc.mcnc.org
   mcnc-alertmon-2:
     HostName: mon-02.globalnoc.mcnc.org
 
   # frontend servers
-  mcnc-frontend-1:
+  'mcnc-frontend-1 mcnc-frontend':
     HostName: snapp-frontend-01.globalnoc.mcnc.org
   mcnc-frontend-2:
     HostName: snapp-frontend-02.globalnoc.mcnc.org
@@ -230,7 +235,7 @@ ssh_host_configs:
     HostName: snapp-frontend-test-01.globalnoc.mcnc.org
 
   # KVM servers
-  mcnc-kvm-1:
+  'mcnc-kvm-1 mcnc-kvm':
     HostName: snapp-01.globalnoc.mcnc.org
   mcnc-kvm-2:
     HostName: snapp-02.globalnoc.mcnc.org
@@ -238,7 +243,7 @@ ssh_host_configs:
     HostName: snapp-test-01.globalnoc.mcnc.org
 
   # mongo servers
-  mcnc-mongo-1:
+  'mcnc-mongo-1 mcnc-mongo':
     HostName: snapp-shard-01.globalnoc.mcnc.org
   mcnc-mongo-2:
     HostName: snapp-shard-02.globalnoc.mcnc.org
@@ -246,7 +251,7 @@ ssh_host_configs:
     HostName: snapp-shard-test-01.globalnoc.mcnc.org
 
   # portal servers
-  mcnc-portal-1:
+  'mcnc-portal-1 mcnc-portal':
     HostName: snapp-portal-01.globalnoc.mcnc.org
   mcnc-portal-2:
     HostName: snapp-portal-02.globalnoc.mcnc.org
@@ -254,7 +259,7 @@ ssh_host_configs:
     HostName: snapp-portal-test-01.globalnoc.mcnc.org
 
   # rabbit servers
-  mcnc-rabbit-1:
+  'mcnc-rabbit-1 mcnc-rabbit':
     HostName: snapp-rabbit-01.globalnoc.mcnc.org
   mcnc-rabbit-2:
     HostName: snapp-rabbit-02.globalnoc.mcnc.org
@@ -262,7 +267,7 @@ ssh_host_configs:
     HostName: snapp-rabbit-test-01.globalnoc.mcnc.org
 
   # TSDS services servers
-  mcnc-services-1:
+  'mcnc-services-1 mcnc-services':
     HostName: snapp-services-01.globalnoc.mcnc.org
   mcnc-services-2:
     HostName: snapp-services-02.globalnoc.mcnc.org
@@ -270,7 +275,7 @@ ssh_host_configs:
     HostName: snapp-services-test-01.globalnoc.mcnc.org
 
   # SNAPP/SIMP servers
-  'mcnc-snapp-1 mcnc-simp-1':
+  'mcnc-snapp-1 mcnc-simp-1 mcnc-snapp mcnc-simp':
     HostName: snapp-collector-01.globalnoc.mcnc.org
   'mcnc-snapp-2 mcnc-simp-2':
     HostName: snapp-collector-02.globalnoc.mcnc.org
