@@ -1,0 +1,3 @@
+---
+aliases:
+  myansible: 'source ~/myansible/bin/activate'
