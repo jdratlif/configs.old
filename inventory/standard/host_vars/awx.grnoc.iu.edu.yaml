@@ -1,3 +1,0 @@
----
-aliases:
-  awx: 'sudo docker exec -it awx_task /bin/bash'
