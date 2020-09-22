@@ -173,7 +173,7 @@ all:
                     tsds.boul.nwave.noaa.gov:
                 nwave_other:
                   children:
-                    awx:
+                    nwave_awx:
                       hosts:
                         awx.bldc.nwave.noaa.gov:
                         awx.ctc.nwave.noaa.gov:
