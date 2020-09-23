@@ -21,7 +21,7 @@ ssh_host_configs:
     HostName: skip.grnoc.iu.edu
   xaiver:
     HostName: xaiver.technoplaza.net
-    Port: 2022
+    Port: 2202
 
 use_keychain: true
 use_vnc: true
