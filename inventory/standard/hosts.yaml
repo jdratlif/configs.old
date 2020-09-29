@@ -167,7 +167,6 @@ all:
                     snapp.boul.nwave.noaa.gov:
                     snapp-arbiter.boul.nwave.noaa.gov:
                     snapp-portal.bldc.nwave.noaa.gov:
-                    snapp-arbiter.boul.nwave.noaa.gov:
                     snapp-services.bldc.nwave.noaa.gov:
                     snapp-services.ctc.nwave.noaa.gov:
                     snapp-shard.bldc.nwave.noaa.gov:
