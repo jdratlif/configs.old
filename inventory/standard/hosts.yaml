@@ -166,6 +166,12 @@ all:
                     snapp.ctc.nwave.noaa.gov:
                     snapp.boul.nwave.noaa.gov:
                     snapp-arbiter.boul.nwave.noaa.gov:
+                    snapp-collector.bldc.nwave.noaa.gov:
+                    snapp-collector.ctc.nwave.noaa.gov:
+                    snapp-frontend.bldc.nwave.noaa.gov:
+                    snapp-frontend.ctc.nwave.noaa.gov:
+                    snapp-rabbit.bldc.nwave.noaa.gov:
+                    snapp-rabbit.ctc.nwave.noaa.gov:
                     snapp-portal.bldc.nwave.noaa.gov:
                     snapp-services.bldc.nwave.noaa.gov:
                     snapp-services.ctc.nwave.noaa.gov:
