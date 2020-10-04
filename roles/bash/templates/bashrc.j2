@@ -26,15 +26,15 @@ bind -m vi-insert "\C-l":clear-screen
 shopt -s histappend
 shopt -s histverify
 
-export HISTTIMEFORMAT="%h %d %H:%M:%S "
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-export HISTCONTROL="ignorespace:erasedups"
+HISTTIMEFORMAT="%h %d %H:%M:%S "
+HISTSIZE=10000
+HISTFILESIZE=10000
+HISTCONTROL="ignorespace:erasedups"
 
-export SUDO_EDITOR=vim
+SUDO_EDITOR=vim
 
-export PAGER='less -X'
-export LIBVIRT_DEFAULT_URI='qemu:///system'
+PAGER='less -X'
+LIBVIRT_DEFAULT_URI='qemu:///system'
 
 # begin local path augments
 {% if path_local_pre is defined %}
@@ -48,7 +48,7 @@ PATH="$PATH:{{ path_local_post | join(':') }}"
 # begin local exports
 {% if exports is defined %}
 {% for item in exports | dictsort %}
-export {{ item[0] }}='{{ item[1] }}'
+{{ item[0] }}='{{ item[1] }}'
 {% endfor %}
 {% endif %}
 # end local exports
@@ -57,7 +57,7 @@ export {{ item[0] }}='{{ item[1] }}'
 {% for item in functions | dictsort %}
 function {{ item[0] }} {
 {% for line in item[1] %}
-     {{ line }}
+    {{ line }}
 {% endfor %}
 }
 {% endfor %}
