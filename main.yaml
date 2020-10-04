@@ -7,18 +7,6 @@
       import_role:
         name: common
 
-    - name: ensure home directory exists
-      file:
-        path: '{{ home_dir }}'
-        state: directory
-        owner: '{{ user }}'
-        group: '{{ group }}'
-        mode: '0700'
-
-    - name: cleanup old config files
-      import_role:
-        name: cleanup
-
     - name: setup bash profile
       import_role:
         name: bash
@@ -26,12 +14,6 @@
     - name: setup gitconfig
       import_role:
         name: gitconfig
-
-    # disable i3 since we're using mate now
-    # - name: setup i3
-    #   import_role:
-    #     name: i3
-    #   when: use_i3
 
     - name: setup perltidy
       import_role:
