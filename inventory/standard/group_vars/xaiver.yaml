@@ -1,4 +1,8 @@
 ---
+aliases:
+  ls: '/bin/ls --color=auto'
+  ll: '/bin/ls -l --color=auto'
+
 gitconfig:
   name: 'John Ratliff'
   email: 'john@technoplaza.net'
