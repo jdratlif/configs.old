@@ -2,10 +2,10 @@
 Host {{ host[0] }}
 {% for name, value in host[1].items() %}
 {% if value is string %}
-{{ name }} {{ value }}
+    {{ name }} {{ value }}
 {% else %}
 {% for v in value %}
-{{ name }} {{ v }}
+    {{ name }} {{ v }}
 {% endfor %}
 {% endif %}
 {% endfor %}
