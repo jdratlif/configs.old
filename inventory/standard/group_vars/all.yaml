@@ -2,6 +2,8 @@
 aliases:
   fix_perms: 'find . -type f -exec chmod 644 {} \; ; find . -type d -exec chmod 755 {} \;'
   git_oneline: 'git log --oneline'
+  ls: 'ls --color=auto'
+  ll: 'ls -l --color=auto'
   ipt: 'sudo iptables --line-numbers -n -v -L'
 
 ssh_authorized_keys:
