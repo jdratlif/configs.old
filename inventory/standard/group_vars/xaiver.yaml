@@ -6,47 +6,23 @@ gitconfig:
 ssh_host_configs:
   noaa-bldc:
     Hostname: 'bastion.bldc.nwave.noaa.gov'
-    PKCS11Provider: '/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so'
-    LocalForward: '5950 localhost:5950'
-    LocalForward: '5951 localhost:5951'
-    LocalForward: '5952 localhost:5952'
-    LocalForward: '5953 localhost:5953'
-    LocalForward: '5954 localhost:5954'
-    LocalForward: '5955 localhost:5955'
-    LocalForward: '5956 localhost:5956'
-    LocalForward: '5957 localhost:5957'
-    LocalForward: '5958 localhost:5958'
-    LocalForward: '5959 localhost:5959'
-
-ssh_host_configs:
   noaa-ctc:
     Hostname: 'bastion.ctc.nwave.noaa.gov'
-    PKCS11Provider: '/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so'
-    LocalForward: '5950 localhost:5950'
-    LocalForward: '5951 localhost:5951'
-    LocalForward: '5952 localhost:5952'
-    LocalForward: '5953 localhost:5953'
-    LocalForward: '5954 localhost:5954'
-    LocalForward: '5955 localhost:5955'
-    LocalForward: '5956 localhost:5956'
-    LocalForward: '5957 localhost:5957'
-    LocalForward: '5958 localhost:5958'
-    LocalForward: '5959 localhost:5959'
-
-ssh_host_configs:
   noaa-boul:
     Hostname: 'bastion.boul.nwave.noaa.gov'
+  'noaa-bldc noaa-ctc noaa-boul':
     PKCS11Provider: '/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so'
-    LocalForward: '5950 localhost:5950'
-    LocalForward: '5951 localhost:5951'
-    LocalForward: '5952 localhost:5952'
-    LocalForward: '5953 localhost:5953'
-    LocalForward: '5954 localhost:5954'
-    LocalForward: '5955 localhost:5955'
-    LocalForward: '5956 localhost:5956'
-    LocalForward: '5957 localhost:5957'
-    LocalForward: '5958 localhost:5958'
-    LocalForward: '5959 localhost:5959'
+    LocalForward:
+      - '5950 localhost:5950'
+      - '5951 localhost:5951'
+      - '5952 localhost:5952'
+      - '5953 localhost:5953'
+      - '5954 localhost:5954'
+      - '5955 localhost:5955'
+      - '5956 localhost:5956'
+      - '5957 localhost:5957'
+      - '5958 localhost:5958'
+      - '5959 localhost:5959'
 
 use_vnc: true
 use_vscode_git: true
