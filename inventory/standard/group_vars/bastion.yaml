@@ -95,6 +95,10 @@ ssh_host_configs:
   netflow-dev-agg-ctc:
     HostName: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
 
+  # old physical np-dev3
+  np-dev3-old:
+    Hostname: 140.182.45.84
+
   # out of band devices
   oob-n13:
     HostName: oob.n13.ctc.grnoc.iu.edu
