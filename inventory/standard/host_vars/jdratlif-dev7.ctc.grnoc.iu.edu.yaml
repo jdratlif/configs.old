@@ -35,3 +35,4 @@ vpn_hosts:
   - awx.bldc.nwave.noaa.gov
   - awx.ctc.nwave.noaa.gov
   - oob2.n13.ctc.grnoc.iu.edu
+  - weblogin.nwave.noaa.gov
