@@ -190,6 +190,8 @@ all:
                         awx.bldc.nwave.noaa.gov:
                         awx.ctc.nwave.noaa.gov:
                   hosts:
+                    backup.boul.nwave.noaa.gov:
+                    backup.ctc.nwave.noaa.gov:
                     dist.bldc.nwave.noaa.gov:
                     mysql.bldc.nwave.noaa.gov:
                     mysql.ctc.nwave.noaa.gov:
