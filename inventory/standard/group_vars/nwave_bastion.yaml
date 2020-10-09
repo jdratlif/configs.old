@@ -19,5 +19,7 @@ ssh_host_configs:
     HostName: 'mysql.bldc.nwave.noaa.gov'
   puppet:
     HostName: 'dist.nwave.noaa.gov'
+  snapp-arbiter.boul.nwave.noaa.gov:
+    Hostname: '140.172.4.29'
 
 use_tmux: true
