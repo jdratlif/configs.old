@@ -109,6 +109,9 @@ ssh_host_configs:
   pdu-n13:
     User: grnoc
     Hostname: 10.241.3.54
+    Ciphers: aes256-cbc
+    HostKeyAlgorithms: ssh-dss
+    KexAlgorithms: diffie-hellman-group1-sha1
 
   # portal servers
   portal-intl:
