@@ -34,6 +34,5 @@ vpn_hosts:
   - awx-test.bldc.grnoc.iu.edu
   - awx.bldc.nwave.noaa.gov
   - awx.ctc.nwave.noaa.gov
-  - oob2.bc10.bldc.grnoc.iu.edu
   - oob2.n13.ctc.grnoc.iu.edu
   - weblogin.nwave.noaa.gov
