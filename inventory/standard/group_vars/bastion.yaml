@@ -99,9 +99,10 @@ ssh_host_configs:
   np-dev3-old:
     Hostname: 140.182.45.84
 
-  # out of band devices
-  oob-n13:
-    HostName: oob.n13.ctc.grnoc.iu.edu
+  # pdu devices
+  pdu-bc10:
+    User: grnoc
+    HostName: 10.240.3.15
     KexAlgorithms: diffie-hellman-group1-sha1
     Ciphers: aes256-cbc
 
