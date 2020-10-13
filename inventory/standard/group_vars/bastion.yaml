@@ -102,8 +102,12 @@ ssh_host_configs:
   # oob devices
   oob-bc10 oob-bc10-1:
     Hostname: oob.bc10.bldc.grnoc.iu.edu
+    Ciphers: aes256-cbc
+    KexAlgorithms: diffie-hellman-group1-sha1
   oob-bc10-2:
     Hostname: oob.bc10.bldc.grnoc.iu.edu
+    Ciphers: aes256-cbc
+    KexAlgorithms: diffie-hellman-group1-sha1
 
   # pdu devices
   pdu-bc10:
