@@ -99,6 +99,12 @@ ssh_host_configs:
   np-dev3-old:
     Hostname: 140.182.45.84
 
+  # oob devices
+  oob-bc10 oob-bc10-1:
+    Hostname: oob.bldc.grnoc.iu.edu
+  oob-bc10-2:
+    Hostname: oob.bldc.grnoc.iu.edu
+
   # pdu devices
   pdu-bc10:
     User: grnoc
