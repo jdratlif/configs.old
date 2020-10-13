@@ -101,9 +101,9 @@ ssh_host_configs:
 
   # oob devices
   oob-bc10 oob-bc10-1:
-    Hostname: oob.bldc.grnoc.iu.edu
+    Hostname: oob.bc10.bldc.grnoc.iu.edu
   oob-bc10-2:
-    Hostname: oob.bldc.grnoc.iu.edu
+    Hostname: oob.bc10.bldc.grnoc.iu.edu
 
   # pdu devices
   pdu-bc10:
