@@ -17,83 +17,83 @@ ssh_host_configs:
 
   # SNAPP servers
   areon-snapp-frcy:
-    HostName: snapp.frcy.areon.net
+    Hostname: snapp.frcy.areon.net
   areon-snapp-fyvl:
-    HostName: snapp.fyvl.areon.net
+    Hostname: snapp.fyvl.areon.net
 
   # CEN hosts
 
   # nagios servers
   'cen-mon-bldc cen-mon':
-    HostName: mon.bldc.net.cen.ct.gov
+    Hostname: mon.bldc.net.cen.ct.gov
   cen-mon-ehct:
-    HostName: mon.ehct.net.cen.ct.gov
+    Hostname: mon.ehct.net.cen.ct.gov
 
   # portal servers
   cen-portal:
-    HostName: grafana.net.cen.ct.gov
+    Hostname: grafana.net.cen.ct.gov
 
   # SNAPP servers
   cen-snapp:
-    HostName: snapp.net.cen.ct.gov
+    Hostname: snapp.net.cen.ct.gov
 
   # internal hosts
 
   # BURP servers
   burp:
-    HostName: backup.grnoc.iu.edu
+    Hostname: backup.grnoc.iu.edu
   burp-ctc:
-    HostName: backup.ictc.ilight.net
+    Hostname: backup.ictc.ilight.net
 
   # GlobalNOC cloud
   cloud-bldc-1:
-    HostName: compute.cloud.bldc.grnoc.iu.edu
+    Hostname: compute.cloud.bldc.grnoc.iu.edu
   cloud-bldc-2:
-    HostName: compute2.cloud.bldc.grnoc.iu.edu
+    Hostname: compute2.cloud.bldc.grnoc.iu.edu
   cloud-bldc-3:
-    HostName: compute3.cloud.bldc.grnoc.iu.edu
+    Hostname: compute3.cloud.bldc.grnoc.iu.edu
   cloud-bldc-4:
-    HostName: compute4.cloud.bldc.grnoc.iu.edu
+    Hostname: compute4.cloud.bldc.grnoc.iu.edu
   cloud-bldc-5:
-    HostName: compute5.cloud.bldc.grnoc.iu.edu
+    Hostname: compute5.cloud.bldc.grnoc.iu.edu
   cloud-ctc-1:
-    HostName: compute.cloud.ctc.grnoc.iu.edu
+    Hostname: compute.cloud.ctc.grnoc.iu.edu
   cloud-ctc-2:
-    HostName: compute2.cloud.ctc.grnoc.iu.edu
+    Hostname: compute2.cloud.ctc.grnoc.iu.edu
   cloud-ctc-3:
-    HostName: compute3.cloud.ctc.grnoc.iu.edu
+    Hostname: compute3.cloud.ctc.grnoc.iu.edu
   cloud-ctc-4:
-    HostName: compute4.cloud.ctc.grnoc.iu.edu
+    Hostname: compute4.cloud.ctc.grnoc.iu.edu
   cloud-ctc-5:
-    HostName: compute5.cloud.ctc.grnoc.iu.edu
+    Hostname: compute5.cloud.ctc.grnoc.iu.edu
 
   # dev servers
   dev:
-    HostName: jdratlif-dev7.ctc.grnoc.iu.edu
+    Hostname: jdratlif-dev7.ctc.grnoc.iu.edu
 
   # DNS servers
   dns:
-    HostName: db2.grnoc.iu.edu
+    Hostname: db2.grnoc.iu.edu
 
   # Frontend servers
   'frontend-bldc frontend':
-    HostName: frontend.tsds.bldc.grnoc.iu.edu
+    Hostname: frontend.tsds.bldc.grnoc.iu.edu
   frontend-ctc:
-    HostName: frontend.tsds.ctc.grnoc.iu.edu
+    Hostname: frontend.tsds.ctc.grnoc.iu.edu
 
   # NAGIOS servers
   'mon-bldc mon nocmon':
-    HostName: nocmon.bldc.grnoc.iu.edu
+    Hostname: nocmon.bldc.grnoc.iu.edu
   mon-ctc:
-    HostNAme: nocmon.ctc.grnoc.iu.edu
+    Hostname: nocmon.ctc.grnoc.iu.edu
 
   # NetFlow servers
   netflow-dev-master:
-    HostName: netflow-dev-es-master-01.ctc.grnoc.iu.edu
+    Hostname: netflow-dev-es-master-01.ctc.grnoc.iu.edu
   netflow-dev-agg-bldc:
-    HostName: netflow-dev-es-agg-01.bldc.grnoc.iu.edu
+    Hostname: netflow-dev-es-agg-01.bldc.grnoc.iu.edu
   netflow-dev-agg-ctc:
-    HostName: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
+    Hostname: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
 
   # old physical np-dev3
   np-dev3-old:
@@ -102,121 +102,124 @@ ssh_host_configs:
   # pdu devices
   pdu-bc10:
     User: grnoc
-    HostName: 10.240.3.15
+    Hostname: 10.240.3.15
     Ciphers: aes256-cbc
     HostKeyAlgorithms: ssh-dss
     KexAlgorithms: diffie-hellman-group1-sha1
+  pdu-n13:
+    User: grnoc
+    Hostname: 10.241.3.54
 
   # portal servers
   portal-intl:
-    HostName: grafana.intl.grnoc.iu.edu
+    Hostname: grafana.intl.grnoc.iu.edu
 
   # puppet master
   puppet:
-    HostName: build.grnoc.iu.edu
+    Hostname: build.grnoc.iu.edu
 
   # rabbit hosts
   'rabbit-bldc rabbit':
-    HostName: rabbitmq.tsds.bldc.grnoc.iu.edu
+    Hostname: rabbitmq.tsds.bldc.grnoc.iu.edu
 
   # TSDS services hosts
   'services-bldc services':
-    HostName: services.tsds.bldc.grnoc.iu.edu
+    Hostname: services.tsds.bldc.grnoc.iu.edu
   services-ctc:
-    HostName: services.tsds.ctc.grnoc.iu.edu
+    Hostname: services.tsds.ctc.grnoc.iu.edu
 
   # SIMP hosts
   'simp-comp simp-tsds':
-    HostName: simp-comp.bldc.grnoc.iu.edu
+    Hostname: simp-comp.bldc.grnoc.iu.edu
   simp-data:
-    HostName: simp-data2.bldc.grnoc.iu.edu
+    Hostname: simp-data2.bldc.grnoc.iu.edu
   simp-poller:
-    HostName: simp-poller.bldc.grnoc.iu.edu
+    Hostname: simp-poller.bldc.grnoc.iu.edu
 
   # SNAPP host
   snapp:
-    HostName: snapp.bldc.grnoc.iu.edu
+    Hostname: snapp.bldc.grnoc.iu.edu
 
   # Campus Network Switches
   switch-bldc-bc10:
-    HostName: 10.240.120.37
+    Hostname: 10.240.120.37
     User: cni_rancid
 
   switch-bldc-ak23:
-    HostName: 10.240.120.71
+    Hostname: 10.240.120.71
     User: cni_rancid
 
   switch-ctc-n13:
-    HostName: 10.241.120.43
+    Hostname: 10.241.120.43
     User: cni_rancid
 
   # Juniper VMX servers
   vmx:
-    HostName: 140.182.45.188
+    Hostname: 140.182.45.188
     User: root
 
   # Internet2 hosts
 
   # Bastion hosts
   'i2-bastion-bldc i2-bastion':
-    HostName: bastion.bldc.net.internet2.edu
+    Hostname: bastion.bldc.net.internet2.edu
   i2-bastion-wash2:
-    HostName: bastion.wash2.net.internet2.edu
+    Hostname: bastion.wash2.net.internet2.edu
 
   # BURP servers
   'i2-burp-bldc i2-burp-wash2 i2-burp':
-    HostName: backup.ctc.net.internet2.edu
+    Hostname: backup.ctc.net.internet2.edu
 
   # frontend servers
   'i2-frontend-bldc i2-frontend':
-    HostName: frontend.tsds.bldc.net.internet2.edu
+    Hostname: frontend.tsds.bldc.net.internet2.edu
   i2-frontend-wash2:
-    HostName: frontend.tsds.wash2.net.internet2.edu
+    Hostname: frontend.tsds.wash2.net.internet2.edu
 
   # NAGIOS servers
   'i2-mon-bldc i2-mon i2-nocmon':
-    HostName: mon.bldc.net.internet2.edu
+    Hostname: mon.bldc.net.internet2.edu
   'i2-mon-wash2 i2-nocmon-wash2':
-    HostName: mon.wash2.net.internet2.edu
+    Hostname: mon.wash2.net.internet2.edu
 
   # mongo servers
   i2-mongo-bldc-1:
-    HostName: mongo1.tsds.bldc.net.internet2.edu
+    Hostname: mongo1.tsds.bldc.net.internet2.edu
   i2-mongo-bldc-2:
-    HostName: mongo2.tsds.bldc.net.internet2.edu
+    Hostname: mongo2.tsds.bldc.net.internet2.edu
   i2-mongo-bldc-3:
-    HostName: mongo3.tsds.bldc.net.internet2.edu
+    Hostname: mongo3.tsds.bldc.net.internet2.edu
 
   i2-mongo-wash2-1:
-    HostName: mongo1.tsds.wash2.net.internet2.edu
+    Hostname: mongo1.tsds.wash2.net.internet2.edu
   i2-mongo-wash2-2:
-    HostName: mongo2.tsds.wash2.net.internet2.edu
+    Hostname: mongo2.tsds.wash2.net.internet2.edu
   i2-mongo-wash2-3:
-    HostName: mongo3.tsds.wash2.net.internet2.edu
+    Hostname: mongo3.tsds.wash2.net.internet2.edu
 
   # rabbit servers
   'i2-rabbit-bldc i2-rabbit':
-    HostName: rabbitmq.tsds.bldc.net.internet2.edu
+    Hostname: rabbitmq.tsds.bldc.net.internet2.edu
   i2-rabbit-wash2:
-    HostName: rabbitmq.tsds.wash2.net.internet2.edu
+    Hostname: rabbitmq.tsds.wash2.net.internet2.edu
 
   # TSDS services servers
   'i2-services-bldc i2-services':
-    HostName: services.tsds.bldc.net.internet2.edu
+    Hostname: services.tsds.bldc.net.internet2.edu
   i2-services-wash2:
-    HostName: services.tsds.wash2.net.internet2.edu
+    Hostname: services.tsds.wash2.net.internet2.edu
 
   # SNAPP servers
   'i2-snapp-bldc i2-simp-bldc i2-snapp i2-simp':
-    HostName: snapp-collector.bldc.net.internet2.edu
+    Hostname: snapp-collector.bldc.net.internet2.edu
   'i2-snapp-wash2 i2-simp-wash2':
-    HostName: snapp-collector.wash2.net.internet2.edu
+    Hostname: snapp-collector.wash2.net.internet2.edu
 
   # Visual Network servers
   'i2-vn-bldc i2-vn':
-    HostName: vn.bldc.net.internet2.edu
+    Hostname: vn.bldc.net.internet2.edu
   i2-vn-wash2:
-    HostName: vn.wash2.net.internet2.edu
+    Hostname: vn.wash2.net.internet2.edu
 
   # old network devices
   sdn-dcp2.ashb.net.internet2.edu:
@@ -228,82 +231,82 @@ ssh_host_configs:
 
   # AlertMon servers
   'mcnc-alertmon-1 mcnc-alertmon':
-    HostName: mon-01.globalnoc.mcnc.org
+    Hostname: mon-01.globalnoc.mcnc.org
   mcnc-alertmon-2:
-    HostName: mon-02.globalnoc.mcnc.org
+    Hostname: mon-02.globalnoc.mcnc.org
 
   # frontend servers
   'mcnc-frontend-1 mcnc-frontend':
-    HostName: snapp-frontend-01.globalnoc.mcnc.org
+    Hostname: snapp-frontend-01.globalnoc.mcnc.org
   mcnc-frontend-2:
-    HostName: snapp-frontend-02.globalnoc.mcnc.org
+    Hostname: snapp-frontend-02.globalnoc.mcnc.org
   mcnc-frontend-test:
-    HostName: snapp-frontend-test-01.globalnoc.mcnc.org
+    Hostname: snapp-frontend-test-01.globalnoc.mcnc.org
 
   # KVM servers
   'mcnc-kvm-1 mcnc-kvm':
-    HostName: snapp-01.globalnoc.mcnc.org
+    Hostname: snapp-01.globalnoc.mcnc.org
   mcnc-kvm-2:
-    HostName: snapp-02.globalnoc.mcnc.org
+    Hostname: snapp-02.globalnoc.mcnc.org
   mcnc-kvm-test:
-    HostName: snapp-test-01.globalnoc.mcnc.org
+    Hostname: snapp-test-01.globalnoc.mcnc.org
 
   # mongo servers
   'mcnc-mongo-1 mcnc-mongo':
-    HostName: snapp-shard-01.globalnoc.mcnc.org
+    Hostname: snapp-shard-01.globalnoc.mcnc.org
   mcnc-mongo-2:
-    HostName: snapp-shard-02.globalnoc.mcnc.org
+    Hostname: snapp-shard-02.globalnoc.mcnc.org
   mcnc-mongo-test:
-    HostName: snapp-shard-test-01.globalnoc.mcnc.org
+    Hostname: snapp-shard-test-01.globalnoc.mcnc.org
 
   # portal servers
   'mcnc-portal-1 mcnc-portal':
-    HostName: snapp-portal-01.globalnoc.mcnc.org
+    Hostname: snapp-portal-01.globalnoc.mcnc.org
   mcnc-portal-2:
-    HostName: snapp-portal-02.globalnoc.mcnc.org
+    Hostname: snapp-portal-02.globalnoc.mcnc.org
   mcnc-portal-test:
-    HostName: snapp-portal-test-01.globalnoc.mcnc.org
+    Hostname: snapp-portal-test-01.globalnoc.mcnc.org
 
   # rabbit servers
   'mcnc-rabbit-1 mcnc-rabbit':
-    HostName: snapp-rabbit-01.globalnoc.mcnc.org
+    Hostname: snapp-rabbit-01.globalnoc.mcnc.org
   mcnc-rabbit-2:
-    HostName: snapp-rabbit-02.globalnoc.mcnc.org
+    Hostname: snapp-rabbit-02.globalnoc.mcnc.org
   mcnc-rabbit-test:
-    HostName: snapp-rabbit-test-01.globalnoc.mcnc.org
+    Hostname: snapp-rabbit-test-01.globalnoc.mcnc.org
 
   # TSDS services servers
   'mcnc-services-1 mcnc-services':
-    HostName: snapp-services-01.globalnoc.mcnc.org
+    Hostname: snapp-services-01.globalnoc.mcnc.org
   mcnc-services-2:
-    HostName: snapp-services-02.globalnoc.mcnc.org
+    Hostname: snapp-services-02.globalnoc.mcnc.org
   mcnc-services-test:
-    HostName: snapp-services-test-01.globalnoc.mcnc.org
+    Hostname: snapp-services-test-01.globalnoc.mcnc.org
 
   # SNAPP/SIMP servers
   'mcnc-snapp-1 mcnc-simp-1 mcnc-snapp mcnc-simp':
-    HostName: snapp-collector-01.globalnoc.mcnc.org
+    Hostname: snapp-collector-01.globalnoc.mcnc.org
   'mcnc-snapp-2 mcnc-simp-2':
-    HostName: snapp-collector-02.globalnoc.mcnc.org
+    Hostname: snapp-collector-02.globalnoc.mcnc.org
   mcnc-snapp-ncren:
-    HostName: snapp.ncren.net
+    Hostname: snapp.ncren.net
   'mcnc-snapp-test mcnc-simp-test':
-    HostName: snapp-collector-test-01.globalnoc.mcnc.org
+    Hostname: snapp-collector-test-01.globalnoc.mcnc.org
 
   # OneNet hosts
 
   # portal servers
   onenet-portal:
-    HostName: snapp-portal.noc.onenet.net
+    Hostname: snapp-portal.noc.onenet.net
 
   # SNAPP servers
   onenet-snapp:
-    HostName: snapp.noc.onenet.net
+    Hostname: snapp.noc.onenet.net
 
   # OSHEAN hosts
 
   # SNAPP/SIMP servers
   'oshean-snapp oshean-simp':
-    HostName: snapp.oshean.org
+    Hostname: snapp.oshean.org
 
 use_tmux: true
