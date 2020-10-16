@@ -265,11 +265,11 @@ ssh_host_configs:
     Hostname: snapp-test-01.globalnoc.mcnc.org
 
   # mongo servers
-  'mcnc-mongo-1 mcnc-mongo':
+  'mcnc-mongo-1 mcnc-mongo mcnc-shard-1 mcnc-shard':
     Hostname: snapp-shard-01.globalnoc.mcnc.org
-  mcnc-mongo-2:
+  'mcnc-mongo-2 mcnc-shard-2':
     Hostname: snapp-shard-02.globalnoc.mcnc.org
-  mcnc-mongo-test:
+  'mcnc-mongo-test mcnc-shard-test':
     Hostname: snapp-shard-test-01.globalnoc.mcnc.org
 
   # portal servers
