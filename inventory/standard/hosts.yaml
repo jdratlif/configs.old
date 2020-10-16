@@ -192,7 +192,7 @@ all:
                   hosts:
                     backup.boul.nwave.noaa.gov:
                     backup.ctc.nwave.noaa.gov:
-                    dist.bldc.nwave.noaa.gov:
+                    dist.nwave.noaa.gov:
                     mysql.bldc.nwave.noaa.gov:
                     mysql.ctc.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
