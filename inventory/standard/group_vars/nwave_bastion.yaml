@@ -18,7 +18,7 @@ ssh_host_configs:
   dns:
     HostName: 'mysql.bldc.nwave.noaa.gov'
   puppet:
-    HostName: 'dist.nwave.noaa.gov'
+    HostName: 'dist.bldc.nwave.noaa.gov'
   snapp-arbiter.boul.nwave.noaa.gov:
     Hostname: '140.172.4.29'
 
