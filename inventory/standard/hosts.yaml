@@ -103,6 +103,7 @@ all:
                     mon-02.grnoc.iu.edu:
                     nocmon.bldc.grnoc.iu.edu:
                     nocmon.ctc.grnoc.iu.edu:
+                    sn-tools-dev.grnoc.iu.edu:
                     syslog.grnoc.iu.edu:
                     webdoc-01.grnoc.iu.edu:
         i2_all:
