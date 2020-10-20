@@ -135,6 +135,12 @@ all:
                 i2_other:
                   hosts:
                     backup.ctc.net.internet2.edu:
+                    compute.os.bldc.net.internet2.edu:
+                    compute2.os.bldc.net.internet2.edu:
+                    compute3.os.bldc.net.internet2.edu:
+                    compute.os.wash2.net.internet2.edu:
+                    compute2.os.wash2.net.internet2.edu:
+                    compute3.os.wash2.net.internet2.edu:
                     mon.bldc.net.internet2.edu:
                     mon.wash2.net.internet2.edu:
         nwave_all:
