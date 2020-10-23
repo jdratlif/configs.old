@@ -16,10 +16,10 @@ ssh_host_common_configs:
 
 ssh_host_configs:
   dns:
-    HostName: 'mysql.bldc.nwave.noaa.gov'
+    Hostname: 'mysql.bldc.nwave.noaa.gov'
+  flow-new.ctc.nwave.noaa.gov:
+    Hostname: '140.182.54.57'
   puppet:
-    HostName: 'dist.bldc.nwave.noaa.gov'
-  snapp-arbiter.boul.nwave.noaa.gov:
-    Hostname: '140.172.4.29'
+    Hostname: 'dist.bldc.nwave.noaa.gov'
 
 use_tmux: true
