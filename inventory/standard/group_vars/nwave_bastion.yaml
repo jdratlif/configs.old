@@ -17,8 +17,6 @@ ssh_host_common_configs:
 ssh_host_configs:
   dns:
     Hostname: 'mysql.bldc.nwave.noaa.gov'
-  flow-new.ctc.nwave.noaa.gov:
-    Hostname: '140.182.54.57'
   puppet:
     Hostname: 'dist.bldc.nwave.noaa.gov'
 
