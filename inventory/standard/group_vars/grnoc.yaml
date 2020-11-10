@@ -16,6 +16,7 @@ aliases:
   p_lookup: 'sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
   p_force: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --agent_disabled_lockfile=/nonexisting'
   p_test: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
+  puppet: 'sudo /opt/puppetlabs/bin/puppet'
   socks5: 'ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
   socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
 

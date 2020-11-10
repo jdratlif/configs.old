@@ -1,3 +1,0 @@
----
-aliases:
-  puppet: 'sudo /opt/puppetlabs/bin/puppet'
