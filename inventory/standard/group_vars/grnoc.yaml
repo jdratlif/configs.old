@@ -20,6 +20,13 @@ aliases:
   socks5: 'ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
   socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
 
+functions:
+  perl_libs:
+    - >-
+      MY_LIBS=$(grep '^use' $1 | tr -d '\n')
+    - >-
+      perl -M'Data::Dump qw(pp)' -e "${MY_LIBS} pp(\%INC);"
+
 gitconfig:
   name: 'John Ratliff'
   email: 'jdratlif@globalnoc.iu.edu'
