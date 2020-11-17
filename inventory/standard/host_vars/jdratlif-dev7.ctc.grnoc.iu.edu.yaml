@@ -14,14 +14,15 @@ ssh_host_common_configs:
 
 ssh_host_configs:
   leap:
-    HostName: leap.grnoc.iu.edu
+    Hostname: leap.grnoc.iu.edu
   jump:
-    HostName: jump.grnoc.iu.edu
+    Hostname: jump.grnoc.iu.edu
   skip:
-    HostName: skip.grnoc.iu.edu
+    Hostname: skip.grnoc.iu.edu
   xaiver:
-    HostName: xaiver.technoplaza.net
+    Hostname: xaiver.technoplaza.net
     Port: '2202'
+    RemoteForward: '192.168.1.5:5907 localhost:5901'
 
 use_keychain: true
 use_vnc: true
