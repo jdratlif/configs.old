@@ -196,6 +196,18 @@ all:
                       hosts:
                         awx.bldc.nwave.noaa.gov:
                         awx.ctc.nwave.noaa.gov:
+                    nwave_compute:
+                      children:
+                        nwave_compute_bldc:
+                          hosts:
+                            compute.cloud.bldc.nwave.noaa.gov:
+                            compute2.cloud.bldc.nwave.noaa.gov:
+                            compute3.cloud.bldc.nwave.noaa.gov:
+                        nwave_compute_ctc:
+                          hosts:
+                            compute.cloud.ctc.nwave.noaa.gov:
+                            compute2.cloud.ctc.nwave.noaa.gov:
+                            compute3.cloud.ctc.nwave.noaa.gov:
                   hosts:
                     backup.boul.nwave.noaa.gov:
                     backup.ctc.nwave.noaa.gov:
