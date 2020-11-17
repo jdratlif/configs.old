@@ -11,7 +11,7 @@ ssh_host_configs:
   noaa-boul:
     Hostname: 'bastion.boul.nwave.noaa.gov'
   'noaa-bldc noaa-ctc noaa-boul':
-    PKCS11Provider: '/usr/lib/x86_64-linux-gnu/pkcs11/opensc-pkcs11.so'
+    PKCS11Provider: '/usr/lib/opensc-pkcs11.so'
     DynamicForward: '192.168.1.5:7070'
     LocalForward:
       - '192.168.1.5:5950 localhost:5950'
