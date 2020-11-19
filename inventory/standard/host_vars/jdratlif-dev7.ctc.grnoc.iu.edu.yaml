@@ -36,6 +36,9 @@ vpn_hosts:
   - awx.bldc.nwave.noaa.gov
   - awx.ctc.nwave.noaa.gov
   - build.grnoc.iu.edu
+  - cloud.grnoc.iu.edu
+  - cloud.bldc.grnoc.iu.edu
+  - cloud.ctc.grnoc.iu.edu
   - oob2.n13.ctc.grnoc.iu.edu
   - nessus.boul.nwave.noaa.gov
   - weblogin.nwave.noaa.gov
