@@ -212,6 +212,8 @@ all:
                     backup.boul.nwave.noaa.gov:
                     backup.ctc.nwave.noaa.gov:
                     dist.bldc.nwave.noaa.gov:
+                    kerb.bldc.nwave.noaa.gov:
+                    kerb.ctc.nwave.noaa.gov:
                     mysql.bldc.nwave.noaa.gov:
                     mysql.ctc.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
