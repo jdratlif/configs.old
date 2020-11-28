@@ -11,7 +11,6 @@ ssh_host_configs:
   noaa-boul:
     Hostname: 'bastion.boul.nwave.noaa.gov'
   'noaa-bldc noaa-ctc noaa-boul':
-    PKCS11Provider: '/usr/lib/opensc-pkcs11.so'
     DynamicForward: '192.168.1.5:7070'
     LocalForward:
       - '192.168.1.5:5950 localhost:5950'
@@ -24,6 +23,8 @@ ssh_host_configs:
       - '192.168.1.5:5957 localhost:5957'
       - '192.168.1.5:5958 localhost:5958'
       - '192.168.1.5:5959 localhost:5959'
+    PKCS11Provider: '/usr/lib64/opensc-pkcs11.so'
+    PubkeyAcceptedKeyTypes: '+ssh-rsa'
 
-use_vnc: true
+use_vnc: false
 use_vscode_git: true
