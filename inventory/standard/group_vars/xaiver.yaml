@@ -25,6 +25,10 @@ ssh_host_configs:
       - '192.168.1.5:5959 localhost:5959'
     PKCS11Provider: '/usr/lib64/opensc-pkcs11.so'
     PubkeyAcceptedKeyTypes: '+ssh-rsa'
+  raspberrypi:
+    Hostname: '68.45.17.181'
+    Port: '2222'
+    User: 'pi'
 
 use_vnc: false
 use_vscode_git: true
