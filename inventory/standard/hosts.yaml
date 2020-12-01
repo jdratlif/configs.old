@@ -20,6 +20,7 @@ all:
                     io3.bldc.grnoc.iu.edu:
                     irnc-grm.grnoc.iu.edu:
                     jdratlif-dev7.ctc.grnoc.iu.edu:
+                    map-builder.grnoc.iu.edu:
                     mongo-arbiter.areon.net:
                     netflow-dev-es-master-01.ctc.grnoc.iu.edu:
                     netflow-dev-es-agg-01.bldc.grnoc.iu.edu:
