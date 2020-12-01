@@ -173,6 +173,7 @@ all:
                     flow.boul.nwave.noaa.gov:
                     flow-new.bldc.nwave.noaa.gov:
                     flow-new.ctc.nwave.noaa.gov:
+                    map-builder.bldc.nwave.noaa.gov:
                     portal-demo.bldc.nwave.noaa.gov:
                     portal-demo.ctc.nwave.noaa.gov:
                     simp-poller.silv.nwave.noaa.gov:
