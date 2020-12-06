@@ -228,5 +228,5 @@ all:
                     tools2.silv.nwave.noaa.gov:
     xaiver:
       hosts:
-        fedora:
+        htpcc:
           ansible_connection: local
