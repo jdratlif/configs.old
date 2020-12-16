@@ -22,6 +22,9 @@ all:
                     jdratlif-dev7.ctc.grnoc.iu.edu:
                     map-builder.grnoc.iu.edu:
                     mongo-arbiter.areon.net:
+                    mongo1.tsds.grnoc.iu.edu:
+                    mongo2.tsds.grnoc.iu.edu:
+                    mongo3.tsds.grnoc.iu.edu:
                     netflow-dev-es-master-01.ctc.grnoc.iu.edu:
                     netflow-dev-es-agg-01.bldc.grnoc.iu.edu:
                     netflow-dev-es-agg-01.ctc.grnoc.iu.edu:
@@ -130,6 +133,7 @@ all:
                   hosts:
                     frontend.tsds.bldc.net.internet2.edu:
                     frontend.tsds.wash2.net.internet2.edu:
+                    map-builder.net.internet2.edu:
                     mongo1.tsds.bldc.net.internet2.edu:
                     mongo2.tsds.bldc.net.internet2.edu:
                     mongo3.tsds.bldc.net.internet2.edu:
