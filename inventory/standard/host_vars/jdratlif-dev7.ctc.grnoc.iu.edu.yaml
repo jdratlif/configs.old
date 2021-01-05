@@ -40,5 +40,7 @@ vpn_hosts:
   - cloud.bldc.grnoc.iu.edu
   - cloud.ctc.grnoc.iu.edu
   - oob2.n13.ctc.grnoc.iu.edu
+  - os.bldc.net.internet2.edu
+  - os.wash2.net.internet2.edu
   - nessus.boul.nwave.noaa.gov
   - weblogin.nwave.noaa.gov
