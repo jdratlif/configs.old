@@ -133,6 +133,7 @@ all:
               children:
                 i2_ndca:
                   hosts:
+                    carto.net.internet2.edu:
                     frontend.tsds.bldc.net.internet2.edu:
                     frontend.tsds.wash2.net.internet2.edu:
                     map-builder.net.internet2.edu:
