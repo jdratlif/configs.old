@@ -51,6 +51,8 @@ all:
                     snapp.fyvl.areon.net:
                     snapp.oshean.org:
                     snapp.net.cen.ct.gov:
+                    snapp-01.globalnoc.mcnc.org:
+                    snapp-02.globalnoc.mcnc.org:
                     snapp-test-01.globalnoc.mcnc.org:
                     snapp-collector-01.globalnoc.mcnc.org:
                     snapp-collector-02.globalnoc.mcnc.org:
