@@ -136,6 +136,7 @@ all:
                 i2_ndca:
                   hosts:
                     bgp.bldc.net.internet2.edu:
+                    bgp.wash2.net.internet2.edu:
                     carto.net.internet2.edu:
                     frontend.tsds.bldc.net.internet2.edu:
                     frontend.tsds.wash2.net.internet2.edu:
