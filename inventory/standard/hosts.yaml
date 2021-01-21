@@ -140,6 +140,8 @@ all:
                     carto.net.internet2.edu:
                     frontend.tsds.bldc.net.internet2.edu:
                     frontend.tsds.wash2.net.internet2.edu:
+                    grafana.bldc.net.internet2.edu:
+                    grafana.wash2.net.internet2.edu:
                     map-builder.net.internet2.edu:
                     mongo1.tsds.bldc.net.internet2.edu:
                     mongo2.tsds.bldc.net.internet2.edu:

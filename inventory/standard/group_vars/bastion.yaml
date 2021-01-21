@@ -189,6 +189,12 @@ ssh_host_configs:
   i2-frontend-wash2:
     Hostname: frontend.tsds.wash2.net.internet2.edu
 
+  # grafana servers
+  'i2-grafana-bldc i2-grafana':
+    Hostname: grafana.bldc.net.internet2.edu
+  i2-grafana-wash2:
+    Hostname: grafana.wash2.net.internet2.edu
+
   # NAGIOS servers
   'i2-mon-bldc i2-mon i2-nocmon':
     Hostname: mon.bldc.net.internet2.edu
