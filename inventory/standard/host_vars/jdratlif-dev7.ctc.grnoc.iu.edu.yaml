@@ -44,4 +44,6 @@ vpn_hosts:
   - os.bldc.net.internet2.edu
   - os.wash2.net.internet2.edu
   - nessus.boul.nwave.noaa.gov
+  - snapp-frontend-01.globalnoc.mcnc.org
+  - snapp-frontend-02.globalnoc.mcnc.org
   - weblogin.nwave.noaa.gov
