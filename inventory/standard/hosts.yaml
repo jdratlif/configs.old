@@ -102,6 +102,7 @@ all:
                     build.grnoc.iu.edu:
                     db-01.grnoc.iu.edu:
                     db-02.grnoc.iu.edu:
+                    db.oshean.org:
                     jenkins.grnoc.iu.edu:
                     mon.bldc.net.cen.ct.gov:
                     mon.ehct.net.cen.ct.gov:
