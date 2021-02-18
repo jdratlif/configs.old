@@ -22,7 +22,7 @@ my_prompt() {
         PS1="(${GREEN}"
     fi
 
-    PS1="${PS1}${exit_code}${RESET}) ${BLUE}\u${RESET}@${GREEN}\H${RESET} [${BLUE}\w${RESET}]\n\$ "
+    PS1="${PS1}${exit_code}${RESET}) ${GREEN}\H${RESET} [${BLUE}\w${RESET}]\n\$ "
 
     if [ ! -z $VIRTUAL_ENV ]; then
         venv=$(basename $VIRTUAL_ENV)
