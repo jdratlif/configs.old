@@ -27,11 +27,11 @@ ssh_host_configs:
     Hostname: compute2.cloud.ctc
   'cloud-ctc-3 compute-ctc-3':
     Hostname: compute3.cloud.ctc
-  'cope.ctc.nwave.noaa.gov cope.ctc':
-    Hostname: 140.182.46.156
-  dns:
-    Hostname: 'mysql.bldc.nwave.noaa.gov'
+  'dns dns-bldc':
+    Hostname: db2.bldc
+  'dns-ctc':
+    Hostname: db2.ctc
   puppet:
-    Hostname: 'dist.bldc.nwave.noaa.gov'
+    Hostname: dist.bldc
 
 use_tmux: true
