@@ -27,6 +27,8 @@ ssh_host_configs:
     Hostname: compute2.cloud.ctc
   'cloud-ctc-3 compute-ctc-3':
     Hostname: compute3.cloud.ctc
+  'cope.bldc.nwave.noaa.gov':
+    Hostname: '140.182.54.14'
   'dns dns-bldc':
     Hostname: db2.bldc
   'dns-ctc':
