@@ -9,7 +9,7 @@ fi
 PROMPT_COMMAND=my_prompt
 
 git_branch() {
-    return $(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'
 }
 
 my_prompt() {
@@ -22,7 +22,7 @@ my_prompt() {
     YELLOW="\[\033[01;33m\]"
     CYAN="\[\033[00;36m\]"
 
-    GIT_BRANCH=git_branch()
+    GIT_BRANCH=$(git_branch)
 
     if [ $exit_code -ne 0 ]; then
         PS1="(${RED}"
