@@ -17,4 +17,4 @@
       file:
         path: '{{ home_dir }}/termite.terminfo'
         state: absent
-  when: not terminfo.stat.isreg
+  when: not terminfo.stat.exists
