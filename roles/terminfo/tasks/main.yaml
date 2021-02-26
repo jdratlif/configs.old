@@ -1,0 +1,20 @@
+---
+- name: check for termite terminfo
+  stat:
+    path: '{{ home_dir }}/.terminfo/x/xterm-termite'
+  register: terminfo
+
+- name: create termite terminfo
+  block:
+    - name: copy termite.terminfo
+      copy:
+        src: termite.terminfo
+        dest: '{{ home_dir }}/termite.terminfo'
+    - name: use terminfo compiler
+      command:
+        cmd: 'tic -x {{ home_dir}}/termite.terminfo'
+    - name: delete termite.terminfo file
+      file:
+        path: '{{ home_dir }}/termite.terminfo'
+        state: absent
+  when: not terminfo.stat.isreg

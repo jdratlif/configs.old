@@ -23,6 +23,10 @@
       import_role:
         name: ssh
 
+    - name: setup local terminfo
+      import_role:
+        name: terminfo
+
     - name: setup tmux config
       import_role:
         name: tmux
