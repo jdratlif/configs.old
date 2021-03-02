@@ -13,6 +13,7 @@ functions:
 ssh_host_common_configs:
   ControlMaster: 'auto'
   ControlPath: '~/.ssh/%r@%h:%p'
+  Tunnel: 'no'
 
 ssh_host_configs:
   'cloud-bldc-1 compute-bldc-1 cloud-bldc compute-bldc':
