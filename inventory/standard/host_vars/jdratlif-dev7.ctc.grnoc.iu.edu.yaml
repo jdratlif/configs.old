@@ -24,6 +24,7 @@ ssh_host_configs:
     Port: '2202'
     RemoteForward: '192.168.1.5:5907 localhost:5901'
 
+use_i3: true
 use_keychain: true
 use_vnc: true
 use_vscode_git: true

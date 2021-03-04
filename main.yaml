@@ -15,6 +15,11 @@
       import_role:
         name: gitconfig
 
+    - name: setup i3
+      import_role:
+        name: i3
+      when: use_i3
+
     - name: setup perltidy
       import_role:
         name: perltidy

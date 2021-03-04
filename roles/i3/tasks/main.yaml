@@ -8,6 +8,6 @@
 - name: setup i3status config
   copy:
     src: i3status.conf
-    dest: '{{ home_dir }}/.i3status'
+    dest: '{{ home_dir }}/.config/i3status/config'
     owner: '{{ user }}'
     group: '{{ group }}'
