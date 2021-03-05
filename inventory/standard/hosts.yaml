@@ -15,6 +15,8 @@ all:
                 internal_ndca:
                   hosts:
                     carto.bldc.grnoc.iu.edu:
+                    flow-proc.bldc.grnoc.iu.edu:
+                    flow-store.bldc.grnoc.iu.edu:
                     frontend.tsds.bldc.grnoc.iu.edu:
                     frontend.tsds.ctc.grnoc.iu.edu:
                     haproxy.bldc.grnoc.iu.edu:
