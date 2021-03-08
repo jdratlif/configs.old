@@ -233,6 +233,8 @@ all:
                     db2.boul.nwave.noaa.gov:
                     db2.ctc.nwave.noaa.gov:
                     dist.bldc.nwave.noaa.gov:
+                    idp.bldc.nwave.noaa.gov:
+                    idp.ctc.nwave.noaa.gov:
                     kerb.bldc.nwave.noaa.gov:
                     kerb.ctc.nwave.noaa.gov:
                     mysql.bldc.nwave.noaa.gov:
