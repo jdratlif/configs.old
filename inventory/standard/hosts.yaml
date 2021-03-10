@@ -237,8 +237,8 @@ all:
                     idp.ctc.nwave.noaa.gov:
                     kerb.bldc.nwave.noaa.gov:
                     kerb.ctc.nwave.noaa.gov:
-                    mysql.bldc.nwave.noaa.gov:
-                    mysql.ctc.nwave.noaa.gov:
+                    mon.bldc.nwave.noaa.gov:
+                    mon.ctc.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
                     ps.ctc.nwave.noaa.gov:
                     tools.bldc.nwave.noaa.gov:
