@@ -23,7 +23,7 @@ ssh_host_configs:
       - '192.168.1.5:5957 localhost:5957'
       - '192.168.1.5:5958 localhost:5958'
       - '192.168.1.5:5959 localhost:5959'
-    PKCS11Provider: '/usr/lib/x86_64-linux-gnu/opensc-pkcs11.so'
+    PKCS11Provider: '/usr/lib/opensc-pkcs11.so'
     PubkeyAcceptedKeyTypes: '+ssh-rsa'
   raspberrypi:
     Hostname: '68.45.17.181'
