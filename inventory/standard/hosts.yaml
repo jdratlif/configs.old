@@ -41,8 +41,6 @@ all:
                     netsage-portal-sox.grnoc.iu.edu:
                     netsage-simp.grnoc.iu.edu:
                     np-dev3.grnoc.iu.edu:
-                    np-dev3-old:
-                      ansible_host: 140.182.45.84
                     rabbitmq.tsds.bldc.grnoc.iu.edu:
                     services.tsds.bldc.grnoc.iu.edu:
                     services.tsds.ctc.grnoc.iu.edu:
