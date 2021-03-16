@@ -30,13 +30,14 @@ use_vnc: true
 use_vscode_git: true
 
 vpn_hosts:
-  - account.bldc.net.internet2.edu
-  - account.wash2.net.internet2.edu
+  - account.net.internet2.edu
+  - account.noc.onenet.net
   - awx.grnoc.iu.edu
   - awx-test.bldc.grnoc.iu.edu
   - awx.bldc.nwave.noaa.gov
   - awx.ctc.nwave.noaa.gov
   - build.grnoc.iu.edu
+  - cosign.areon.net
   - cloud.grnoc.iu.edu
   - cloud.bldc.grnoc.iu.edu
   - cloud.ctc.grnoc.iu.edu
@@ -47,4 +48,7 @@ vpn_hosts:
   - nessus.boul.nwave.noaa.gov
   - snapp-frontend-01.globalnoc.mcnc.org
   - snapp-frontend-02.globalnoc.mcnc.org
+  - weblogin.grnoc.iu.edu
+  - weblogin.net.cen.ct.gov
+  - weblogin.oshean.org
   - weblogin.nwave.noaa.gov
