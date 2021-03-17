@@ -97,6 +97,10 @@ ssh_host_configs:
     Hostname: netflow-dev-es-agg-01.ctc.grnoc.iu.edu
 
   # oob devices
+  oob-ak23 oob-ak23-1:
+    Hostname: oob.ak23.bldc.grnoc.iu.edu
+    Ciphers: aes256-cbc
+    KexAlgorithms: diffie-hellman-group1-sha1
   oob-bc10 oob-bc10-1:
     Hostname: oob.bc10.bldc.grnoc.iu.edu
     Ciphers: aes256-cbc
