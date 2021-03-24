@@ -19,6 +19,7 @@ all:
                     flow-store.bldc.grnoc.iu.edu:
                     frontend.tsds.bldc.grnoc.iu.edu:
                     frontend.tsds.ctc.grnoc.iu.edu:
+                    grafana.net.pennren.net:
                     grafana.net.uits.iu.edu:
                     grafana.sox.net:
                     haproxy.bldc.grnoc.iu.edu:

@@ -29,8 +29,8 @@ ssh_host_configs:
   cen-mon-ehct:
     Hostname: mon.ehct.net.cen.ct.gov
 
-  # portal servers
-  cen-portal:
+  # grafana servers
+  cen-grafana:
     Hostname: grafana.net.cen.ct.gov
 
   # SNAPP servers
@@ -85,6 +85,8 @@ ssh_host_configs:
   # grafana servers
   'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
+  'pennren-grafana'
+    Hostname: grafana.net.pennren.net
   'sox-grafana':
     Hostname: grafana.sox.net
 
