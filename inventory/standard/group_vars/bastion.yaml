@@ -82,6 +82,12 @@ ssh_host_configs:
   frontend-ctc:
     Hostname: frontend.tsds.ctc.grnoc.iu.edu
 
+  # grafana servers
+  'grafana-iu':
+    Hostname: grafana.net.uits.iu.edu
+  'grafana-sox':
+    Hostname: grafana.sox.net
+
   # NAGIOS servers
   'mon-bldc mon nocmon':
     Hostname: nocmon.bldc.grnoc.iu.edu
@@ -127,10 +133,6 @@ ssh_host_configs:
     Ciphers: aes256-cbc
     HostKeyAlgorithms: ssh-dss
     KexAlgorithms: diffie-hellman-group1-sha1
-
-  # portal servers
-  portal-intl:
-    Hostname: grafana.intl.grnoc.iu.edu
 
   # puppet master
   puppet:
