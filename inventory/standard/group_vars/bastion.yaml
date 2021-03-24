@@ -83,9 +83,9 @@ ssh_host_configs:
     Hostname: frontend.tsds.ctc.grnoc.iu.edu
 
   # grafana servers
-  'grafana-iu':
+  'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
-  'grafana-sox':
+  'sox-grafana':
     Hostname: grafana.sox.net
 
   # NAGIOS servers
