@@ -49,6 +49,10 @@ vpn_hosts:
   - nessus.boul.nwave.noaa.gov
   - snapp-frontend-01.globalnoc.mcnc.org
   - snapp-frontend-02.globalnoc.mcnc.org
+  - snapp-frontend-test-01.globalnoc.mcnc.org
+  - snapp-services-01.globalnoc.mcnc.org
+  - snapp-services-02.globalnoc.mcnc.org
+  - snapp-services-test-01.globalnoc.mcnc.org
   - weblogin.grnoc.iu.edu
   - weblogin.net.cen.ct.gov
   - weblogin.oshean.org
