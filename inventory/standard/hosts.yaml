@@ -22,6 +22,7 @@ all:
                     frontend.tsds.ctc.grnoc.iu.edu:
                     grafana.grnoc.iu.edu:
                     grafana.caaren.grnoc.iu.edu:
+                    grafana.campuses.grnoc.iu.edu:
                     grafana.net.pennren.net:
                     grafana.net.rt.iu.edu:
                     grafana.net.uits.iu.edu:
