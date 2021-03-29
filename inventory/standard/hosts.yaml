@@ -25,9 +25,12 @@ all:
                     grafana.campuses.grnoc.iu.edu:
                     grafana.gpn.grnoc.iu.edu:
                     grafana.ilight.net:
+                    grafana.indiana.gigapop.net:
+                    grafana.intl.grnoc.iu.edu:
                     grafana.net.pennren.net:
                     grafana.net.rt.iu.edu:
                     grafana.net.uits.iu.edu:
+                    grafana.omnipop.btaa.org:
                     grafana.sox.net:
                     haproxy.bldc.grnoc.iu.edu:
                     haproxy.ctc.grnoc.iu.edu:
