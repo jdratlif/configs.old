@@ -24,6 +24,7 @@ all:
                     grafana.caaren.grnoc.iu.edu:
                     grafana.campuses.grnoc.iu.edu:
                     grafana.gpn.grnoc.iu.edu:
+                    grafana.ilight.net:
                     grafana.net.pennren.net:
                     grafana.net.rt.iu.edu:
                     grafana.net.uits.iu.edu:
