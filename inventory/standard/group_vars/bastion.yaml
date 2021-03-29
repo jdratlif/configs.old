@@ -23,6 +23,10 @@ ssh_host_configs:
 
   # CEN hosts
 
+  # carto host
+  'cen-carto':
+    Hostname: carto.net.cen.ct.gov
+
   # nagios servers
   'cen-mon-bldc cen-mon':
     Hostname: mon.bldc.net.cen.ct.gov
