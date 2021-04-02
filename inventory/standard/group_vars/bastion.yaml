@@ -6,6 +6,10 @@ functions:
     - name=$1
     - shift
     - ansible-playbook main.yaml -e "host_override=$name" "$@"
+  fix_agent:
+    - MY_DIR=$(ls -ldt /tmp/ssh-* | grep jdratlif | head -1 | awk '{print $NF}')
+    - MY_AGENT=$(ls ${MY_DIR}/agent*)
+    - export SSH_AUTH_SOCK=$MY_AGENT
 
 ssh_host_common_configs:
   ControlMaster: 'auto'
