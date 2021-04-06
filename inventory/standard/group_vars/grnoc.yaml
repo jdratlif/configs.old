@@ -21,6 +21,11 @@ aliases:
   socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
 
 functions:
+  p_disable:
+    - >-
+      if [ x$1 = "x" ]; then msg="testing"; else msg=$1; fi
+    - >-
+      sudo /opt/puppetlabs/puppet/bin/puppet agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
   perl_libs:
     - >-
       MY_LIBS=$(grep '^use' $1 | tr -d '\n')
