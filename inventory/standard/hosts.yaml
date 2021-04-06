@@ -20,6 +20,7 @@ all:
                     flow-store.bldc.grnoc.iu.edu:
                     frontend.tsds.bldc.grnoc.iu.edu:
                     frontend.tsds.ctc.grnoc.iu.edu:
+                    grafana.areon.net:
                     grafana.grnoc.iu.edu:
                     grafana.caaren.grnoc.iu.edu:
                     grafana.campuses.grnoc.iu.edu:
