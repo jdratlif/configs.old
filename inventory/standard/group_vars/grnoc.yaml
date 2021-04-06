@@ -23,7 +23,7 @@ aliases:
 functions:
   p_disable:
     - >-
-      if [ x$1 = "x" ]; then msg="testing"; else msg=$1; fi
+      if [ "x$1" = "x" ]; then msg="testing"; else msg=$1; fi
     - >-
       sudo /opt/puppetlabs/puppet/bin/puppet agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
   perl_libs:
