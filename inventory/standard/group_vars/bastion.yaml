@@ -19,10 +19,13 @@ ssh_host_common_configs:
 ssh_host_configs:
   # AREON hosts
 
+  areon-grafana:
+    Hostname: grafana.areon.net
+
   # SNAPP servers
-  areon-snapp-frcy:
+  areon-snapp areon-snapp-1 areon-snapp-frcy:
     Hostname: snapp.frcy.areon.net
-  areon-snapp-fyvl:
+  areon-snapp-2 areon-snapp-fyvl:
     Hostname: snapp.fyvl.areon.net
 
   # CEN hosts
