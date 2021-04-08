@@ -284,6 +284,10 @@ ssh_host_configs:
   mcnc-frontend-test:
     Hostname: snapp-frontend-test-01.globalnoc.mcnc.org
 
+  # kerberos servers
+  'mcnc-kerb mcnc-kerb-1':
+    Hostname: tools-01.globalnoc.mcnc.org
+
   # KVM servers
   'mcnc-kvm-1 mcnc-kvm':
     Hostname: snapp-01.globalnoc.mcnc.org
