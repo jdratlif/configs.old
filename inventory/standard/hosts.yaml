@@ -122,6 +122,7 @@ all:
                     mon-02.grnoc.iu.edu:
                     sn-tools-dev.grnoc.iu.edu:
                     syslog.grnoc.iu.edu:
+                    tools-01.globalnoc.mcnc.org:
                     webdoc-01.grnoc.iu.edu:
         # all onenet hosts need established connection sharing (ControlMaster)
         # or the OneNet firewall will block you for connecting too many times
