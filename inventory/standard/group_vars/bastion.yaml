@@ -304,6 +304,14 @@ ssh_host_configs:
   'mcnc-mongo-test mcnc-shard-test':
     Hostname: snapp-shard-test-01.globalnoc.mcnc.org
 
+  # nagios
+  'mcnc-mon-test mcnc-nagios-test':
+    Hostname: mon-test-01.globalnoc.mcnc.org
+  'mcnc-mon-1 mcnc-nagios-1 mcnc-mon mcnc-nagios':
+    Hostname: mon-01.globalnoc.mcnc.org
+  'mcnc-mon-2 mcnc-nagios-2':
+    Hostname: mon-02.globalnoc.mcnc.org
+
   # portal servers
   'mcnc-portal-1 mcnc-portal':
     Hostname: snapp-portal-01.globalnoc.mcnc.org

@@ -120,6 +120,9 @@ all:
                     mon.ehct.net.cen.ct.gov:
                     mon-01.grnoc.iu.edu:
                     mon-02.grnoc.iu.edu:
+                    mon-01.globalnoc.mcnc.org:
+                    mon-02.globalnoc.mcnc.org:
+                    mon-test-01.globalnoc.mcnc.org:
                     sn-tools-dev.grnoc.iu.edu:
                     syslog.grnoc.iu.edu:
                     tools-01.globalnoc.mcnc.org:
