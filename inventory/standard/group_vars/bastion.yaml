@@ -98,6 +98,8 @@ ssh_host_configs:
   # grafana servers
   'caaren-grafana':
     Hostname: grafana.caaren.grnoc.iu.edu
+  'campuses-grafana':
+    Hostname: grafana.campuses.grnoc.iu.edu
   'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
   'pennren-grafana':
