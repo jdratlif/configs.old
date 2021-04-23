@@ -96,6 +96,8 @@ ssh_host_configs:
     Hostname: frontend.tsds.ctc.grnoc.iu.edu
 
   # grafana servers
+  'caaren-grafana':
+    Hostname: grafana.caaren.grnoc.iu.edu
   'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
   'pennren-grafana':
