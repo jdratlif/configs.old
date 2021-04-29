@@ -255,6 +255,8 @@ all:
                     mon.ctc.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
                     ps.ctc.nwave.noaa.gov:
+                    syslog.bldc.nwave.noaa.gov:
+                    syslog.ctc.nwave.noaa.gov:
                     tools.bldc.nwave.noaa.gov:
                     tools.ctc.nwave.noaa.gov:
                     tools.boul.nwave.noaa.gov:
