@@ -207,6 +207,14 @@ ssh_host_configs:
   i2-bastion-wash2:
     Hostname: bastion.wash2.net.internet2.edu
 
+  # BGP hosts
+  'i2-bgp':
+    Hostname: openbgp.wash2.net.internet2.edu
+  'i2-bgp-old':
+    Hostname: bgp.ctc.net.internet2.edu
+  'i2-bgp-report':
+    Hostname: bgp.ctc.grnoc.iu.edu
+
   # BURP servers
   'i2-burp-bldc i2-burp-wash2 i2-burp':
     Hostname: backup.ctc.net.internet2.edu

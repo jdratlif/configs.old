@@ -165,6 +165,7 @@ all:
                     mongo1.tsds.wash2.net.internet2.edu:
                     mongo2.tsds.wash2.net.internet2.edu:
                     mongo3.tsds.wash2.net.internet2.edu:
+                    openbgp.wash2.net.internet2.edu:
                     rabbitmq.tsds.bldc.net.internet2.edu:
                     rabbitmq.tsds.wash2.net.internet2.edu:
                     services.tsds.bldc.net.internet2.edu:
