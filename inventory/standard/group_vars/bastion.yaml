@@ -363,8 +363,8 @@ ssh_host_configs:
   # OneNet hosts
 
   # portal servers
-  onenet-portal:
-    Hostname: snapp-portal.noc.onenet.net
+  onenet-grafana:
+    Hostname: grafana.noc.onenet.net
 
   # SNAPP servers
   onenet-snapp:

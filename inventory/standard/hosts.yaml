@@ -139,8 +139,8 @@ all:
                 onenet_ndca:
                   hosts:
                     carto.noc.onenet.net:
+                    grafana.noc.onenet.net:
                     snapp.noc.onenet.net:
-                    snapp-portal.noc.onenet.net:
                 onenet_other:
         i2_all:
           children:
