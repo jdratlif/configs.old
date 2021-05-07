@@ -84,7 +84,7 @@ ssh_host_configs:
     LocalForward:
       - '24478 localhost:5901'
       - '24422 localhost:22'
-  dev2 'jdratlif-dev7.bldc.grnoc.iu.edu':
+  'dev2 jdratlif-dev7.bldc.grnoc.iu.edu':
     Hostname: 140.182.50.129
 
   # DNS servers
