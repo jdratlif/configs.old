@@ -114,6 +114,7 @@ all:
                     backup.ictc.ilight.net:
                     bgp.ctc.grnoc.iu.edu:
                     build.grnoc.iu.edu:
+                    db.areon.net:
                     db-01.grnoc.iu.edu:
                     db-02.grnoc.iu.edu:
                     db.oshean.org:
