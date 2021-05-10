@@ -14,6 +14,7 @@ all:
               children:
                 internal_ndca:
                   hosts:
+                    carto.areon.net:
                     carto.bldc.grnoc.iu.edu:
                     carto.net.cen.ct.gov:
                     flow-proc.bldc.grnoc.iu.edu:
