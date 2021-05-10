@@ -117,6 +117,7 @@ all:
                     db.areon.net:
                     db-01.grnoc.iu.edu:
                     db-02.grnoc.iu.edu:
+                    db.net.cen.ct.gov:
                     db.oshean.org:
                     dc-dev.grnoc.iu.edu:
                     jenkins.grnoc.iu.edu:
