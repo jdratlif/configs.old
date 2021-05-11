@@ -208,9 +208,8 @@ all:
                     cope.ctc.nwave.noaa.gov:
                     flow.bldc.nwave.noaa.gov:
                     flow.ctc.nwave.noaa.gov:
-                    flow.boul.nwave.noaa.gov:
-                    flow-new.bldc.nwave.noaa.gov:
-                    flow-new.ctc.nwave.noaa.gov:
+                    haproxy.bldc.nwave.noaa.gov:
+                    haproxy.ctc.nwave.noaa.gov:
                     map-builder.bldc.nwave.noaa.gov:
                     portal-demo.bldc.nwave.noaa.gov:
                     portal-demo.ctc.nwave.noaa.gov:
