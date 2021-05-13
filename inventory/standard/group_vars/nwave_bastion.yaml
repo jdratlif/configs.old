@@ -32,10 +32,6 @@ ssh_host_configs:
     Hostname: db2.bldc
   'dns-ctc':
     Hostname: db2.ctc
-  'haproxy.bldc haproxy.bldc.nwave.noaa.gov':
-    Hostname: 140.182.54.39
-  'haproxy.ctc haproxy.ctc.nwave.noaa.gov':
-    Hostname: 140.182.54.57
   puppet:
     Hostname: dist.bldc
 
