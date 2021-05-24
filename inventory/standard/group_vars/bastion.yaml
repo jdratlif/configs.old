@@ -114,6 +114,8 @@ ssh_host_configs:
     Hostname: grafana.net.uits.iu.edu
   'pennren-grafana':
     Hostname: grafana.net.pennren.net
+  'rt-grafana':
+    Hostname: grafana.net.rt.iu.edu
   'sox-grafana':
     Hostname: grafana.sox.net
 
