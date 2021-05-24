@@ -339,11 +339,11 @@ ssh_host_configs:
     Hostname: mon-02.globalnoc.mcnc.org
 
   # portal servers
-  'mcnc-portal-1 mcnc-portal':
+  'mcnc-grafana-1 mcnc-grafana mcnc-portal-1 mcnc-portal':
     Hostname: snapp-portal-01.globalnoc.mcnc.org
-  mcnc-portal-2:
+  'mcnc-grafana-2 mcnc-portal-2':
     Hostname: snapp-portal-02.globalnoc.mcnc.org
-  mcnc-portal-test:
+  'mcnc-grafana-test mcnc-portal-test':
     Hostname: snapp-portal-test-01.globalnoc.mcnc.org
 
   # rabbit servers
