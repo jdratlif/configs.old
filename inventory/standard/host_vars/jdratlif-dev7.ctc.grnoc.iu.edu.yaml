@@ -10,8 +10,8 @@ aliases:
 functions:
   yaml_class:
     - for f in *.eyaml; do
-    -   yq e '.classes[] | select(. == '\"$1\"')' $f 2> /dev/null | grep $1 > /dev/null
-    -   if [ $? == 0 ]; then echo $f; fi
+    - '  yq e '.classes[] | select(. == '\"$1\"')' $f 2> /dev/null | grep $1 > /dev/null'
+    - '  if [ $? == 0 ]; then echo $f; fi'
     - done
 
 keychain_bin: '/usr/local/bin/keychain'
