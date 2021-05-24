@@ -17,6 +17,7 @@ all:
                     carto.areon.net:
                     carto.bldc.grnoc.iu.edu:
                     carto.net.cen.ct.gov:
+                    carto-test.grnoc.iu.edu:
                     flow-proc.bldc.grnoc.iu.edu:
                     flow-store.bldc.grnoc.iu.edu:
                     frontend.tsds.bldc.grnoc.iu.edu:
