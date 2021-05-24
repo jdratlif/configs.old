@@ -50,7 +50,19 @@ all:
                     netsage-flow.grnoc.iu.edu:
                     netsage-probe1.grnoc.iu.edu:
                     netsage-portal.grnoc.iu.edu:
+                    netsage-portal-all.grnoc.iu.edu:
+                    netsage-portal-ana.grnoc.iu.edu:
+                    netsage-portal-apr.grnoc.iu.edu:
+                    netsage-portal-frgp.grnoc.iu.edu:
+                    netsage-portal-gpn.grnoc.iu.edu:
+                    netsage-portal.grnoc.iu.edu:
+                    netsage-portal-ilight.grnoc.iu.edu:
+                    netsage-portal-nea3r.grnoc.iu.edu:
+                    netsage-portal-pacwave.grnoc.iu.edu:
+                    netsage-portal-pennren.grnoc.iu.edu:
                     netsage-portal-sox.grnoc.iu.edu:
+                    netsage-portal-suncorridor.grnoc.iu.edu:
+                    netsage-portal-tacc.grnoc.iu.edu:
                     netsage-simp.grnoc.iu.edu:
                     np-dev3.grnoc.iu.edu:
                     rabbitmq.tsds.bldc.grnoc.iu.edu:
