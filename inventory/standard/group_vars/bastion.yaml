@@ -102,10 +102,14 @@ ssh_host_configs:
     Hostname: grafana.caaren.grnoc.iu.edu
   'campuses-grafana':
     Hostname: grafana.campuses.grnoc.iu.edu
+  'gigapop-grafana':
+    Hostname: grafana.indiana.gigapop.net
   'gpn-grafana':
     Hostname: grafana.gpn.grnoc.iu.edu
   'ilight-grafana':
     Hostname: grafana.ilight.net
+  'intl-grafana':
+    Hostname: grafana.intl.grnoc.iu.edu
   'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
   'pennren-grafana':
