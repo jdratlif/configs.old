@@ -42,7 +42,6 @@ all:
                     jdratlif-dev7.bldc.grnoc.iu.edu:
                     jdratlif-dev7.ctc.grnoc.iu.edu:
                     jeuno.ctc.grnoc.iu.edu:
-                    map-builder.grnoc.iu.edu:
                     mongo-arbiter.areon.net:
                     mongo1.tsds.grnoc.iu.edu:
                     mongo2.tsds.grnoc.iu.edu:
