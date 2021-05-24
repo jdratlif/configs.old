@@ -98,6 +98,8 @@ ssh_host_configs:
     Hostname: frontend.tsds.ctc.grnoc.iu.edu
 
   # grafana servers
+  'btaa-grafana':
+    Hostname: grafana.omnipop.btaa.org
   'caaren-grafana':
     Hostname: grafana.caaren.grnoc.iu.edu
   'campuses-grafana':
