@@ -374,6 +374,10 @@ ssh_host_configs:
 
   # OneNet hosts
 
+  # carto hosts
+  onenet-carto:
+    Hostname: carto.noc.onenet.net
+
   # portal servers
   onenet-grafana:
     Hostname: grafana.noc.onenet.net
