@@ -49,7 +49,6 @@ all:
                     netsage-dev.grnoc.iu.edu:
                     netsage-flow.grnoc.iu.edu:
                     netsage-pipeline-dev2.bldc.grnoc.iu.edu:
-                    netsage-probe1.grnoc.iu.edu:
                     netsage-portal.grnoc.iu.edu:
                     netsage-portal-all.grnoc.iu.edu:
                     netsage-portal-ana.grnoc.iu.edu:
