@@ -1,6 +1,6 @@
 ---
 aliases:
-  p: 'sudo /opt/puppetlabs/puppet/bin/puppet agent --test'
+  p: 'puppet agent --test'
   p_environment: >-
     grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
   p_enabled: >-
@@ -13,9 +13,9 @@ aliases:
     else
     echo "puppet is enabled";
     fi
-  p_lookup: 'sudo /opt/puppetlabs/puppet/bin/puppet lookup --merge deep --node'
-  p_force: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --agent_disabled_lockfile=/nonexisting'
-  p_test: 'sudo /opt/puppetlabs/puppet/bin/puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
+  p_lookup: 'puppet lookup --merge deep --node'
+  p_force: 'puppet agent -t --agent_disabled_lockfile=/nonexisting'
+  p_test: 'puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
   puppet: 'sudo /opt/puppetlabs/bin/puppet'
   socks5: 'ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
   socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
@@ -25,7 +25,12 @@ functions:
     - >-
       if [ "x$1" = "x" ]; then msg="testing"; else msg=$1; fi
     - >-
-      sudo /opt/puppetlabs/puppet/bin/puppet agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
+      puppet agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
+  p_logtest:
+    - >-
+      if [ "x$1" = "x" ]; then my_env="jdratlif"; else my_env=$1; fi
+    - >-
+      p_test -E "$my_env" | tee ~/puppet.log ; less -R ~/puppet.log
   perl_libs:
     - >-
       MY_LIBS=$(grep '^use' $1 | tr -d '\n')
