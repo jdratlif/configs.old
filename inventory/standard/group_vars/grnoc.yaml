@@ -17,7 +17,7 @@ functions:
     - >-
       agent="agent --test"
     - >-
-      log="tee ~/puppet.log"
+      log="tee $HOME/puppet.log"
     - >-
       if [[ $action = "env" ]]; then grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
     - >-
