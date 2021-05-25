@@ -6,7 +6,8 @@ aliases:
   ll: 'ls -l --color=auto'
   ipt: 'sudo iptables --line-numbers -n -v -L'
 
-ssh_authorized_keys: []
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDK7TJZCbVG5BDbpK/G3MoNSuebAgepHU2nr88AI1NaBnbjIMuYloLNlDfRSnfmsOJN+g1baQW0x1cIyjaSqQ4iseth+tYnTagNeN9sPZSvBfRkUZB1pBtj74hUKKCF3EoqagBPrAnqeiVDK5vOZdcoXNsCLkWj18jREphtSpEXtf54eZ28dDaHbOOBjwJvlqRKccX/v47ah1Oaaf19BM3XiOkADYEiFd3fDvo/ZEk6hNtyDcNLKpyOP0eFB3hqYyU4MBM+qzdxDAVesfqcz2puLdfD/iV6yV3Gg/UERZE/seW9xsmNr/NqS3Jr5DRE3yygQnMNGayJ0jXDw9oCBgm9IqL5DFkN+ikL4apLsRhC1GBVKn0zlIAmKm0sbN8PxyTPlJJQKeTRXC4Kl1Ttlq4KZgA6Xhraj2DjBaIDa+tsSrpqSOuL9Ma9SwG729qzeZoRAxy3xnL6f52G226p7eNOTSXwTzpJNXRG+i10vzXY7Ld3sls7AuPKHbVgH/NJxHk= jdratlif@skip.grnoc.iu.edu
 
 ssh_host_common_configs:
   ServerAliveCountMax: 3
