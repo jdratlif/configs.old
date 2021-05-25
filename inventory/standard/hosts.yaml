@@ -18,8 +18,6 @@ all:
                     carto.bldc.grnoc.iu.edu:
                     carto.net.cen.ct.gov:
                     carto-test.grnoc.iu.edu:
-                    flow-proc.bldc.grnoc.iu.edu:
-                    flow-store.bldc.grnoc.iu.edu:
                     frontend.tsds.bldc.grnoc.iu.edu:
                     frontend.tsds.ctc.grnoc.iu.edu:
                     grafana.areon.net:
@@ -66,7 +64,6 @@ all:
                     netsage-portal-suncorridor.grnoc.iu.edu:
                     netsage-portal-tacc.grnoc.iu.edu:
                     netsage-simp.grnoc.iu.edu:
-                    np-dev3.grnoc.iu.edu:
                     rabbitmq.tsds.bldc.grnoc.iu.edu:
                     services.tsds.bldc.grnoc.iu.edu:
                     services.tsds.ctc.grnoc.iu.edu:
@@ -178,7 +175,6 @@ all:
                     frontend.tsds.wash2.net.internet2.edu:
                     grafana.bldc.net.internet2.edu:
                     grafana.wash2.net.internet2.edu:
-                    map-builder.net.internet2.edu:
                     mongo1.tsds.bldc.net.internet2.edu:
                     mongo2.tsds.bldc.net.internet2.edu:
                     mongo3.tsds.bldc.net.internet2.edu:
