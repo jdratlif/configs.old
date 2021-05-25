@@ -21,7 +21,7 @@ functions:
     - >-
       if [[ $action = "env" ]]; then grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
     - >-
-      elif [[ $action = "enabled" ]]
+      elif [[ $action = "enabled" ]]; then
     - >2-
         msg=$(sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock 2>/dev/null)
     - >2-
@@ -31,15 +31,17 @@ functions:
     - >2-
         fi
     - >-
-      elif [[ $action = "run" ]]; $cmd $agent "$@" | $log
+      elif [[ $action = "run" ]]; then $cmd $agent "$@" | $log
     - >-
-      elif [[ $action = "test" ]]; $cmd $agent $noop $ignore_lock "$@" | $log
+      elif [[ $action = "test" ]]; then $cmd $agent $noop $ignore_lock "$@" | $log
     - >-
-      elif [[ $action = "force" ]]; $cmd $agent $ignore_lock "$@" | $log
+      elif [[ $action = "force" ]]; then $cmd $agent $ignore_lock "$@" | $log
     - >-
-      elif [[ $action = "lookup" ]]; $cmd lookup --merge deep --node "$@"
+      elif [[ $action = "lookup" ]]; then $cmd lookup --merge deep --node "$@"
     - >-
-      elif [[ $action = "disable" ]]; if [[ -z "$1" ]]; msg="testing"; else msg=$1; fi
+      elif [[ $action = "disable" ]]; then
+    - >2-
+        if [[ -z "$1" ]]; then msg="testing"; else msg=$1; fi
     - >2-
         $cmd agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
     - >-
