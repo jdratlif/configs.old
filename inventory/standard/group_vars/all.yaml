@@ -6,8 +6,7 @@ aliases:
   ll: 'ls -l --color=auto'
   ipt: 'sudo iptables --line-numbers -n -v -L'
 
-ssh_authorized_keys:
-  - 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDfLJkqRu2u0wKI9flvXLdLSfsn4GCNImU/2J2ckP2UtFlWM323E8xzCcmi/SL3gIsgOa75+nPPRApiKk9L8/cfKTG4GT7KLvU31BxTOSSPCxrcbPo67D6Bz1Ad1zMdgRtfQPuwpqIpYy7qag2kANymVQofef58YA51rG6bGgKoc0z/ZeMByDWwV0a9NyeyeaXnirWrP80iJAJK/Q8YbfUb6wYgHEObOL4qAKRSugOoz8Ti1wIeLk0dOeeD8FSpXB6/QO++37pfegMHdfIG0Haf8VtcVQGHs3bUj4ij8P/lbJEs+yOQIOYLvj/ymy0f16iJcIAAUlOK1/RhowdKstWydtX8VDebC+MWrCJE4/epfIn7j0qtu52iW1eRgLM0MQT9w2z4G0GDkUxGjz+2H2g/UL+lmQ28Qk8WaAHich7GLwutfWhsv7GmdirgpyaNj9zcECSnv6XaQW2V+Ovpc4v1zgfFrJdd7+4coiPA93Gt4Tvr49PqkZSBlEtY+W46HG0= john@jdratlif-yoga2'
+ssh_authorized_keys: []
 
 ssh_host_common_configs:
   ServerAliveCountMax: 3
