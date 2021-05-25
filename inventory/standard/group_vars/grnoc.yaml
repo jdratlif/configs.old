@@ -27,13 +27,13 @@ functions:
     - >2-
         fi
     - >-
-      elif [[ $action = "run" ]]; then my_cmd="$puppet agent --test \"$@\" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
+      elif [[ $action = "run" ]]; then my_cmd="$puppet agent --test "$@" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "test" ]]; then my_cmd="$puppet agent --test $ignore_lock --noop \"$@\" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
+      elif [[ $action = "test" ]]; then my_cmd="$puppet agent --test $ignore_lock --noop "$@" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "force" ]]; then my_cmd="$puppet agent --test $ignore_lock \"$@\" 2>&1 | $log" ; echo "running [$my_cmd]..."; eval $my_cmd
+      elif [[ $action = "force" ]]; then my_cmd="$puppet agent --test $ignore_lock "$@" 2>&1 | $log" ; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "lookup" ]]; then my_cmd="$puppet lookup --merge deep --node \"$@\""; echo "running [$my_cmd]..."; eval $my_cmd
+      elif [[ $action = "lookup" ]]; then my_cmd="$puppet lookup --merge deep --node "$@""; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
       elif [[ $action = "disable" ]]; then
     - >2-
