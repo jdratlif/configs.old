@@ -45,6 +45,8 @@ functions:
     - >2-
         $cmd agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
     - >-
+      elif [[ $action = "enable" ]]; then $cmd agent --enable
+    - >-
       else echo "unrecognized action ${action}"
     - >-
       fi
