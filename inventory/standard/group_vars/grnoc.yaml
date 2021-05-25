@@ -21,15 +21,14 @@ functions:
     - >-
       if [[ $action = "env" ]]; grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
     - >-
-      elif [[ $action = "enabled" ]]; sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
+      elif [[ $action = "enabled" ]]
     - >2-
-        if test $? -eq 0; then
-        echo "puppet is disabled";
-        sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
-        | awk -F: "{print \$2}"
-        | sed -e '\''s/["}]//g'\'';
-        else
-        echo "puppet is enabled";
+        msg=$(sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock 2>/dev/null)
+    - >2-
+        if [[ -z $msg ]]; then echo "puppet is enabled"
+    - >2-
+        else echo "puppet is disabled: $(echo $msg | jq .disabled_message)"
+    - >2-
         fi
     - >-
       elif [[ $action = "run" ]]; $cmd $agent "$@" | $log
