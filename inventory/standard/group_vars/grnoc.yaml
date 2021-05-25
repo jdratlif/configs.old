@@ -1,36 +1,52 @@
 ---
 aliases:
-  p: 'puppet agent --test'
-  p_environment: >-
-    grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
-  p_enabled: >-
-    sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock;
-    if test $? -eq 0; then
-    echo "puppet is disabled";
-    sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
-    | awk -F: "{print \$2}"
-    | sed -e '\''s/["}]//g'\'';
-    else
-    echo "puppet is enabled";
-    fi
-  p_lookup: 'puppet lookup --merge deep --node'
-  p_force: 'puppet agent -t --agent_disabled_lockfile=/nonexisting'
-  p_test: 'puppet agent -t --noop --agent_disabled_lockfile=/nonexisting'
   puppet: 'sudo /opt/puppetlabs/bin/puppet'
   socks5: 'ssh -D 17798 -S /tmp/.ssh-skip-socks5-jdratlif -M -fN skip.grnoc.iu.edu; export SOCKS5_PROXY="localhost:17798"'
   socks5_kill: 'ssh -S /tmp/.ssh-skip-socks5-jdratlif -O exit skip.grnoc.iu.edu'
 
 functions:
-  p_disable:
+  p:
     - >-
-      if [ "x$1" = "x" ]; then msg="testing"; else msg=$1; fi
+      if [[ -z "$1" ]]; then action="run"; else action=$1; shift; fi
     - >-
-      puppet agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
-  p_logtest:
+      cmd="sudo /opt/puppetlabs/bin/puppet"
     - >-
-      if [ "x$1" = "x" ]; then my_env="jdratlif"; else my_env=$1; fi
+      test_mode="--noop"
     - >-
-      p_test -E "$my_env" | tee ~/puppet.log ; less -R ~/puppet.log
+      ignore_lock="--agent_disabled_lockfile=/nonexisting"
+    - >-
+      agent="agent --test"
+    - >-
+      log="tee ~/puppet.log"
+    - >-
+      if [[ $action = "env" ]]; grep environment /etc/puppetlabs/puppet/puppet.conf | awk "{print \$3}"
+    - >-
+      elif [[ $action = "enabled" ]]; sudo test -f /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
+    - >2-
+        if test $? -eq 0; then
+        echo "puppet is disabled";
+        sudo cat /opt/puppetlabs/puppet/cache/state/agent_disabled.lock
+        | awk -F: "{print \$2}"
+        | sed -e '\''s/["}]//g'\'';
+        else
+        echo "puppet is enabled";
+        fi
+    - >-
+      elif [[ $action = "run" ]]; $cmd $agent "$@" | $log
+    - >-
+      elif [[ $action = "test" ]]; $cmd $agent $noop $ignore_lock "$@" | $log
+    - >-
+      elif [[ $action = "force" ]]; $cmd $agent $ignore_lock "$@" | $log
+    - >-
+      elif [[ $action = "lookup" ]]; $cmd lookup --merge deep --node "$@"
+    - >-
+      elif [[ $action = "disable" ]]; if [[ -z "$1" ]]; msg="testing"; else msg=$1; fi
+    - >2-
+        $cmd agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
+    - >-
+      else echo "unrecognized action ${action}"
+    - >-
+      fi
   perl_libs:
     - >-
       MY_LIBS=$(grep '^use' $1 | tr -d '\n')
