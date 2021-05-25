@@ -11,8 +11,6 @@ functions:
     - >-
       cmd="sudo /opt/puppetlabs/bin/puppet"
     - >-
-      test_mode="--noop"
-    - >-
       ignore_lock="--agent_disabled_lockfile=/nonexisting"
     - >-
       agent="agent --test"
@@ -33,7 +31,7 @@ functions:
     - >-
       elif [[ $action = "run" ]]; then $cmd $agent "$@" 2>&1 | $log
     - >-
-      elif [[ $action = "test" ]]; then $cmd $agent $noop $ignore_lock "$@" 2>&1 | $log
+      elif [[ $action = "test" ]]; then $cmd $agent $ignore_lock --noop "$@" 2>&1 | $log
     - >-
       elif [[ $action = "force" ]]; then $cmd $agent $ignore_lock "$@" 2>&1 | $log
     - >-
