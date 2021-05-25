@@ -9,11 +9,9 @@ functions:
     - >-
       if [[ -z "$1" ]]; then action="run"; else action=$1; shift; fi
     - >-
-      cmd="sudo /opt/puppetlabs/bin/puppet"
+      puppet="sudo /opt/puppetlabs/bin/puppet"
     - >-
       ignore_lock="--agent_disabled_lockfile=/nonexisting"
-    - >-
-      agent="agent --test"
     - >-
       log="tee $HOME/puppet.log"
     - >-
@@ -29,21 +27,21 @@ functions:
     - >2-
         fi
     - >-
-      elif [[ $action = "run" ]]; then $cmd $agent "$@" 2>&1 | $log
+      elif [[ $action = "run" ]]; then my_cmd="$puppet agent --test \"$@\" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "test" ]]; then $cmd $agent $ignore_lock --noop "$@" 2>&1 | $log
+      elif [[ $action = "test" ]]; then my_cmd="$puppet agent --test $ignore_lock --noop \"$@\" 2>&1 | $log"; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "force" ]]; then $cmd $agent $ignore_lock "$@" 2>&1 | $log
+      elif [[ $action = "force" ]]; then my_cmd="$puppet agent --test $ignore_lock \"$@\" 2>&1 | $log" ; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "lookup" ]]; then $cmd lookup --merge deep --node "$@"
+      elif [[ $action = "lookup" ]]; then my_cmd="$puppet lookup --merge deep --node \"$@\""; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
       elif [[ $action = "disable" ]]; then
     - >2-
         if [[ -z "$1" ]]; then msg="testing"; else msg=$1; fi
     - >2-
-        $cmd agent --disable "$(date '+%Y-%m-%d') $(whoami) - $msg"
+        my_cmd="$puppet agent --disable \"$(date '+%Y-%m-%d') $(whoami) - $msg\""; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
-      elif [[ $action = "enable" ]]; then $cmd agent --enable
+      elif [[ $action = "enable" ]]; then my_cmd="$puppet agent --enable"; echo "running [$my_cmd]..."; eval $my_cmd
     - >-
       else echo "unrecognized action ${action}"
     - >-
