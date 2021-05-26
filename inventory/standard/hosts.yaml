@@ -269,7 +269,10 @@ all:
                     kerb.bldc.nwave.noaa.gov:
                     kerb.ctc.nwave.noaa.gov:
                     mon.bldc.nwave.noaa.gov:
+                    mon.boul.nwave.noaa.gov:
                     mon.ctc.nwave.noaa.gov:
+                    mon.silv.nwave.noaa.gov:
+                    mon.silv2.nwave.noaa.gov:
                     perf.dall.nwave.noaa.gov:
                     ps.ctc.nwave.noaa.gov:
                     syslog.bldc.nwave.noaa.gov:
