@@ -44,6 +44,8 @@ vpn_hosts:
   - awx.bldc.nwave.noaa.gov
   - awx.ctc.nwave.noaa.gov
   - build.grnoc.iu.edu
+  - cni-mapper.grnoc.iu.edu
+  - cni-mapper-bl.grnoc.iu.edu
   - cosign.areon.net
   - cloud.grnoc.iu.edu
   - cloud.bldc.grnoc.iu.edu
