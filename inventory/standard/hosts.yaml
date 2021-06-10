@@ -221,6 +221,7 @@ all:
                     haproxy.ctc.nwave.noaa.gov:
                     map-builder.bldc.nwave.noaa.gov:
                     netflow-frontend.bldc.nwave.noaa.gov:
+                    netflow-processor.bldc.nwave.noaa.gov:
                     portal-demo.bldc.nwave.noaa.gov:
                     portal-demo.ctc.nwave.noaa.gov:
                     simp-poller.silv.nwave.noaa.gov:
