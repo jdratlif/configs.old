@@ -1,0 +1,45 @@
+---
+gitconfig:
+  name: 'John Ratliff'
+  email: 'john@technoplaza.net'
+
+ssh_host_configs:
+  dev:
+    Hostname: localhost
+    Port: '5922'
+  htpc:
+    Hostname: '192.168.1.5'
+  noaa-bldc:
+    Hostname: 'bastion.bldc.nwave.noaa.gov'
+  noaa-ctc:
+    Hostname: 'bastion.ctc.nwave.noaa.gov'
+  noaa-boul:
+    Hostname: 'bastion.boul.nwave.noaa.gov'
+  'noaa-bldc noaa-ctc noaa-boul':
+    DynamicForward: '7070'
+    LocalForward:
+      - '5950 localhost:5950'
+      - '5951 localhost:5951'
+      - '5952 localhost:5952'
+      - '5953 localhost:5953'
+      - '5954 localhost:5954'
+      - '5955 localhost:5955'
+      - '5956 localhost:5956'
+      - '5957 localhost:5957'
+      - '5958 localhost:5958'
+      - '5959 localhost:5959'
+    PKCS11Provider: '/usr/lib/x86_64-linux-gnu/opensc-pkcs11.so'
+    PubkeyAcceptedKeyTypes: '+ssh-rsa'
+  skip:
+    Hostname: skip.grnoc.iu.edu
+  leap:
+    Hostname: leap.grnoc.iu.edu
+  jump:
+    Hostname: jump.grnoc.iu.edu
+  'skip leap jump':
+    KexAlgorithms: diffie-hellman-group14-sha1
+    LocalForward:
+      - '5901 localhost:24478'
+      - '5922 localhost:24422'
+
+use_vscode_git: true

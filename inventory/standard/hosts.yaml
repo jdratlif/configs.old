@@ -287,5 +287,5 @@ all:
                     tools2.silv.nwave.noaa.gov:
     xaiver:
       hosts:
-        htpc:
-          ansible_connection: local
+        htpc-mint:
+        yoga-mint:

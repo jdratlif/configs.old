@@ -1,0 +1,12 @@
+---
+gitconfig:
+  name: 'John Ratliff'
+  email: 'john@technoplaza.net'
+
+ssh_host_configs:
+  raspberrypi:
+    Hostname: '68.45.17.181'
+    Port: '2222'
+    User: 'pi'
+
+use_vscode_git: true

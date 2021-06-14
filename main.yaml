@@ -15,11 +15,6 @@
       import_role:
         name: gitconfig
 
-    - name: setup i3
-      import_role:
-        name: i3
-      when: use_i3
-
     - name: setup perltidy
       import_role:
         name: perltidy
@@ -27,10 +22,6 @@
     - name: setup ssh configs
       import_role:
         name: ssh
-
-    - name: setup local terminfo
-      import_role:
-        name: terminfo
 
     - name: setup tmux config
       import_role:
@@ -40,11 +31,6 @@
     - name: setup vim
       import_role:
         name: vim
-
-    - name: setup vnc
-      import_role:
-        name: vnc
-      when: use_vnc
 
     - name: special dev host tasks
       become: true
