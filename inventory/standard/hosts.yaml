@@ -220,6 +220,8 @@ all:
                     haproxy.bldc.nwave.noaa.gov:
                     haproxy.ctc.nwave.noaa.gov:
                     map-builder.bldc.nwave.noaa.gov:
+                    netflow-data.bldc.nwave.noaa.gov:
+                    netflow-data.ctc.nwave.noaa.gov:
                     netflow-frontend.bldc.nwave.noaa.gov:
                     netflow-logstash.bldc.nwave.noaa.gov:
                     netflow-processor.bldc.nwave.noaa.gov:
