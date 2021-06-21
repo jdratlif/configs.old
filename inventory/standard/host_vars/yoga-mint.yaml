@@ -48,6 +48,7 @@ ssh_host_configs:
       - '5901 localhost:24478'
       - '5922 localhost:24422'
 
+use_tmux: true
 use_vscode_git: true
 
 vpn_hosts:
