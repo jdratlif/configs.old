@@ -122,7 +122,7 @@ ssh_host_configs:
     Hostname: grafana.intl.grnoc.iu.edu
   'iu-grafana':
     Hostname: grafana.net.uits.iu.edu
-  'linkoregon-grafana':
+  'linkoregon-grafana grafana.net.linkoregon.net':
     Hostname: 140.182.44.246
   'pennren-grafana':
     Hostname: grafana.net.pennren.net
