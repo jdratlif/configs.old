@@ -67,6 +67,10 @@ ssh_host_configs:
     Hostname: compute4.cloud.bldc.grnoc.iu.edu
   cloud-bldc-5:
     Hostname: compute5.cloud.bldc.grnoc.iu.edu
+  cloud-bldc-6:
+    Hostname: compute6.cloud.bldc.grnoc.iu.edu
+  cloud-bldc-7:
+    Hostname: compute7.cloud.bldc.grnoc.iu.edu
   cloud-ctc-1:
     Hostname: compute.cloud.ctc.grnoc.iu.edu
   cloud-ctc-2:
@@ -77,6 +81,10 @@ ssh_host_configs:
     Hostname: compute4.cloud.ctc.grnoc.iu.edu
   cloud-ctc-5:
     Hostname: compute5.cloud.ctc.grnoc.iu.edu
+  cloud-ctc-6:
+    Hostname: compute6.cloud.ctc.grnoc.iu.edu
+  cloud-ctc-7:
+    Hostname: compute7.cloud.ctc.grnoc.iu.edu
 
   # dev servers
   dev:
