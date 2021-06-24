@@ -13,6 +13,11 @@ ssh_host_configs:
   dev:
     Hostname: localhost
     Port: '5922'
+  dev-htpc:
+    Hostname: '192.168.1.5'
+    Port: '9922'
+    ForwardX11: 'yes'
+    ForwardX11Trusted: 'yes'
   htpc:
     Hostname: '192.168.1.5'
   noaa-bldc:
