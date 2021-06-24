@@ -18,9 +18,9 @@ keychain_bin: '/usr/local/bin/keychain'
 
 ssh_host_configs:
   xaiver:
-    Hostname: xaiver.technoplaza.net
-    Port: 2202
-    RemoteForward: 192.168.1.5:9922 localhost:22
+    Hostname: 'xaiver.technoplaza.net'
+    Port: '2202'
+    RemoteForward: '192.168.1.5:9922 localhost:22'
 
 use_i3: true
 use_keychain: false
