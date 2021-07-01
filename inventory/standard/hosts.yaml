@@ -249,6 +249,7 @@ all:
                     snapp-shard.bldc.nwave.noaa.gov:
                     snapp-shard.ctc.nwave.noaa.gov:
                     snapp-test.ctc.nwave.noaa.gov:
+                    snapp-test.silv.nwave.noaa.gov:
                 nwave_other:
                   children:
                     nwave_awx:
