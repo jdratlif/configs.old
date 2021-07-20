@@ -222,6 +222,7 @@ all:
                     cope.ctc.nwave.noaa.gov:
                     flow.bldc.nwave.noaa.gov:
                     flow.ctc.nwave.noaa.gov:
+                    grafana.ctc.nwave.noaa.gov:
                     haproxy.bldc.nwave.noaa.gov:
                     haproxy.ctc.nwave.noaa.gov:
                     map-builder.bldc.nwave.noaa.gov:
