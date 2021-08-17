@@ -20,6 +20,11 @@ ssh_host_configs:
     ForwardX11Trusted: 'yes'
   htpc:
     Hostname: '192.168.1.5'
+  xaiver:
+    Hostname: xaiver.technoplaza.net
+    Port: '2202'
+    LocalForward:
+      - '3389 192.168.1.2:3389'
   noaa-bldc:
     Hostname: 'bastion.bldc.nwave.noaa.gov'
   noaa-ctc:
