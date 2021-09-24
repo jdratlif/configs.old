@@ -80,6 +80,7 @@ vpn_hosts:
     - cloud.bldc.grnoc.iu.edu
     - cloud.ctc.grnoc.iu.edu
     - db.ncren.net
+    - db-test.ncren.net
     - footprints.ncren.net
     - oob2.ak23.bldc.grnoc.iu.edu
     - oob2.n13.ctc.grnoc.iu.edu
