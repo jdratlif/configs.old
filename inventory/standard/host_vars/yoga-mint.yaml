@@ -18,6 +18,9 @@ ssh_host_configs:
     Port: '9922'
     ForwardX11: 'yes'
     ForwardX11Trusted: 'yes'
+  awx-skip:
+    ProxyJump: 'skip'
+    Hostname: 'awx.grnoc.iu.edu'
   htpc:
     Hostname: '192.168.1.5'
   xaiver:
@@ -76,6 +79,7 @@ vpn_hosts:
     - cloud.grnoc.iu.edu
     - cloud.bldc.grnoc.iu.edu
     - cloud.ctc.grnoc.iu.edu
+    - db.ncren.net
     - footprints.ncren.net
     - oob2.ak23.bldc.grnoc.iu.edu
     - oob2.n13.ctc.grnoc.iu.edu
