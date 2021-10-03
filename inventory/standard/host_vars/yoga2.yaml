@@ -1,7 +1,7 @@
 ---
 aliases:
   vpn_iu: >-
-    sudo openconnect --juniper
+    sudo openconnect --protocol=pulse
     -s "/home/jdratlif/venvs/vpn-slice/bin/vpn-slice 10.0.0.0/8 {{ vpn_hosts['iu'] | join(' ') }}"
     -u jdratlif https://vpn.iu.edu/groups
 
