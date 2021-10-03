@@ -299,4 +299,4 @@ all:
     xaiver:
       hosts:
         htpc-mint:
-        yoga-mint:
+        yoga2:
