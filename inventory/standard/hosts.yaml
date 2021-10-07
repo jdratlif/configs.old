@@ -129,6 +129,9 @@ all:
                     backup.ictc.ilight.net:
                     bgp.ctc.grnoc.iu.edu:
                     build.grnoc.iu.edu:
+                    cosign.areon.net:
+                    cosign.bldc.net.cen.ct.gov:
+                    cosign.bldc.oshean.org:
                     db.areon.net:
                     db-01.grnoc.iu.edu:
                     db-02.grnoc.iu.edu:
@@ -162,6 +165,8 @@ all:
                     grafana.noc.onenet.net:
                     snapp.noc.onenet.net:
                 onenet_other:
+                  hosts:
+                    account.noc.onenet.net:
         i2_all:
           children:
             i2_bastion:
