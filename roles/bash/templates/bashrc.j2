@@ -24,7 +24,7 @@ my_prompt() {
 
     GIT_BRANCH=$(git_branch)
 
-    if [ $exit_code -ne 0 ]; then
+    if [[ $exit_code -ne 0 ]]; then
         PS1="(${RED}"
     else
         PS1="(${GREEN}"
@@ -32,13 +32,13 @@ my_prompt() {
 
     PS1="${PS1}${exit_code}${RESET}) ${YELLOW}\H${RESET} [${BLUE}\w${RESET}]"
 
-    if [ ! -z $GIT_BRANCH ]; then
+    if [[ ! -z $GIT_BRANCH ]]; then
         PS1="${PS1} (${CYAN}${GIT_BRANCH}${RESET})"
     fi
 
     PS1="${PS1}\n\$ "
 
-    if [ ! -z $VIRTUAL_ENV ]; then
+    if [[ ! -z $VIRTUAL_ENV ]]; then
         venv=$(basename $VIRTUAL_ENV)
         PS1="($venv) $PS1"
     fi
