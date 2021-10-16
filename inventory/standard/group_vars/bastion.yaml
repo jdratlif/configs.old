@@ -14,7 +14,6 @@ functions:
 ssh_host_common_configs:
   ControlMaster: 'auto'
   ControlPath: '~/.ssh/%r@%h:%p'
-  ForwardAgent: 'yes'
 
 ssh_host_configs:
   # AREON hosts
