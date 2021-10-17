@@ -127,7 +127,6 @@ all:
                     alertmon.ctc.grnoc.iu.edu:
                     backup.grnoc.iu.edu:
                     backup.ictc.ilight.net:
-                    bgp.ctc.grnoc.iu.edu:
                     build.grnoc.iu.edu:
                     cosign.areon.net:
                     cosign.bldc.net.cen.ct.gov:
