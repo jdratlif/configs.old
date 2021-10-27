@@ -141,6 +141,8 @@ all:
                     jenkins.grnoc.iu.edu:
                     kerb.bldc.grnoc.iu.edu:
                     kerb.ctc.grnoc.iu.edu:
+                    mail.bldc.grnoc.iu.edu:
+                    mail.ctc.grnoc.iu.edu:
                     mon.bldc.net.cen.ct.gov:
                     mon.ehct.net.cen.ct.gov:
                     mon-01.grnoc.iu.edu:
