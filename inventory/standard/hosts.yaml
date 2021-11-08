@@ -204,6 +204,8 @@ all:
                 i2_other:
                   hosts:
                     backup.ctc.net.internet2.edu:
+                    db.bldc.net.internet2.edu:
+                    db.wash2.net.internet2.edu:
                     compute.os.bldc.net.internet2.edu:
                     compute2.os.bldc.net.internet2.edu:
                     compute3.os.bldc.net.internet2.edu:
