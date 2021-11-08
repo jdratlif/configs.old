@@ -168,7 +168,7 @@ all:
                 onenet_other:
                   hosts:
                     account.noc.onenet.net:
-                    db-new.noc.onenet.net:
+                    db2.noc.onenet.net:
         i2_all:
           children:
             i2_bastion:
