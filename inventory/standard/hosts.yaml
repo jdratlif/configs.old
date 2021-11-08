@@ -203,6 +203,8 @@ all:
                     vn.wash2.net.internet2.edu:
                 i2_other:
                   hosts:
+                    account.bldc.net.internet2.edu:
+                    account.wash2.net.internet2.edu:
                     backup.ctc.net.internet2.edu:
                     db.bldc.net.internet2.edu:
                     db.wash2.net.internet2.edu:
