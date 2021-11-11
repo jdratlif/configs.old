@@ -16,6 +16,9 @@ functions:
 
 keychain_bin: '/usr/local/bin/keychain'
 
+path_local_pre:
+  - /opt/node/bin
+
 ssh_host_configs:
   xaiver:
     Hostname: 'xaiver.technoplaza.net'
