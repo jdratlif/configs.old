@@ -53,4 +53,4 @@
       rescue:
         - debug:
             msg: 'Did you add sudo privileges?'
-      when: inventory_hostname == 'jdratlif-dev7.ctc.grnoc.iu.edu'
+      when: inventory_hostname == 'jdratlif-dev7.grnoc.iu.edu'
