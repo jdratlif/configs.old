@@ -129,6 +129,8 @@ all:
                     backup.ictc.ilight.net:
                     build.grnoc.iu.edu:
                     cosign.areon.net:
+                    cosign.bldc.grnoc.iu.edu:
+                    cosign.ctc.grnoc.iu.edu:
                     cosign.bldc.net.cen.ct.gov:
                     cosign.bldc.oshean.org:
                     db.areon.net:
