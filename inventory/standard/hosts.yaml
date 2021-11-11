@@ -134,6 +134,7 @@ all:
                     db.areon.net:
                     db-01.grnoc.iu.edu:
                     db-02.grnoc.iu.edu:
+                    db2-stage.grnoc.iu.edu:
                     db.bldc.net.cen.ct.gov:
                     db.ehct.net.cen.ct.gov:
                     db.oshean.org:
