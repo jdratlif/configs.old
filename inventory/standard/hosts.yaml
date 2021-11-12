@@ -125,6 +125,8 @@ all:
                   hosts:
                     alertmon.bldc.grnoc.iu.edu:
                     alertmon.ctc.grnoc.iu.edu:
+                    account.bldc.grnoc.iu.edu:
+                    account.ctc.grnoc.iu.edu:
                     backup.grnoc.iu.edu:
                     backup.ictc.ilight.net:
                     build.grnoc.iu.edu:
