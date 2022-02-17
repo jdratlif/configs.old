@@ -6,8 +6,7 @@ aliases:
   ll: 'ls -l --color=auto'
   ipt: 'sudo iptables --line-numbers -n -v -L'
 
-ssh_authorized_keys:
-  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHileejvC29SZpNQHPvPU6FILgQx5wFQ1fUgpqCbS++F87NAPBFlmFO+3W3bcHcOjix6Dt6JNM10nLb6OBXyF14X+8ZhxhFW83Kz8MpEvBkESMVJOHbXHhiuxMH3K0Dwrno8Z6MWyXuUgCpjLrG/sZ5sbie8mMq/3lhhsBXHaI4sRY1vRs682m7HBI3AaM7h4QlqmYkN8gviTfeni5CIipd+d1FqVfJ652AF4onLxrTbBb/sc7dm5ktKAEDsDBGuA5qK1weyhid4LD4lr64FimduviHesoXl7qi6bAOCoHXB9iQwd+MQ10ur7Vi7N+n55BPKF+cIPqpTomu8oJ8iOiyUcF6zNbVKZTaZ/bm6EIU8E/oS/pKpQD9XCKuJixkw+MJrkA3F9zImg7ygMJEO0mx6kXzpN59vvSYZY4BnIBMhOCI4Eo218PXcVLPp08i4W7GlyBYcR5f0Oe6o0Zb/2bHMCt9FvEvNbP45rPh3aUuyT9ZNe1zE3rb8Ac8XP9mWU= jdratlif-yoga2-win11
+ssh_authorized_keys: []
 
 ssh_host_common_configs:
   ServerAliveCountMax: 3
