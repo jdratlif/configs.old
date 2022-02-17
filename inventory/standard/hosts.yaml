@@ -163,6 +163,7 @@ all:
                 tools-01.globalnoc.mcnc.org:
                 webdoc-01.grnoc.iu.edu:
 
+        # I2 hosts have separate kerberos
         i2_all:
           children:
             i2_bastion:
@@ -203,6 +204,8 @@ all:
                 services.tsds.wash2.net.internet2.edu:
                 snapp-collector.bldc.net.internet2.edu:
                 snapp-collector.wash2.net.internet2.edu:
+
+        # N-Wave hosts must be session multiplexed first
         nwave_all:
           children:
             nwave_bastion:
