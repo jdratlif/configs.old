@@ -52,7 +52,6 @@ all:
                 carto.noc.onenet.net:
                 carto-test.grnoc.iu.edu:
                 cosign.areon.net:
-                cosign.bldc.grnoc.iu.edu:
                 cosign.ctc.grnoc.iu.edu:
                 cosign.bldc.net.cen.ct.gov:
                 cosign.bldc.oshean.org:
@@ -126,7 +125,6 @@ all:
                 netsage-portal-tacc.grnoc.iu.edu:
                 netsage-simp.grnoc.iu.edu:
                 rabbitmq.tsds.bldc.grnoc.iu.edu:
-                qa-test.grnoc.iu.edu:
                 services.tsds.bldc.grnoc.iu.edu:
                 services.tsds.ctc.grnoc.iu.edu:
                 simp.grnoc.iu.edu:
