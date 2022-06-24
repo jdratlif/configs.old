@@ -50,6 +50,8 @@ vpn_hosts:
   - cloud.grnoc.iu.edu
   - cloud.bldc.grnoc.iu.edu
   - cloud.ctc.grnoc.iu.edu
+  - cloud-new.bldc.grnoc.iu.edu
+  - cloud-new.ctc.grnoc.iu.edu
   - footprints.ncren.net
   - oob2.ak23.bldc.grnoc.iu.edu
   - oob2.n13.ctc.grnoc.iu.edu
