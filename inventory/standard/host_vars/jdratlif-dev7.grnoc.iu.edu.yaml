@@ -2,28 +2,34 @@
 aliases:
   rpm6: 'rpm --define="_gpg_name syseng@grnoc.iu.edu"'
   rpm7: 'rpm --define="_gpg_name globalnoc@iu.edu"'
-  # vpn: >-
-  #   sudo openconnect --juniper
-  #   -s "vpn-slice 10.0.0.0/8 {{ vpn_hosts | join(' ') }}"
-  #   -u jdratlif https://vpn.iu.edu/groups
+  vpn: >-
+    sudo /home/jdratlif/openconnect/sbin/openconnect --protocol=nc
+    -s "vpn-slice 10.0.0.0/8 {{ vpn_hosts | join(' ') }}"
+    -u jdratlif https://vpn.iu.edu/groups
 
 functions:
   yaml_class:
     - for f in *.eyaml; do
-    -   yq e '.classes[] | select(. == '\"$1\"')' $f 2> /dev/null | grep $1 > /dev/null
-    -   if [ $? == 0 ]; then echo $f; fi
+    - yq e '.classes[] | select(. == '\"$1\"')' $f 2> /dev/null | grep $1 > /dev/null
+    - if [ $? == 0 ]; then echo $f; fi
     - done
 
-keychain_bin: '/usr/local/bin/keychain'
+keychain_bin: "/usr/local/bin/keychain"
 
 path_local_pre:
   - /opt/node/bin
 
 ssh_host_configs:
+  awx.bldc:
+    Hostname: awx.grnoc.iu.edu
+    ProxyJump: skip.grnoc.iu.edu
+  awx.ctc:
+    Hostname: awx.ctc.grnoc.iu.edu
+    ProxyJump: skip.grnoc.iu.edu
   xaiver:
-    Hostname: 'xaiver.technoplaza.net'
-    Port: '2202'
-    RemoteForward: '192.168.1.5:9922 localhost:22'
+    Hostname: "xaiver.technoplaza.net"
+    Port: "5122"
+    RemoteForward: "192.168.1.5:9922 localhost:22"
 
 use_i3: false
 use_keychain: false
