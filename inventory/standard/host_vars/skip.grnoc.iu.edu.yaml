@@ -1,6 +1,6 @@
 ---
 aliases:
-  myansible: 'source ~/myansible/bin/activate'
+  myansible: "source ~/venvs/ansible/bin/activate"
 
 path_local_pre:
-  - '~/openssh/bin'
+  - "~/openssh/bin:~/python3/bin"
