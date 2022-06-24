@@ -35,6 +35,7 @@ all:
                 awx:
                   hosts:
                     awx.grnoc.iu.edu:
+                    awx.ctc.grnoc.iu.edu:
                     awx-test.bldc.grnoc.iu.edu:
               hosts:
                 account.bldc.grnoc.iu.edu:
@@ -89,6 +90,7 @@ all:
                 jenkins.grnoc.iu.edu:
                 jdratlif-dev7.grnoc.iu.edu:
                 jdratlif-dev7.bldc.grnoc.iu.edu:
+                jdratlif-dev8.grnoc.iu.edu:
                 jeuno.ctc.grnoc.iu.edu:
                 kerb.bldc.grnoc.iu.edu:
                 kerb.ctc.grnoc.iu.edu:
