@@ -5,6 +5,21 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # User specific aliases and functions
 PROMPT_COMMAND=my_prompt
 
@@ -45,8 +60,8 @@ my_prompt() {
 }
 
 # use vi line editing mode
-set -o vi
-bind -m vi-insert "\C-l":clear-screen
+# set -o vi
+# bind -m vi-insert "\C-l":clear-screen
 
 # history options
 shopt -s histappend
