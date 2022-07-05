@@ -159,6 +159,20 @@ all:
                 snapp-shard-02.globalnoc.mcnc.org:
                 snapp-shard-test-01.globalnoc.mcnc.org:
                 ssh-collector.bldc.grnoc.iu.edu:
+                storage.cloud.bldc.grnoc.iu.edu:
+                storage2.cloud.bldc.grnoc.iu.edu:
+                storage3.cloud.bldc.grnoc.iu.edu:
+                storage4.cloud.bldc.grnoc.iu.edu:
+                storage5.cloud.bldc.grnoc.iu.edu:
+                storage6.cloud.bldc.grnoc.iu.edu:
+                storage7.cloud.bldc.grnoc.iu.edu:
+                storage.cloud.ctc.grnoc.iu.edu:
+                storage2.cloud.ctc.grnoc.iu.edu:
+                storage3.cloud.ctc.grnoc.iu.edu:
+                storage4.cloud.ctc.grnoc.iu.edu:
+                storage5.cloud.ctc.grnoc.iu.edu:
+                storage6.cloud.ctc.grnoc.iu.edu:
+                storage7.cloud.ctc.grnoc.iu.edu:
                 syslog.grnoc.iu.edu:
                 tools-01.globalnoc.mcnc.org:
                 webdoc-01.grnoc.iu.edu:
