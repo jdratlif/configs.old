@@ -41,6 +41,7 @@ all:
                 account.bldc.grnoc.iu.edu:
                 account.ctc.grnoc.iu.edu:
                 account.noc.onenet.net:
+                adeora-dev.grnoc.iu.edu:
                 alertmon.bldc.grnoc.iu.edu:
                 alertmon.ctc.grnoc.iu.edu:
                 backup.grnoc.iu.edu:
