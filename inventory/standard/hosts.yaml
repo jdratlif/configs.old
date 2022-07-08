@@ -133,12 +133,16 @@ all:
                 netsage-portal-suncorridor.grnoc.iu.edu:
                 netsage-portal-tacc.grnoc.iu.edu:
                 netsage-simp.grnoc.iu.edu:
+                opendistro-dev-new.grnoc.iu.edu:
                 rabbitmq.tsds.bldc.grnoc.iu.edu:
+                rpki.ctc.indiana.gigapop.net:
                 services.tsds.bldc.grnoc.iu.edu:
                 services.tsds.ctc.grnoc.iu.edu:
                 simp.grnoc.iu.edu:
+                simp-dev.grnoc.iu.edu:
                 simp-poller.bldc.grnoc.iu.edu:
                 sn-tools.grnoc.iu.edu:
+                sn-tools.ctc.grnoc.iu.edu:
                 sn-tools-dev.grnoc.iu.edu:
                 snapp.bldc.grnoc.iu.edu:
                 snapp.frcy.areon.net:
@@ -183,8 +187,10 @@ all:
                 storage6.cloud.ctc.grnoc.iu.edu:
                 storage7.cloud.ctc.grnoc.iu.edu:
                 syslog.grnoc.iu.edu:
+                syslog.wash2.net.internet2.edu:
                 tools-01.globalnoc.mcnc.org:
                 webdoc-01.grnoc.iu.edu:
+                worldview.grnoc.iu.edu:
 
         # I2 hosts have separate kerberos
         i2_all:
