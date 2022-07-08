@@ -60,6 +60,8 @@ all:
                 db.areon.net:
                 db-01.grnoc.iu.edu:
                 db-02.grnoc.iu.edu:
+                db-01.globalnoc.mcnc.org:
+                db-02.globalnoc.mcnc.org:
                 db.bldc.net.cen.ct.gov:
                 db.ehct.net.cen.ct.gov:
                 db.oshean.org:
