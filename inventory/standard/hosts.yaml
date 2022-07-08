@@ -100,6 +100,7 @@ all:
                 jeuno.ctc.grnoc.iu.edu:
                 kerb.bldc.grnoc.iu.edu:
                 kerb.ctc.grnoc.iu.edu:
+                lightweight-db-dev.grnoc.iu.edu:
                 mail.bldc.grnoc.iu.edu:
                 mail.ctc.grnoc.iu.edu:
                 mon.bldc.net.cen.ct.gov:
