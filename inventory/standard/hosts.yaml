@@ -90,6 +90,10 @@ all:
                 gnat.ctc.oshean.org:
                 haproxy.bldc.grnoc.iu.edu:
                 haproxy.ctc.grnoc.iu.edu:
+                idp.areon.net:
+                idp.bldc.net.cen.ct.gov:
+                idp.ehct.net.cen.ct.gov:
+                idp.nkri.oshean.org:
                 idp.noc.onenet.net:
                 io3.bldc.grnoc.iu.edu:
                 irnc-grm.grnoc.iu.edu:
@@ -138,6 +142,7 @@ all:
                 pwa-dev2.grnoc.iu.edu:
                 rabbitmq.tsds.bldc.grnoc.iu.edu:
                 routerproxy.bldc.net.internet2.edu:
+                rpki.bldc.indiana.gigapop.net:
                 rpki.ctc.indiana.gigapop.net:
                 services.tsds.bldc.grnoc.iu.edu:
                 services.tsds.ctc.grnoc.iu.edu:
