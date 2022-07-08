@@ -86,6 +86,8 @@ all:
                 grafana.noc.onenet.net:
                 grafana.omnipop.btaa.org:
                 grafana.sox.net:
+                gnat.bldc.oshean.org:
+                gnat.ctc.oshean.org:
                 haproxy.bldc.grnoc.iu.edu:
                 haproxy.ctc.grnoc.iu.edu:
                 io3.bldc.grnoc.iu.edu:
