@@ -109,6 +109,7 @@ all:
                 mon-02.grnoc.iu.edu:
                 mon-01.globalnoc.mcnc.org:
                 mon-02.globalnoc.mcnc.org:
+                mon-classify-stage2.grnoc.iu.edu:
                 mon-test-01.globalnoc.mcnc.org:
                 mongo-arbiter.areon.net:
                 mongo1.tsds.grnoc.iu.edu:
