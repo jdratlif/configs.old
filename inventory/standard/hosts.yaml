@@ -90,6 +90,7 @@ all:
                 gnat.ctc.oshean.org:
                 haproxy.bldc.grnoc.iu.edu:
                 haproxy.ctc.grnoc.iu.edu:
+                idp.noc.onenet.net:
                 io3.bldc.grnoc.iu.edu:
                 irnc-grm.grnoc.iu.edu:
                 jenkins.grnoc.iu.edu:
