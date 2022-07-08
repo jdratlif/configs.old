@@ -134,6 +134,7 @@ all:
                 netsage-portal-tacc.grnoc.iu.edu:
                 netsage-simp.grnoc.iu.edu:
                 opendistro-dev-new.grnoc.iu.edu:
+                packrat.grnoc.iu.edu:
                 rabbitmq.tsds.bldc.grnoc.iu.edu:
                 rpki.ctc.indiana.gigapop.net:
                 services.tsds.bldc.grnoc.iu.edu:
