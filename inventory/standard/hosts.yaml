@@ -46,6 +46,7 @@ all:
                 alertmon.ctc.grnoc.iu.edu:
                 backup.grnoc.iu.edu:
                 backup.ictc.ilight.net:
+                bridge.grnoc.iu.edu:
                 build.grnoc.iu.edu:
                 carto.areon.net:
                 carto.bldc.grnoc.iu.edu:
