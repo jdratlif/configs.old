@@ -53,6 +53,7 @@ all:
                 carto.net.cen.ct.gov:
                 carto.noc.onenet.net:
                 carto-test.grnoc.iu.edu:
+                carto-test-01.globalnoc.mcnc.org:
                 cosign.areon.net:
                 cosign.ctc.grnoc.iu.edu:
                 cosign.bldc.net.cen.ct.gov:
@@ -123,10 +124,12 @@ all:
                 netsage-dev.grnoc.iu.edu:
                 netsage-flow.grnoc.iu.edu:
                 netsage-pipeline-dev2.bldc.grnoc.iu.edu:
+                netsage-pipeline-stage.grnoc.iu.edu:
                 netsage-portal.grnoc.iu.edu:
                 netsage-portal-all.grnoc.iu.edu:
                 netsage-portal-ana.grnoc.iu.edu:
                 netsage-portal-apr.grnoc.iu.edu:
+                netsage-portal-dev2.grnoc.iu.edu:
                 netsage-portal-frgp.grnoc.iu.edu:
                 netsage-portal-gpn.grnoc.iu.edu:
                 netsage-portal-ilight.grnoc.iu.edu:
