@@ -6,6 +6,9 @@ aliases:
   ipt: "sudo iptables --line-numbers -n -v -L"
 
 functions:
+  del_known_host:
+    - LINE_NUMBER=$1
+    - "[[ ! -z $LINE_NUMBER ]] && sed -i -e $1d ~/.ssh/known_hosts"
   fix_agent:
     - MY_DIR=$(ls -ldt /tmp/ssh-* | grep jdratlif | head -1 | awk '{print $NF}')
     - MY_AGENT=$(ls ${MY_DIR}/agent*)
