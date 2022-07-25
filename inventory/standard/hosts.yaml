@@ -305,6 +305,7 @@ all:
                 netflow-frontend.bldc.nwave.noaa.gov:
                 netflow-logstash.bldc.nwave.noaa.gov:
                 netflow-processor.bldc.nwave.noaa.gov:
+                ngfs-rabbitmq.ctc.nwave.noaa.gov:
                 perf.dall.nwave.noaa.gov:
                 portal-demo.bldc.nwave.noaa.gov:
                 portal-demo.ctc.nwave.noaa.gov:
