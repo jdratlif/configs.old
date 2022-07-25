@@ -287,7 +287,6 @@ all:
                 cope.ctc.nwave.noaa.gov:
                 flow.bldc.nwave.noaa.gov:
                 flow.ctc.nwave.noaa.gov:
-                grafana.ctc.nwave.noaa.gov:
                 haproxy.bldc.nwave.noaa.gov:
                 haproxy.ctc.nwave.noaa.gov:
                 idp.bldc.nwave.noaa.gov:
@@ -322,6 +321,7 @@ all:
                 snapp-rabbit.bldc.nwave.noaa.gov:
                 snapp-rabbit.ctc.nwave.noaa.gov:
                 snapp-portal.bldc.nwave.noaa.gov:
+                snapp-portal.ctc.nwave.noaa.gov:
                 snapp-services.bldc.nwave.noaa.gov:
                 snapp-services.ctc.nwave.noaa.gov:
                 snapp-shard.bldc.nwave.noaa.gov:
