@@ -173,6 +173,7 @@ all:
                 snapp-frontend-01.globalnoc.mcnc.org:
                 snapp-frontend-02.globalnoc.mcnc.org:
                 snapp-frontend-test-01.globalnoc.mcnc.org:
+                snapp-mongo.oshean.org:
                 snapp-portal-01.globalnoc.mcnc.org:
                 snapp-portal-02.globalnoc.mcnc.org:
                 snapp-portal-test-01.globalnoc.mcnc.org:
