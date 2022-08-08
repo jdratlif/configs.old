@@ -123,6 +123,7 @@ all:
                 mongo1.tsds.grnoc.iu.edu:
                 mongo2.tsds.grnoc.iu.edu:
                 mongo3.tsds.grnoc.iu.edu:
+                neteng-sb.ctc.grnoc.iu.edu:
                 netsage-archive.grnoc.iu.edu:
                 netsage-dev.grnoc.iu.edu:
                 netsage-flow.grnoc.iu.edu:
