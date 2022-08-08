@@ -94,6 +94,7 @@ all:
                 grafana.sox.net:
                 gnat.bldc.oshean.org:
                 gnat.ctc.oshean.org:
+                gnui.grnoc.iu.edu:
                 haproxy.bldc.grnoc.iu.edu:
                 haproxy.ctc.grnoc.iu.edu:
                 idp.areon.net:
