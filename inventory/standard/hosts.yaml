@@ -62,6 +62,7 @@ all:
                 cosign.ctc.grnoc.iu.edu:
                 cosign.bldc.net.cen.ct.gov:
                 cosign.bldc.oshean.org:
+                daldoyle-dev-7.grnoc.iu.edu:
                 db.areon.net:
                 db-01.grnoc.iu.edu:
                 db-02.grnoc.iu.edu:
