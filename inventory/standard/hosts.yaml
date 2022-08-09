@@ -47,6 +47,7 @@ all:
                 awx-frontend.ctc.grnoc.iu.edu:
                 backup.grnoc.iu.edu:
                 backup.ictc.ilight.net:
+                bgeels-dev-7.grnoc.iu.edu:
                 bridge.grnoc.iu.edu:
                 build.grnoc.iu.edu:
                 carto.areon.net:
