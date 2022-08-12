@@ -281,6 +281,7 @@ all:
                         compute2.cloud.ctc.nwave.noaa.gov:
                         compute3.cloud.ctc.nwave.noaa.gov:
               hosts:
+                awx-frontend.bldc.nwave.noaa.gov:
                 backup.boul.nwave.noaa.gov:
                 backup.ctc.nwave.noaa.gov:
                 db2.bldc.nwave.noaa.gov:
