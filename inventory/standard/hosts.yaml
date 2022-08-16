@@ -151,6 +151,7 @@ all:
                 opendistro-dev-new.grnoc.iu.edu:
                 packrat.grnoc.iu.edu:
                 pwa-dev2.grnoc.iu.edu:
+                puppet-stage2.grnoc.iu.edu:
                 rabbitmq.tsds.bldc.grnoc.iu.edu:
                 routerproxy.bldc.net.internet2.edu:
                 rpki.bldc.indiana.gigapop.net:
