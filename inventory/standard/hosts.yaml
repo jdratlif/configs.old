@@ -36,6 +36,8 @@ all:
                   hosts:
                     awx.grnoc.iu.edu:
                     awx.ctc.grnoc.iu.edu:
+                    awx-stage.bldc.grnoc.iu.edu:
+                    awx-stage.ctc.grnoc.iu.edu:
                     awx-test.bldc.grnoc.iu.edu:
               hosts:
                 account.bldc.grnoc.iu.edu:
