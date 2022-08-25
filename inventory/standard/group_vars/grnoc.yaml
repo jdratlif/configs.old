@@ -60,4 +60,4 @@ gitconfig:
   credentials:
     - name: "https://github.grnoc.iu.edu"
       username: jdratlif
-      helper: "cache --timeout 43200"
+      helper: "cache --timeout 14400"
