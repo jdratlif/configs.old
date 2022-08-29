@@ -1,0 +1,59 @@
+---
+- name: config setup playbook
+  gather_facts: false
+  hosts: '{{ host_override | default("skip.grnoc.iu.edu") }}'
+  tasks:
+    - name: Import common values
+      ansible.builtin.import_role:
+        name: common
+
+    - name: Setup bash profile
+      ansible.builtin.import_role:
+        name: bash
+
+    - name: Setup gitconfig
+      ansible.builtin.import_role:
+        name: gitconfig
+
+    - name: Setup perltidy
+      ansible.builtin.import_role:
+        name: perltidy
+
+    - name: Setup ssh configs
+      ansible.builtin.import_role:
+        name: ssh
+
+    - name: Setup tmux config
+      ansible.builtin.import_role:
+        name: tmux
+      when: use_tmux
+
+    - name: Setup vim
+      ansible.builtin.import_role:
+        name: vim
+
+    - name: Special dev host tasks
+      become: true
+      block:
+        - name: Increase sudo timeout
+          ansible.builtin.copy:
+            content: |
+              Defaults timestamp_timeout=480
+            dest: /etc/sudoers.d/90-timeout
+            owner: root
+            group: root
+            mode: "0440"
+
+        - name: Set inotify user watches
+          ansible.builtin.copy:
+            content: |
+              fs.inotify.max_user_watches=65536
+            dest: /etc/sysctl.d/90-inotify.conf
+            owner: root
+            group: root
+            mode: "0644"
+      rescue:
+        - name: Remind user that sudo is required here
+          ansible.builtin.debug:
+            msg: "Did you add sudo privileges?"
+      when: inventory_hostname == 'jdratlif-dev7.grnoc.iu.edu'

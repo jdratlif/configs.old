@@ -1,4 +1,0 @@
-source ~/.tmux-common.conf
-
-# right of active window display
-set -g status-right " %a %b %e @ %I:%M %p "

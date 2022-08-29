@@ -1,4 +1,0 @@
-source ~/.tmux-common.conf
-
-# fix puTTY xterm ctrl arrow keys
-set -g terminal-overrides "xterm*:kLFT5=\eOD:kRIT5=\eOC:kUP5=\eOA:kDN5=\eOB:smkx@:rmkx@"

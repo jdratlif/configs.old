@@ -1,8 +1,0 @@
----
-- name: copy perltidyrc
-  copy:
-    src: perltidyrc
-    dest: '{{ home_dir }}/.perltidyrc'
-    owner: '{{ user }}'
-    group: '{{ group }}'
-    mode: '0644'

@@ -1,7 +1,0 @@
----
-ansible_connection: local
-
-ssh_host_common_configs:
-  ControlMaster: 'auto'
-  ControlPath: '~/.ssh/%r@%h:%p'
-  ForwardAgent: 'yes'

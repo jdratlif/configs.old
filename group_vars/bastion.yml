@@ -1,0 +1,14 @@
+---
+ansible_connection: local
+
+functions:
+  config_host:
+    - name=$1
+    - shift
+    - ansible-playbook main.yaml -e "host_override=$name" "$@"
+
+ssh_host_common_configs:
+  ControlMaster: "auto"
+  ControlPath: "~/.ssh/%r@%h:%p"
+
+use_tmux: true

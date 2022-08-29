@@ -1,7 +1,0 @@
----
-- name: template gitconfig
-  template:
-    src: gitconfig.j2
-    dest: '{{ home_dir }}/.gitconfig'
-    owner: '{{ user }}'
-    group: '{{ group }}'

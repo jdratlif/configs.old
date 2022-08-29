@@ -1,6 +1,0 @@
----
-- name: remove old config files
-  file:
-    path: '{{ home_dir }}/{{ item }}'
-    state: absent
-  with_items: '{{ files }}'

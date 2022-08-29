@@ -1,7 +1,0 @@
----
-- name: template tmux.conf
-  template:
-    src: tmux.conf.j2
-    dest: '{{ home_dir }}/.tmux.conf'
-    owner: '{{ user }}'
-    group: '{{ group }}'

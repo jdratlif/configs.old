@@ -1,9 +1,0 @@
-Host *
-    ServerAliveCountMax 3
-    ServerAliveInterval 30
-
-Host backup
-    HostName backup.ctc.nwave.noaa.gov
-
-Host puppet
-    HostName dist.nwave.noaa.gov
