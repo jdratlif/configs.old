@@ -56,4 +56,5 @@
         - name: Remind user that sudo is required here
           ansible.builtin.debug:
             msg: "Did you add sudo privileges?"
-      when: inventory_hostname == 'jdratlif-dev7.grnoc.iu.edu'
+      when: >-
+        'dev' in group_names
