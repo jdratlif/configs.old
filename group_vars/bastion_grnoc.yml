@@ -113,6 +113,12 @@ ssh_host_configs:
   "sox-grafana":
     Hostname: grafana.sox.net
 
+  # Kerberos servers
+  "kerb kerberos":
+    HostName: kerb.ctc.grnoc.iu.edu
+  kerberos.bldc:
+    HostName: kerb.bldc.grnoc.iu.edu
+
   # NAGIOS servers
   "mon-bldc mon nocmon":
     Hostname: nocmon.bldc.grnoc.iu.edu
