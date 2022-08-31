@@ -1,0 +1,6 @@
+---
+gitconfig:
+  safe_directories:
+    - /etc/puppetlabs/code/environments/production/hieradata
+    - /etc/puppetlabs/code/environments/production/manifests
+    - /etc/puppetlabs/code/environments/production/modules
