@@ -104,3 +104,9 @@ function {{ item[0] }} {
 alias {{ item[0] }}='{{ item[1] }}'
 {% endfor %}
 # end aliases
+
+# begin source imports
+{% for item in bash_sources %}
+source {{ item }}
+{% endfor %}
+# end source imports

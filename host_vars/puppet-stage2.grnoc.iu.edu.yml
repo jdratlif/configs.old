@@ -1,2 +1,4 @@
 ---
+bash_sources:
+  - scl_source enable rh-ruby27
 use_vscode_git: true
