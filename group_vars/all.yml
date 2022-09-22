@@ -11,6 +11,7 @@ functions:
     - "[[ ! -z $LINE_NUMBER ]] && sed -i -e $1d ~/.ssh/known_hosts"
 
 bash_sources: []
+path_local_pre: ["/bin/"]
 ssh_authorized_keys: []
 
 ssh_host_common_configs:
