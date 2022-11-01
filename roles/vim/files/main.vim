@@ -1,6 +1,6 @@
 " set colorscheme
 syntax on
-set background=dark
+" set background=dark
 
 set autoindent
 au BufNewFile,BufRead *.eyaml,*.yaml,*.yml so ~/.vim/yaml.vim
