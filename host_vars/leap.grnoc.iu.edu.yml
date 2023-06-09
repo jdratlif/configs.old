@@ -1,0 +1,2 @@
+path_local_pre:
+  - "/opt/openssh89/bin:/opt/python38/bin"
