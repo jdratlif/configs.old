@@ -12,3 +12,4 @@ ssh_host_common_configs:
   ControlPath: "~/.ssh/%r@%h:%p"
 
 use_tmux: true
+use_vscode_git: false
