@@ -16,3 +16,5 @@ ssh_host_configs:
     Hostname: db2.bldc
   "dns-ctc":
     Hostname: db2.ctc
+  "* !*.nwave.noaa.gov":
+    Hostname: "%h.nwave.noaa.gov"
