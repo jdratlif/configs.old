@@ -9,7 +9,7 @@ functions:
   fix_agent:
     - MY_USERNAME=$(whoami)
     - MY_DIR=$(ls -ldt /tmp/ssh-* | grep ${MY_USERNAME} | head -1 | awk '{print $NF}')
-    - MY_AGENT=$(ls ${MY_DIR}/agent*)
+    - MY_AGENT=$(ls ${MY_DIR}/agent* 2> /dev/null)
     - test -f "${MY_AGENT}" && export SSH_AUTH_SOCK=$MY_AGENT || echo "No SSH agent found"
   p:
     - >-
