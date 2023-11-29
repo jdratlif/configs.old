@@ -1,14 +1,16 @@
 ---
 aliases:
   puppet: "sudo /opt/puppetlabs/bin/puppet"
+  rpm7: 'rpm --define="_gpg_name globalnoc@iu.edu"'
 
 functions:
   find_puppet_class:
     - find -iname "*.eyaml" -exec sh -c "CLASS=$1 "'RES=$(yq ".classes[] | select(. == \"${CLASS}\")" < {} 2>/dev/null); test ! -z $RES && echo {}' \;
   fix_agent:
-    - MY_DIR=$(ls -ldt /tmp/ssh-* | grep jdratlif | head -1 | awk '{print $NF}')
+    - MY_USERNAME=$(whoami)
+    - MY_DIR=$(ls -ldt /tmp/ssh-* | grep ${MY_USERNAME} | head -1 | awk '{print $NF}')
     - MY_AGENT=$(ls ${MY_DIR}/agent*)
-    - export SSH_AUTH_SOCK=$MY_AGENT
+    - test -f "${MY_AGENT}" && export SSH_AUTH_SOCK=$MY_AGENT || echo "No SSH agent found"
   p:
     - >-
       if [[ -z "$1" ]]; then action="run"; else action=$1; shift; fi
