@@ -10,6 +10,7 @@ functions:
 ssh_host_common_configs:
   ControlMaster: "auto"
   ControlPath: "~/.ssh/%r@%h:%p"
+  ControlPersist: "5m"
 
 use_tmux: true
 use_vscode_git: false
