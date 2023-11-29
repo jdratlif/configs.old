@@ -1,5 +1,5 @@
 ---
-- name: config setup playbook
+- name: Config setup playbook
   gather_facts: false
   hosts: '{{ host_override | default("skip.grnoc.iu.edu") }}'
   tasks:
@@ -34,6 +34,8 @@
 
     - name: Special dev host tasks
       become: true
+      when: >-
+        'dev' in group_names
       block:
         - name: Increase sudo timeout
           ansible.builtin.copy:
@@ -56,5 +58,3 @@
         - name: Remind user that sudo is required here
           ansible.builtin.debug:
             msg: "Did you add sudo privileges?"
-      when: >-
-        'dev' in group_names
