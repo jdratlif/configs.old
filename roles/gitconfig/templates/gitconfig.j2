@@ -12,12 +12,8 @@
 	helper = {{ c.helper }}
 {% endfor %}
 {% endif %}
-{% if gitconfig.safe_directories is defined %}
 [safe]
-{% for sd in gitconfig.safe_directories %}
-	directory = {{ sd }}
-{% endfor %}
-{% endif %}
+        directory = *
 {% if use_vscode_git %}
 [core]
 	editor = code --wait

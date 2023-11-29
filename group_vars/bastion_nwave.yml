@@ -1,7 +1,4 @@
 ---
-aliases:
-  myansible: "eval $(ssh-agent) ; sudo -E ssh-add /home/syscnf/.ssh/id_rsa"
-
 ssh_host_configs:
   "cloud-bldc-1 compute-bldc-1 cloud-bldc compute-bldc":
     Hostname: compute.cloud.bldc
