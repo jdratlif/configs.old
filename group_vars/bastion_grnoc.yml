@@ -360,3 +360,6 @@ ssh_host_configs:
   # SNAPP/SIMP servers
   "oshean-snapp oshean-simp":
     Hostname: snapp.oshean.org
+
+  "* !*.grnoc.iu.edu":
+    Hostname: "%h.grnoc.iu.edu"
