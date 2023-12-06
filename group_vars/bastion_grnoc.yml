@@ -1,4 +1,7 @@
 ---
+ssh_canonical_domains:
+  - grnoc.iu.edu
+
 ssh_host_configs:
   # AREON hosts
 
@@ -360,6 +363,3 @@ ssh_host_configs:
   # SNAPP/SIMP servers
   "oshean-snapp oshean-simp":
     Hostname: snapp.oshean.org
-
-  "* !*.grnoc.iu.edu":
-    Hostname: "%h.grnoc.iu.edu"

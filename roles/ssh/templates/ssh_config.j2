@@ -1,3 +1,7 @@
+{% if ssh_canonical_domains is defined -%}
+CanonicalizeHostname yes
+CanonicalDomains {{ ssh_canonical_domains | join(' ') }}
+{% endif -%}
 {% for host in ssh_host_configs | dictsort %}
 Host {{ host[0] }}
 {% for name, value in host[1].items() %}

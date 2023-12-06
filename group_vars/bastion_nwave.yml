@@ -1,4 +1,7 @@
 ---
+ssh_canonical_domains:
+  - nwave.noaa.gov
+
 ssh_host_configs:
   "cloud-bldc-1 compute-bldc-1 cloud-bldc compute-bldc":
     Hostname: compute.cloud.bldc
@@ -16,5 +19,3 @@ ssh_host_configs:
     Hostname: db2.bldc
   "dns-ctc":
     Hostname: db2.ctc
-  "* !*.nwave.noaa.gov":
-    Hostname: "%h.nwave.noaa.gov"
