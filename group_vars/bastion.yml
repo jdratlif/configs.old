@@ -8,9 +8,9 @@ functions:
     - ansible-playbook playbook.yml -e "host_override=$name" "$@"
 
 ssh_host_common_configs:
-  ControlMaster: "auto"
-  ControlPath: "~/.ssh/%r@%h:%p"
-  ControlPersist: "5m"
+  ControlMaster: auto
+  ControlPath: ~/.ssh/cp-%r@%h:%p
+  ControlPersist: 5m
 
 use_tmux: true
 use_vscode_git: false
