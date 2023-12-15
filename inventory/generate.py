@@ -39,7 +39,7 @@ def main():
             hosts[cloud][team] = dict()
 
             if team in team_data:
-                hosts[cloud][team] = team_data[team]["hosts"]
+                hosts[cloud][team] = {host: {} for host in team_data[team]["hosts"]}
 
     other_hosts = dict()
 
