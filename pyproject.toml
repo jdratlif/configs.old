@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "configs"
+version = "0.1.0"
+description = ""
+authors = ["John Ratliff <john@technoplaza.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.11"
+requests = "^2.31.0"
+urllib3 = "<2.0.0"
+pyyaml = "^6.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

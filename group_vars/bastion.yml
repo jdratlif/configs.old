@@ -1,6 +1,4 @@
 ---
-ansible_connection: local
-
 functions:
   config_host:
     - name=$1
